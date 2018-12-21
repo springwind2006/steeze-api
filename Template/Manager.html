@@ -1,0 +1,942 @@
+<html>
+<head>
+<title>Docs For Class Manager</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">Template</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        		  [ <a href="../classtrees_Template.html" class="menu">类树图: Template</a> ]
+		    [ <a href="../elementindex_Template.html" class="menu">索引: Template</a> ]
+      		  [ <a href="../elementindex.html" class="menu">所有元素</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_default.html">default</a><br />
+              <a href="../li_Cache.html">Cache</a><br />
+              <a href="../li_Database.html">Database</a><br />
+              <a href="../li_Drivers.html">Drivers</a><br />
+              <a href="../li_Library.html">Library</a><br />
+              <a href="../li_Service.html">Service</a><br />
+              <a href="../li_Storage.html">Storage</a><br />
+              <a href="../li_Template.html">Template</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../Template/Manager.html">Manager</a><br />
+	    		<a href="../Template/St.html">St</a><br />
+	  </div>
+                  <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../Template/_Service---Template---Manager.class.php.html">		Manager.class.php
+		</a><br>
+			<a href="../Template/_Service---Template---Taglib---St.class.php.html">		St.class.php
+		</a><br>
+	  </div><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Manager</h1>
+Source Location: /Service/Template/Manager.class.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">模板服务类</div><br /><br />
+
+
+
+
+
+
+
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../Template/Manager.html#method__construct">__construct</a></li>
+    <li><a href="../Template/Manager.html#methodchangeDotArray">changeDotArray</a></li>
+    <li><a href="../Template/Manager.html#methodcompile">compile</a></li>
+    <li><a href="../Template/Manager.html#methodinstance">instance</a></li>
+    <li><a href="../Template/Manager.html#methodoperator">operator</a></li>
+    <li><a href="../Template/Manager.html#methodparse">parse</a></li>
+    <li><a href="../Template/Manager.html#methodparseAction">parseAction</a></li>
+    <li><a href="../Template/Manager.html#methodparseArray">parseArray</a></li>
+    <li><a href="../Template/Manager.html#methodparseAssign">parseAssign</a></li>
+    <li><a href="../Template/Manager.html#methodparseDoVar">parseDoVar</a></li>
+    <li><a href="../Template/Manager.html#methodparseElseif">parseElseif</a></li>
+    <li><a href="../Template/Manager.html#methodparseExpression">parseExpression</a></li>
+    <li><a href="../Template/Manager.html#methodparseFor">parseFor</a></li>
+    <li><a href="../Template/Manager.html#methodparseForeach">parseForeach</a></li>
+    <li><a href="../Template/Manager.html#methodparseFunc">parseFunc</a></li>
+    <li><a href="../Template/Manager.html#methodparseIf">parseIf</a></li>
+    <li><a href="../Template/Manager.html#methodparseImport">parseImport</a></li>
+    <li><a href="../Template/Manager.html#methodparseInclude">parseInclude</a></li>
+    <li><a href="../Template/Manager.html#methodparseLayout">parseLayout</a></li>
+    <li><a href="../Template/Manager.html#methodparseTagLib">parseTagLib</a></li>
+    <li><a href="../Template/Manager.html#methodparseVar">parseVar</a></li>
+    <li><a href="../Template/Manager.html#methodrefresh">refresh</a></li>
+    <li><a href="../Template/Manager.html#methodset_delim">set_delim</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+<td valign="top">
+<h3>Inherited Variables</h3>
+</td>
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+</div>
+</td>
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 12]<br />
+模板服务类<br /></div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+
+<hr />
+<a name="class_methods"></a>
+<h3>Method Detail</h3>
+<div class="tags">
+	<a name="method__construct"></a>
+	<h3>__construct (Constructor)<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 26]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Manager __construct(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodchangeDotArray"></a>
+	<h3>changeDotArray<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 515]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string changeDotArray(
+
+$var_str, string
+$str)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		将用“.”表示的数组，转化为PHP表示<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 转化后的字符串</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$str</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>需要转化的字符串</td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$var_str</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodcompile"></a>
+	<h3>compile<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 43]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>number compile(
+string
+$tplfile, string
+$compiledtplfile)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		模板编译<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 生成的编译文件的字节数</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$tplfile</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>模板文件路径</td>
+      </tr>
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$compiledtplfile</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>编译后文件路径</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodinstance"></a>
+	<h3>instance<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 18]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void instance(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodoperator"></a>
+	<h3>operator<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 630]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed operator(
+
+$sqlstr, string
+$str)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		替换SQL字符串条件语句中的比较操作符<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$str</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$sqlstr</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparse"></a>
+	<h3>parse<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 79]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool parse(
+string
+$str)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析模板<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$str</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseAction"></a>
+	<h3>parseAction<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 300]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void parseAction(
+array
+$matches)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析action标签<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>匹配集合</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseArray"></a>
+	<h3>parseArray<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 415]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseArray(
+array
+$matches)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析数组<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseAssign"></a>
+	<h3>parseAssign<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 161]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseAssign(
+array
+$matches, string
+$str)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析assign标签<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$str</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>模板文件内容</td>
+      </tr>
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseDoVar"></a>
+	<h3>parseDoVar<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 536]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseDoVar(
+mixed
+$para)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析使用点号分割的数组表示字符串<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 数组表示的字符串</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$para</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseElseif"></a>
+	<h3>parseElseif<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 354]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseElseif(
+array
+$matches)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析elseif标签<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseExpression"></a>
+	<h3>parseExpression<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 457]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseExpression(
+array
+$matches)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析表达式 支持以“.”分割的数组表示方式<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseFor"></a>
+	<h3>parseFor<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 366]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void parseFor(
+array
+$matches)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析for标签<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseForeach"></a>
+	<h3>parseForeach<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 385]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void parseForeach(
+array
+$matches)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析foreach标签<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseFunc"></a>
+	<h3>parseFunc<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 429]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseFunc(
+mixed
+$matches)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析函数 支持以“.”分割的数组表示方式<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseIf"></a>
+	<h3>parseIf<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 341]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseIf(
+array
+$matches)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析if标签<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseImport"></a>
+	<h3>parseImport<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 232]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseImport(
+array
+$matches)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析import标签<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseInclude"></a>
+	<h3>parseInclude<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 279]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseInclude(
+array
+$matches)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析include或template标签 用法：模块@主题风格/控制器/方法 例如：home@default/index/show<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseLayout"></a>
+	<h3>parseLayout<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 174]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseLayout(
+string
+$str)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析layout标签<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 处理后的模板</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$str</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>模板文件内容</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseTagLib"></a>
+	<h3>parseTagLib<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 467]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void parseTagLib(
+
+$matches, string
+$op, string
+$datas)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析PC标签<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$op</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>操作方式</td>
+      </tr>
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$datas</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>参数</td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseVar"></a>
+	<h3>parseVar<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 439]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseVar(
+mixed
+$matches)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析数组变量，包括“.”操作符号的数组变量<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$matches</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodrefresh"></a>
+	<h3>refresh<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 65]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$strlen refresh(
+string
+$tplfile, string
+$compiledtplfile)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		更新模板缓存<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 长度</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$tplfile</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>模板原文件路径</td>
+      </tr>
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$compiledtplfile</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>编译完成后，写入文件名</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodset_delim"></a>
+	<h3>set_delim<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 31]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void set_delim(
+
+$ldelim, 
+$rdelim)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$ldelim</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$rdelim</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+</div>
+
+        <div class="credit">
+		    <hr />
+		    Powered by Steeze. author email: spring.wind2006@163.com
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,2549 @@
+<html>
+<head>
+<title>Docs For Class Driver</title>
+<link rel="stylesheet" type="text/css" href="../../media/style.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">Service</td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        		  [ <a href="../../classtrees_Service.html" class="menu">类树图: Service</a> ]
+		    [ <a href="../../elementindex_Service.html" class="menu">索引: Service</a> ]
+      		  [ <a href="../../elementindex.html" class="menu">所有元素</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../../li_default.html">default</a><br />
+              <a href="../../li_Cache.html">Cache</a><br />
+              <a href="../../li_Database.html">Database</a><br />
+              <a href="../../li_Drivers.html">Drivers</a><br />
+              <a href="../../li_Library.html">Library</a><br />
+              <a href="../../li_Service.html">Service</a><br />
+              <a href="../../li_Storage.html">Storage</a><br />
+              <a href="../../li_Template.html">Template</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../../Service/Db.html">Db</a><br />
+	    		<a href="../../Service/File.html">File</a><br />
+	    		<a href="../../Service/Memcache.html">Memcache</a><br />
+	    		<a href="../../Service/Sae.html">Sae</a><br />
+	  </div>
+  <div class="package">
+	Database<br />	    &nbsp;&nbsp;		<a href="../../Service/Database/Driver.html">Driver</a><br />
+	    &nbsp;&nbsp;		<a href="../../Service/Database/Manager.html">Manager</a><br />
+	  </div>
+                  <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../../Service/_Service---Session---Driver---Db.class.php.html">		Db.class.php
+		</a><br>
+			<a href="../../Service/_Service---Storage---Drivers---File.class.php.html">		File.class.php
+		</a><br>
+			<a href="../../Service/_Service---Session---Driver---Memcache.class.php.html">		Memcache.class.php
+		</a><br>
+			<a href="../../Service/_Service---Storage---Drivers---Sae.class.php.html">		Sae.class.php
+		</a><br>
+	  </div><br />
+	subpackage <b>Database</b><br>  <div class="package">
+			<a href="../../Service/Database/_Service---Database---Driver.class.php.html">		Driver.class.php
+		</a><br>
+			<a href="../../Service/Database/_Service---Database---Manager.class.php.html">		Manager.class.php
+		</a><br>
+	  </div><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Driver</h1>
+Source Location: /Service/Database/Driver.class.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">数据库实现基类</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+        </ul>
+
+
+
+
+    
+
+
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../../Service/Database/Driver.html#var$bind">$bind</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$config">$config</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$error">$error</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$executeTimes">$executeTimes</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$exp">$exp</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$lastInsID">$lastInsID</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$linkID">$linkID</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$model">$model</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$modelSql">$modelSql</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$numRows">$numRows</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$options">$options</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$PDOStatement">$PDOStatement</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$queryStr">$queryStr</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$queryTimes">$queryTimes</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$selectSql">$selectSql</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$transTimes">$transTimes</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$_linkID">$_linkID</a></li>
+    <li><a href="../../Service/Database/Driver.html#var$_linkNum">$_linkNum</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../../Service/Database/Driver.html#method__construct">__construct</a></li>
+    <li><a href="../../Service/Database/Driver.html#method__destruct">__destruct</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodbindParam">bindParam</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodbuildSelectSql">buildSelectSql</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodclose">close</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodcommit">commit</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodconnect">connect</a></li>
+    <li><a href="../../Service/Database/Driver.html#methoddebug">debug</a></li>
+    <li><a href="../../Service/Database/Driver.html#methoddelete">delete</a></li>
+    <li><a href="../../Service/Database/Driver.html#methoderror">error</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodescapeString">escapeString</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodexecute">execute</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodfree">free</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodgetError">getError</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodgetExecuteTimes">getExecuteTimes</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodgetLastInsID">getLastInsID</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodgetLastSql">getLastSql</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodgetQueryTimes">getQueryTimes</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodinitConnect">initConnect</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodinsert">insert</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodinsertAll">insertAll</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodmultiConnect">multiConnect</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseBind">parseBind</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseComment">parseComment</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseDistinct">parseDistinct</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseDsn">parseDsn</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseDuplicate">parseDuplicate</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseField">parseField</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseForce">parseForce</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseGroup">parseGroup</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseHaving">parseHaving</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseJoin">parseJoin</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseKey">parseKey</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseLimit">parseLimit</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseLock">parseLock</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseOrder">parseOrder</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseSet">parseSet</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseSql">parseSql</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseSteezeWhere">parseSteezeWhere</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseTable">parseTable</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseUnion">parseUnion</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseValue">parseValue</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseWhere">parseWhere</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodparseWhereItem">parseWhereItem</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodquery">query</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodrollback">rollback</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodselect">select</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodselectInsert">selectInsert</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodsetModel">setModel</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodstartTrans">startTrans</a></li>
+    <li><a href="../../Service/Database/Driver.html#methodupdate">update</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+<td valign="top">
+<h3>Child classes:</h3>
+<div class="tags">
+<dl>
+<dt><a href="../../Database/Drivers/Sqlsrv.html">Sqlsrv</a></dt>
+	<dd>Sqlsrv数据库驱动</dd>
+</dl>
+<dl>
+<dt><a href="../../Database/Drivers/Firebird.html">Firebird</a></dt>
+	<dd>Firebird数据库驱动</dd>
+</dl>
+<dl>
+<dt><a href="../../Database/Drivers/Mongo.html">Mongo</a></dt>
+	<dd>Mongo数据库驱动</dd>
+</dl>
+<dl>
+<dt><a href="../../Database/Drivers/Pgsql.html">Pgsql</a></dt>
+	<dd>Pgsql数据库驱动</dd>
+</dl>
+<dl>
+<dt><a href="../../Database/Drivers/Sqlite.html">Sqlite</a></dt>
+	<dd>Sqlite数据库驱动</dd>
+</dl>
+<dl>
+<dt><a href="../../Database/Drivers/Oracle.html">Oracle</a></dt>
+	<dd>Oracle数据库驱动</dd>
+</dl>
+<dl>
+<dt><a href="../../Database/Drivers/Mysql.html">Mysql</a></dt>
+	<dd>mysql数据库驱动</dd>
+</dl>
+</div>
+</td>
+
+<td valign="top">
+<h3>Inherited Variables</h3>
+</td>
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+</div>
+</td>
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 13]<br />
+数据库实现基类<br /><div class="tags">
+<ul>
+<li><b>Abstract:</b> </li>
+</ul>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$bind"></a>
+	<p></p>
+	<h4>$bind = <span class="value">array()</span></h4>
+	<p>[line 69]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$config"></a>
+	<p></p>
+	<h4>$config = <span class="value">array(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'type'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;'',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;数据库类型<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'hostname'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;'127.0.0.1',&nbsp;//&nbsp;服务器地址<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'database'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;'',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;数据库名<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'username'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;'',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;用户名<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'password'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;'',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;密码<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'hostport'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;'',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;端口&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'dsn'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;'',&nbsp;//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'params'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;array(),//&nbsp;数据库连接参数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+'charset'=&gt;'utf8',//&nbsp;数据库编码默认采用utf8&nbsp;&nbsp;<br>
+'prefix'=&gt;'',//&nbsp;数据库表前缀<br>
+'debug'=&gt;false,//&nbsp;数据库调试模式<br>
+'deploy'=&gt;0,//&nbsp;数据库部署方式:0&nbsp;集中式(单一服务器),1&nbsp;分布式(主从服务器)<br>
+'rw_separate'=&gt;false,//&nbsp;数据库读写是否分离&nbsp;主从式有效<br>
+'master_num'=&gt;1,//&nbsp;读写分离后&nbsp;主服务器数量<br>
+'slave_no'=&gt;'',//&nbsp;指定从服务器序号<br>
+'db_like_fields'=&gt;'',)</span></h4>
+	<p>[line 36]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$error"></a>
+	<p></p>
+	<h4>$error = <span class="value">&nbsp;''</span></h4>
+	<p>[line 28]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$executeTimes"></a>
+	<p></p>
+	<h4>$executeTimes = <span class="value">&nbsp;&nbsp;&nbsp;0</span></h4>
+	<p>[line 61]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$exp"></a>
+	<p></p>
+	<h4>$exp = <span class="value">array('eq'=&gt;'=','neq'=&gt;'&lt;&gt;','gt'=&gt;'&gt;','egt'=&gt;'&gt;=','lt'=&gt;'&lt;','elt'=&gt;'&lt;=','notlike'=&gt;'NOT&nbsp;LIKE','like'=&gt;'LIKE','in'=&gt;'IN','notin'=&gt;'NOT&nbsp;IN','not&nbsp;in'=&gt;'NOT&nbsp;IN','between'=&gt;'BETWEEN','not&nbsp;between'=&gt;'NOT&nbsp;BETWEEN','notbetween'=&gt;'NOT&nbsp;BETWEEN')</span></h4>
+	<p>[line 55]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$lastInsID"></a>
+	<p></p>
+	<h4>$lastInsID = <span class="value">&nbsp;null</span></h4>
+	<p>[line 22]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$linkID"></a>
+	<p></p>
+	<h4>$linkID = <span class="value">array()</span></h4>
+	<p>[line 30]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$model"></a>
+	<p></p>
+	<h4>$model = <span class="value">&nbsp;'_steeze_'</span></h4>
+	<p>[line 17]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$modelSql"></a>
+	<p></p>
+	<h4>$modelSql = <span class="value">array()</span></h4>
+	<p>[line 20]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$numRows"></a>
+	<p></p>
+	<h4>$numRows = <span class="value">&nbsp;0</span></h4>
+	<p>[line 24]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$options"></a>
+	<p></p>
+	<h4>$options = <span class="value">array(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDO::ATTR_CASE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;PDO::CASE_NATURAL,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDO::ATTR_ERRMODE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;PDO::ERRMODE_EXCEPTION,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDO::ATTR_ORACLE_NULLS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;PDO::NULL_NATURAL,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDO::ATTR_STRINGIFY_FETCHES&nbsp;=&gt;&nbsp;&nbsp;false,<br>
+&nbsp;&nbsp;&nbsp;)</span></h4>
+	<p>[line 63]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$PDOStatement"></a>
+	<p></p>
+	<h4>$PDOStatement = <span class="value">&nbsp;null</span></h4>
+	<p>[line 15]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$queryStr"></a>
+	<p></p>
+	<h4>$queryStr = <span class="value">&nbsp;''</span></h4>
+	<p>[line 19]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$queryTimes"></a>
+	<p></p>
+	<h4>$queryTimes = <span class="value">&nbsp;&nbsp;&nbsp;0</span></h4>
+	<p>[line 59]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$selectSql"></a>
+	<p></p>
+	<h4>$selectSql = <span class="value">&nbsp;'SELECT%DISTINCT%&nbsp;%FIELD%&nbsp;FROM&nbsp;%TABLE%%FORCE%%JOIN%%WHERE%%GROUP%%HAVING%%ORDER%%LIMIT%&nbsp;%UNION%%LOCK%%COMMENT%'</span></h4>
+	<p>[line 57]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$transTimes"></a>
+	<p></p>
+	<h4>$transTimes = <span class="value">&nbsp;0</span></h4>
+	<p>[line 26]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_linkID"></a>
+	<p></p>
+	<h4>$_linkID = <span class="value">&nbsp;null</span></h4>
+	<p>[line 32]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_linkNum"></a>
+	<p></p>
+	<h4>$_linkNum = <span class="value">&nbsp;0</span></h4>
+	<p>[line 34]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Method Detail</h3>
+<div class="tags">
+	<a name="method__construct"></a>
+	<h3>__construct (Constructor)<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 76]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Driver __construct(
+[array
+$config = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		架构函数 读取数据库配置信息<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#method__construct">Mongo::__construct()</a></dt>
+		<dd>架构函数 读取数据库配置信息</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$config</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>数据库配置数组</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="method__destruct"></a>
+	<h3>__destruct (Destructor)<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 1179]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void __destruct(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		析构方法<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodbindParam"></a>
+	<h3>bindParam<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 434]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void bindParam(
+string
+$name, mixed
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		参数绑定<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$name</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>绑定参数名</td>
+      </tr>
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$value</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>绑定值</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodbuildSelectSql"></a>
+	<h3>buildSelectSql<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 993]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string buildSelectSql(
+[array
+$options = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		生成查询SQL<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$options</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>表达式</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodclose"></a>
+	<h3>close<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 364]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void close(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		关闭数据库<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodclose">Mongo::close()</a></dt>
+		<dd>关闭数据库</dd>
+	</dl>
+	</p>
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodcommit"></a>
+	<h3>commit<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 292]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean commit(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		用于非自动提交状态下面的查询提交<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodconnect"></a>
+	<h3>connect<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 89]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void connect(
+[
+$config = ''], [
+$linkNum = 0], [
+$autoConnection = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		连接数据库方法<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodconnect">Mongo::connect()</a></dt>
+		<dd>连接数据库方法</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$config</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$linkNum</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$autoConnection</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methoddebug"></a>
+	<h3>debug<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 1086]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void debug(
+boolean
+$start)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		数据库调试 记录当前SQL<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>boolean&nbsp;&nbsp;</td>
+        <td><tt>$start</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>调试开始标记 true 开始 false 结束</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methoddelete"></a>
+	<h3>delete<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 952]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>false delete(
+[array
+$options = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		删除记录<br /><div class="tags">
+<ul>
+<li><b>Return:</b> | integer</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Sqlsrv.html#methoddelete">Sqlsrv::delete()</a></dt>
+		<dd>删除记录</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methoddelete">Mongo::delete()</a></dt>
+		<dd>删除记录</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$options</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>表达式</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methoderror"></a>
+	<h3>error<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 374]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string error(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		数据库错误信息<br /><p>并显示当前的SQL语句</p><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methoderror">Mongo::error()</a></dt>
+		<dd>数据库错误信息</dd>
+	</dl>
+	</p>
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodescapeString"></a>
+	<h3>escapeString<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 1067]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string escapeString(
+string
+$str)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		SQL指令安全过滤<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Firebird.html#methodescapeString">Firebird::escapeString()</a></dt>
+		<dd>SQL指令安全过滤</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Sqlite.html#methodescapeString">Sqlite::escapeString()</a></dt>
+		<dd>SQL指令安全过滤</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Oracle.html#methodescapeString">Oracle::escapeString()</a></dt>
+		<dd>SQL指令安全过滤</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$str</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>SQL字符串</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodexecute"></a>
+	<h3>execute<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 215]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed execute(
+string
+$str, [boolean
+$fetchSql = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		执行语句<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Firebird.html#methodexecute">Firebird::execute()</a></dt>
+		<dd>执行语句</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodexecute">Mongo::execute()</a></dt>
+		<dd>执行语句</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Oracle.html#methodexecute">Oracle::execute()</a></dt>
+		<dd>执行语句</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$str</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>sql指令</td>
+      </tr>
+          <tr>
+        <td>boolean&nbsp;&nbsp;</td>
+        <td><tt>$fetchSql</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>不执行只是获取SQL</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodfree"></a>
+	<h3>free<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 144]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void free(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		释放查询结果<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodfree">Mongo::free()</a></dt>
+		<dd>释放查询结果</dd>
+	</dl>
+	</p>
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodgetError"></a>
+	<h3>getError<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 1057]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getError(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		获取最近的错误信息<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodgetExecuteTimes"></a>
+	<h3>getExecuteTimes<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 356]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>integer getExecuteTimes(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		获得执行次数<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodgetLastInsID"></a>
+	<h3>getLastInsID<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 1048]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getLastInsID(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		获取最近插入的ID<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodgetLastSql"></a>
+	<h3>getLastSql<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 1039]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getLastSql(
+[string
+$model = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		获取最近一次查询的sql语句<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$model</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>模型名</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodgetQueryTimes"></a>
+	<h3>getQueryTimes<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 347]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>integer getQueryTimes(
+[boolean
+$execute = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		获得查询次数<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>boolean&nbsp;&nbsp;</td>
+        <td><tt>$execute</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>是否包含所有查询</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodinitConnect"></a>
+	<h3>initConnect<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 1106]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void initConnect(
+[boolean
+$master = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		初始化数据库连接<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>boolean&nbsp;&nbsp;</td>
+        <td><tt>$master</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>主服务器</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodinsert"></a>
+	<h3>insert<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 835]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>false insert(
+mixed
+$data, [array
+$options = array()], [boolean
+$replace = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		插入记录<br /><div class="tags">
+<ul>
+<li><b>Return:</b> | integer</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodinsert">Mongo::insert()</a></dt>
+		<dd>插入记录</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$data</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>数据</td>
+      </tr>
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$options</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>参数表达式</td>
+      </tr>
+          <tr>
+        <td>boolean&nbsp;&nbsp;</td>
+        <td><tt>$replace</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>是否replace</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodinsertAll"></a>
+	<h3>insertAll<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 873]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>false insertAll(
+mixed
+$dataSet, [array
+$options = array()], [boolean
+$replace = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		批量插入记录<br /><div class="tags">
+<ul>
+<li><b>Return:</b> | integer</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodinsertAll">Mongo::insertAll()</a></dt>
+		<dd>插入多条记录</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Mysql.html#methodinsertAll">Mysql::insertAll()</a></dt>
+		<dd>批量插入记录</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$dataSet</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>数据集</td>
+      </tr>
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$options</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>参数表达式</td>
+      </tr>
+          <tr>
+        <td>boolean&nbsp;&nbsp;</td>
+        <td><tt>$replace</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>是否replace</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodmultiConnect"></a>
+	<h3>multiConnect<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 1122]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void multiConnect(
+[boolean
+$master = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		连接分布式服务器<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>boolean&nbsp;&nbsp;</td>
+        <td><tt>$master</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>主服务器</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseBind"></a>
+	<h3>parseBind<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 801]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array parseBind(
+array
+$bind)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		参数绑定分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$bind</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseComment"></a>
+	<h3>parseComment<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 761]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseComment(
+string
+$comment)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		comment分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$comment</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseDistinct"></a>
+	<h3>parseDistinct<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 771]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseDistinct(
+mixed
+$distinct)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		distinct分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$distinct</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseDsn"></a>
+	<h3>parseDsn<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 138]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseDsn(
+array
+$config)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析pdo连接的dsn信息<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Sqlsrv.html#methodparseDsn">Sqlsrv::parseDsn()</a></dt>
+		<dd>解析pdo连接的dsn信息</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Firebird.html#methodparseDsn">Firebird::parseDsn()</a></dt>
+		<dd>解析pdo连接的dsn信息</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Pgsql.html#methodparseDsn">Pgsql::parseDsn()</a></dt>
+		<dd>解析pdo连接的dsn信息</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Sqlite.html#methodparseDsn">Sqlite::parseDsn()</a></dt>
+		<dd>解析pdo连接的dsn信息</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Oracle.html#methodparseDsn">Oracle::parseDsn()</a></dt>
+		<dd>解析pdo连接的dsn信息</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Mysql.html#methodparseDsn">Mysql::parseDsn()</a></dt>
+		<dd>解析pdo连接的dsn信息</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$config</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>连接信息</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseDuplicate"></a>
+	<h3>parseDuplicate<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 823]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseDuplicate(
+mixed
+$duplicate)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		ON DUPLICATE KEY UPDATE 分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mysql.html#methodparseDuplicate">Mysql::parseDuplicate()</a></dt>
+		<dd>ON DUPLICATE KEY UPDATE 分析</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$duplicate</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseField"></a>
+	<h3>parseField<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 475]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseField(
+mixed
+$fields)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		field分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodparseField">Mongo::parseField()</a></dt>
+		<dd>field分析</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$fields</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseForce"></a>
+	<h3>parseForce<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 811]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseForce(
+mixed
+$index)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		index分析，可在操作链中指定需要强制使用的索引<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$index</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseGroup"></a>
+	<h3>parseGroup<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 741]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseGroup(
+mixed
+$group)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		group分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$group</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseHaving"></a>
+	<h3>parseHaving<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 751]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseHaving(
+string
+$having)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		having分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$having</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseJoin"></a>
+	<h3>parseJoin<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 706]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseJoin(
+mixed
+$join)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		join分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$join</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseKey"></a>
+	<h3>parseKey<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 444]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseKey(
+
+&$key, string
+$key)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		字段名分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Sqlsrv.html#methodparseKey">Sqlsrv::parseKey()</a></dt>
+		<dd>字段名分析</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Mysql.html#methodparseKey">Mysql::parseKey()</a></dt>
+		<dd>字段和表名处理</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$key</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>&$key</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseLimit"></a>
+	<h3>parseLimit<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 696]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseLimit(
+
+$limit, mixed
+$lmit)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		limit分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Sqlsrv.html#methodparseLimit">Sqlsrv::parseLimit()</a></dt>
+		<dd>limit</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Firebird.html#methodparseLimit">Firebird::parseLimit()</a></dt>
+		<dd>limit</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodparseLimit">Mongo::parseLimit()</a></dt>
+		<dd>limit分析</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Pgsql.html#methodparseLimit">Pgsql::parseLimit()</a></dt>
+		<dd>limit分析</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Sqlite.html#methodparseLimit">Sqlite::parseLimit()</a></dt>
+		<dd>limit</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Oracle.html#methodparseLimit">Oracle::parseLimit()</a></dt>
+		<dd>limit</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$lmit</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$limit</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseLock"></a>
+	<h3>parseLock<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 398]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseLock(
+[
+$lock = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		设置锁机制<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Oracle.html#methodparseLock">Oracle::parseLock()</a></dt>
+		<dd>设置锁机制</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$lock</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseOrder"></a>
+	<h3>parseOrder<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 720]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseOrder(
+mixed
+$order)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		order分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Sqlsrv.html#methodparseOrder">Sqlsrv::parseOrder()</a></dt>
+		<dd>order分析</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodparseOrder">Mongo::parseOrder()</a></dt>
+		<dd>order分析</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$order</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseSet"></a>
+	<h3>parseSet<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 408]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseSet(
+array
+$data)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		set分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodparseSet">Mongo::parseSet()</a></dt>
+		<dd>set分析</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$data</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseSql"></a>
+	<h3>parseSql<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 1012]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseSql(
+
+$sql, [array
+$options = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		替换SQL语句中表达式<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$options</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>表达式</td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$sql</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseSteezeWhere"></a>
+	<h3>parseSteezeWhere<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 661]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseSteezeWhere(
+string
+$key, mixed
+$val)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		特殊条件分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$key</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$val</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseTable"></a>
+	<h3>parseTable<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 503]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseTable(
+
+$tables, mixed
+$table)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		table分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$table</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$tables</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseUnion"></a>
+	<h3>parseUnion<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 781]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseUnion(
+mixed
+$union)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		union分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$union</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseValue"></a>
+	<h3>parseValue<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 454]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseValue(
+mixed
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		value分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$value</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseWhere"></a>
+	<h3>parseWhere<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 526]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseWhere(
+mixed
+$where)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		where分析<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodparseWhere">Mongo::parseWhere()</a></dt>
+		<dd>where分析</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$where</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseWhereItem"></a>
+	<h3>parseWhereItem<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 584]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void parseWhereItem(
+
+$key, 
+$val)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodparseWhereItem">Mongo::parseWhereItem()</a></dt>
+		<dd>where子单元分析</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$key</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$val</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodquery"></a>
+	<h3>query<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 155]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed query(
+string
+$str, [boolean
+$fetchSql = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		执行查询 返回数据集<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$str</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>sql指令</td>
+      </tr>
+          <tr>
+        <td>boolean&nbsp;&nbsp;</td>
+        <td><tt>$fetchSql</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>不执行只是获取SQL</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodrollback"></a>
+	<h3>rollback<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 309]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean rollback(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		事务回滚<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodselect"></a>
+	<h3>select<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 979]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed select(
+[array
+$options = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		查找记录<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodselect">Mongo::select()</a></dt>
+		<dd>查找记录</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$options</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>表达式</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodselectInsert"></a>
+	<h3>selectInsert<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 911]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>false selectInsert(
+string
+$fields, string
+$table, [
+$options = array()], array
+$option)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		通过Select方式插入记录<br /><div class="tags">
+<ul>
+<li><b>Return:</b> | integer</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$fields</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>要插入的数据表字段名</td>
+      </tr>
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$table</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>要插入的数据表名</td>
+      </tr>
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$option</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>查询数据参数</td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$options</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodsetModel"></a>
+	<h3>setModel<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 1077]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setModel(
+string
+$model)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		设置当前操作模型<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$model</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>模型名</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodstartTrans"></a>
+	<h3>startTrans<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 276]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void startTrans(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		启动事务<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodupdate"></a>
+	<h3>update<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 928]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>false update(
+mixed
+$data, array
+$options)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		更新记录<br /><div class="tags">
+<ul>
+<li><b>Return:</b> | integer</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../../Database/Drivers/Sqlsrv.html#methodupdate">Sqlsrv::update()</a></dt>
+		<dd>更新记录</dd>
+	</dl>
+		<dl>
+	<dt><a href="../../Database/Drivers/Mongo.html#methodupdate">Mongo::update()</a></dt>
+		<dd>更新记录</dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$data</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>数据</td>
+      </tr>
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$options</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>表达式</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+</div>
+
+        <div class="credit">
+		    <hr />
+		    Powered by Steeze. author email: spring.wind2006@163.com
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

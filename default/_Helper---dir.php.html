@@ -1,0 +1,370 @@
+<html>
+<head>
+<title>Docs for page dir.php</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">default</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        		  [ <a href="../classtrees_default.html" class="menu">类树图: default</a> ]
+		    [ <a href="../elementindex_default.html" class="menu">索引: default</a> ]
+      		  [ <a href="../elementindex.html" class="menu">所有元素</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_default.html">default</a><br />
+              <a href="../li_Cache.html">Cache</a><br />
+              <a href="../li_Database.html">Database</a><br />
+              <a href="../li_Drivers.html">Drivers</a><br />
+              <a href="../li_Library.html">Library</a><br />
+              <a href="../li_Service.html">Service</a><br />
+              <a href="../li_Storage.html">Storage</a><br />
+              <a href="../li_Template.html">Template</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../default/Loader.html">Loader</a><br />
+	  </div>
+                  <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../default/_base.php.html">		base.php
+		</a><br>
+			<a href="../default/_Helper---dir.php.html">		dir.php
+		</a><br>
+			<a href="../default/_View---dispatch_jump.php.html">		dispatch_jump.php
+		</a><br>
+			<a href="../default/_View---exception.php.html">		exception.php
+		</a><br>
+			<a href="../default/_Helper---mail.php.html">		mail.php
+		</a><br>
+			<a href="../default/_Helper---system.php.html">		system.php
+		</a><br>
+			<a href="../default/_Lang---zh-cn.php.html">		zh-cn.php
+		</a><br>
+	  </div><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>File: dir.php</h1>
+Source Location: /Helper/dir.php<br /><br />
+
+<div class="contents">
+<h2>类:</h2>
+</div>
+
+<h2>页面详情:</h2>
+目录函数库<br />  <hr />
+	<a name="functiondir_copy"></a>
+	<h3>dir_copy <span class="smalllinenumber">[line 55]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string dir_copy(
+string $fromdir, string $todir)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		拷贝目录及下面所有文件<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 如果目标路径不存在则返回false，否则为true</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$fromdir</b>&nbsp;&nbsp;</td>
+        <td>原路径,</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$todir</b>&nbsp;&nbsp;</td>
+        <td>目标路径</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiondir_create"></a>
+	<h3>dir_create <span class="smalllinenumber">[line 28]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string dir_create(
+string $path, [int $mode = 0777])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		创建目录<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 如果已经存在则返回true，否则为flase</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$path</b>&nbsp;&nbsp;</td>
+        <td>路径</td>
+      </tr>
+		      <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$mode</b>&nbsp;&nbsp;</td>
+        <td>= 0777 属性</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiondir_delete"></a>
+	<h3>dir_delete <span class="smalllinenumber">[line 177]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool dir_delete(
+string $dir, [ $onlyEmpty = 0], bool $onlyEmpty=0)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		删除目录及目录下面的所有文件<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 如果成功则返回 TRUE，失败则返回 FALSE</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$dir</b>&nbsp;&nbsp;</td>
+        <td>路径</td>
+      </tr>
+		      <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$onlyEmpty=0</b>&nbsp;&nbsp;</td>
+        <td>是否只删除空目录</td>
+      </tr>
+		      <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$onlyEmpty</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiondir_iconv"></a>
+	<h3>dir_iconv <span class="smalllinenumber">[line 88]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string dir_iconv(
+string $in_charset, string $out_charset, string $dir, [string $fileexts = 'php|html|htm|shtml|shtm|js|txt|xml'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		转换目录下面的所有文件编码格式<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 如果原字符集和目标字符集相同则返回false，否则为true</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$in_charset</b>&nbsp;&nbsp;</td>
+        <td>原字符集</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$out_charset</b>&nbsp;&nbsp;</td>
+        <td>目标字符集</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$dir</b>&nbsp;&nbsp;</td>
+        <td>目录地址</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$fileexts</b>&nbsp;&nbsp;</td>
+        <td>= 'php|html|htm|shtml|shtm|js|txt|xml' 转换的文件格式</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiondir_list"></a>
+	<h3>dir_list <span class="smalllinenumber">[line 109]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array dir_list(
+string $path, [string $exts = ''], [array $list = []])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		列出目录下所有文件<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 所有满足条件的文件</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$path</b>&nbsp;&nbsp;</td>
+        <td>路径</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$exts</b>&nbsp;&nbsp;</td>
+        <td>扩展名</td>
+      </tr>
+		      <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$list</b>&nbsp;&nbsp;</td>
+        <td>增加的文件列表</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiondir_path"></a>
+	<h3>dir_path <span class="smalllinenumber">[line 13]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string dir_path(
+string $path)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		功能：转化 \ 为 /<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 路径</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$path</b>&nbsp;&nbsp;</td>
+        <td>路径</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiondir_touch"></a>
+	<h3>dir_touch <span class="smalllinenumber">[line 131]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array dir_touch(
+string $path, [int $mtime = TIME], [int $atime = TIME])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		设置目录下面的所有文件的访问和修改时间<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 不是目录时返回false，否则返回 true</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$path</b>&nbsp;&nbsp;</td>
+        <td>路径</td>
+      </tr>
+		      <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$mtime</b>&nbsp;&nbsp;</td>
+        <td>= TIME 修改时间</td>
+      </tr>
+		      <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$atime</b>&nbsp;&nbsp;</td>
+        <td>= TIME 访问时间</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiondir_tree"></a>
+	<h3>dir_tree <span class="smalllinenumber">[line 154]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array dir_tree(
+string $dir, [int $parentid = 0], [array $dirs = []])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		返回目录列表<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 目录列表</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$dir</b>&nbsp;&nbsp;</td>
+        <td>路径</td>
+      </tr>
+		      <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$parentid</b>&nbsp;&nbsp;</td>
+        <td>= 0 父id</td>
+      </tr>
+		      <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$dirs</b>&nbsp;&nbsp;</td>
+        <td>= array() 传入的目录</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+
+        <div class="credit">
+		    <hr />
+		    Powered by Steeze. author email: spring.wind2006@163.com
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

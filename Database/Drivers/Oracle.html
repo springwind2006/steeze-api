@@ -1,0 +1,836 @@
+<html>
+<head>
+<title>Docs For Class Oracle</title>
+<link rel="stylesheet" type="text/css" href="../../media/style.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">Database</td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        		  [ <a href="../../classtrees_Database.html" class="menu">类树图: Database</a> ]
+		    [ <a href="../../elementindex_Database.html" class="menu">索引: Database</a> ]
+      		  [ <a href="../../elementindex.html" class="menu">所有元素</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../../li_default.html">default</a><br />
+              <a href="../../li_Cache.html">Cache</a><br />
+              <a href="../../li_Database.html">Database</a><br />
+              <a href="../../li_Drivers.html">Drivers</a><br />
+              <a href="../../li_Library.html">Library</a><br />
+              <a href="../../li_Service.html">Service</a><br />
+              <a href="../../li_Storage.html">Storage</a><br />
+              <a href="../../li_Template.html">Template</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+	Drivers<br />	    &nbsp;&nbsp;		<a href="../../Database/Drivers/Firebird.html">Firebird</a><br />
+	    &nbsp;&nbsp;		<a href="../../Database/Drivers/Mongo.html">Mongo</a><br />
+	    &nbsp;&nbsp;		<a href="../../Database/Drivers/Mysql.html">Mysql</a><br />
+	    &nbsp;&nbsp;		<a href="../../Database/Drivers/Oracle.html">Oracle</a><br />
+	    &nbsp;&nbsp;		<a href="../../Database/Drivers/Pgsql.html">Pgsql</a><br />
+	    &nbsp;&nbsp;		<a href="../../Database/Drivers/Sqlite.html">Sqlite</a><br />
+	    &nbsp;&nbsp;		<a href="../../Database/Drivers/Sqlsrv.html">Sqlsrv</a><br />
+	  </div>
+                  <b>Files:</b><br />
+      	subpackage <b>Drivers</b><br>  <div class="package">
+			<a href="../../Database/Drivers/_Service---Database---Drivers---Firebird.class.php.html">		Firebird.class.php
+		</a><br>
+			<a href="../../Database/Drivers/_Service---Database---Drivers---Mongo.class.php.html">		Mongo.class.php
+		</a><br>
+			<a href="../../Database/Drivers/_Service---Database---Drivers---Mysql.class.php.html">		Mysql.class.php
+		</a><br>
+			<a href="../../Database/Drivers/_Service---Database---Drivers---Oracle.class.php.html">		Oracle.class.php
+		</a><br>
+			<a href="../../Database/Drivers/_Service---Database---Drivers---Pgsql.class.php.html">		Pgsql.class.php
+		</a><br>
+			<a href="../../Database/Drivers/_Service---Database---Drivers---Sqlite.class.php.html">		Sqlite.class.php
+		</a><br>
+			<a href="../../Database/Drivers/_Service---Database---Drivers---Sqlsrv.class.php.html">		Sqlsrv.class.php
+		</a><br>
+	  </div><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Oracle</h1>
+Source Location: /Service/Database/Drivers/Oracle.class.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre><a href="../../Service/Database/Driver.html">Driver</a>
+   |
+   --Oracle</pre><br />
+<div class="description">Oracle数据库驱动</div><br /><br />
+
+
+
+
+
+
+
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../../Database/Drivers/Oracle.html#var$selectSql">$selectSql</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../../Database/Drivers/Oracle.html#methodescapeString">escapeString</a></li>
+    <li><a href="../../Database/Drivers/Oracle.html#methodexecute">execute</a></li>
+    <li><a href="../../Database/Drivers/Oracle.html#methodgetFields">getFields</a></li>
+    <li><a href="../../Database/Drivers/Oracle.html#methodgetTables">getTables</a></li>
+    <li><a href="../../Database/Drivers/Oracle.html#methodparseDsn">parseDsn</a></li>
+    <li><a href="../../Database/Drivers/Oracle.html#methodparseLimit">parseLimit</a></li>
+    <li><a href="../../Database/Drivers/Oracle.html#methodparseLock">parseLock</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+<td valign="top">
+<h3>Inherited Variables</h3>
+<div class="tags">
+<h4>Class: <a href="../../Service/Database/Driver.html">Driver</a></h4>
+<dl>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$bind">Driver::$bind</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$config">Driver::$config</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$error">Driver::$error</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$executeTimes">Driver::$executeTimes</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$exp">Driver::$exp</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$lastInsID">Driver::$lastInsID</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$linkID">Driver::$linkID</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$model">Driver::$model</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$modelSql">Driver::$modelSql</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$numRows">Driver::$numRows</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$options">Driver::$options</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$PDOStatement">Driver::$PDOStatement</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$queryStr">Driver::$queryStr</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$queryTimes">Driver::$queryTimes</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$transTimes">Driver::$transTimes</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$_linkID">Driver::$_linkID</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../../Service/Database/Driver.html#var$_linkNum">Driver::$_linkNum</a>
+  </dt>
+<dd>
+   
+</dd>
+</dl>
+</div>
+</td>
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+<h4>Class: <a href="../../Service/Database/Driver.html">Driver</a></h4>
+<dl>
+    <dt>
+    <a href="../../Service/Database/Driver.html#method__construct">Driver::__construct()</a>
+  </dt>
+  <dd>
+    架构函数 读取数据库配置信息
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodbindParam">Driver::bindParam()</a>
+  </dt>
+  <dd>
+    参数绑定
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodbuildSelectSql">Driver::buildSelectSql()</a>
+  </dt>
+  <dd>
+    生成查询SQL
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodclose">Driver::close()</a>
+  </dt>
+  <dd>
+    关闭数据库
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodcommit">Driver::commit()</a>
+  </dt>
+  <dd>
+    用于非自动提交状态下面的查询提交
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodconnect">Driver::connect()</a>
+  </dt>
+  <dd>
+    连接数据库方法
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methoddebug">Driver::debug()</a>
+  </dt>
+  <dd>
+    数据库调试 记录当前SQL
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methoddelete">Driver::delete()</a>
+  </dt>
+  <dd>
+    删除记录
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methoderror">Driver::error()</a>
+  </dt>
+  <dd>
+    数据库错误信息
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodescapeString">Driver::escapeString()</a>
+  </dt>
+  <dd>
+    SQL指令安全过滤
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodexecute">Driver::execute()</a>
+  </dt>
+  <dd>
+    执行语句
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodfree">Driver::free()</a>
+  </dt>
+  <dd>
+    释放查询结果
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodgetError">Driver::getError()</a>
+  </dt>
+  <dd>
+    获取最近的错误信息
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodgetExecuteTimes">Driver::getExecuteTimes()</a>
+  </dt>
+  <dd>
+    获得执行次数
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodgetLastInsID">Driver::getLastInsID()</a>
+  </dt>
+  <dd>
+    获取最近插入的ID
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodgetLastSql">Driver::getLastSql()</a>
+  </dt>
+  <dd>
+    获取最近一次查询的sql语句
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodgetQueryTimes">Driver::getQueryTimes()</a>
+  </dt>
+  <dd>
+    获得查询次数
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodinitConnect">Driver::initConnect()</a>
+  </dt>
+  <dd>
+    初始化数据库连接
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodinsert">Driver::insert()</a>
+  </dt>
+  <dd>
+    插入记录
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodinsertAll">Driver::insertAll()</a>
+  </dt>
+  <dd>
+    批量插入记录
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodmultiConnect">Driver::multiConnect()</a>
+  </dt>
+  <dd>
+    连接分布式服务器
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseBind">Driver::parseBind()</a>
+  </dt>
+  <dd>
+    参数绑定分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseComment">Driver::parseComment()</a>
+  </dt>
+  <dd>
+    comment分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseDistinct">Driver::parseDistinct()</a>
+  </dt>
+  <dd>
+    distinct分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseDsn">Driver::parseDsn()</a>
+  </dt>
+  <dd>
+    解析pdo连接的dsn信息
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseDuplicate">Driver::parseDuplicate()</a>
+  </dt>
+  <dd>
+    ON DUPLICATE KEY UPDATE 分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseField">Driver::parseField()</a>
+  </dt>
+  <dd>
+    field分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseForce">Driver::parseForce()</a>
+  </dt>
+  <dd>
+    index分析，可在操作链中指定需要强制使用的索引
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseGroup">Driver::parseGroup()</a>
+  </dt>
+  <dd>
+    group分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseHaving">Driver::parseHaving()</a>
+  </dt>
+  <dd>
+    having分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseJoin">Driver::parseJoin()</a>
+  </dt>
+  <dd>
+    join分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseKey">Driver::parseKey()</a>
+  </dt>
+  <dd>
+    字段名分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseLimit">Driver::parseLimit()</a>
+  </dt>
+  <dd>
+    limit分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseLock">Driver::parseLock()</a>
+  </dt>
+  <dd>
+    设置锁机制
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseOrder">Driver::parseOrder()</a>
+  </dt>
+  <dd>
+    order分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseSet">Driver::parseSet()</a>
+  </dt>
+  <dd>
+    set分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseSql">Driver::parseSql()</a>
+  </dt>
+  <dd>
+    替换SQL语句中表达式
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseSteezeWhere">Driver::parseSteezeWhere()</a>
+  </dt>
+  <dd>
+    特殊条件分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseTable">Driver::parseTable()</a>
+  </dt>
+  <dd>
+    table分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseUnion">Driver::parseUnion()</a>
+  </dt>
+  <dd>
+    union分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseValue">Driver::parseValue()</a>
+  </dt>
+  <dd>
+    value分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseWhere">Driver::parseWhere()</a>
+  </dt>
+  <dd>
+    where分析
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodparseWhereItem">Driver::parseWhereItem()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodquery">Driver::query()</a>
+  </dt>
+  <dd>
+    执行查询 返回数据集
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodrollback">Driver::rollback()</a>
+  </dt>
+  <dd>
+    事务回滚
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodselect">Driver::select()</a>
+  </dt>
+  <dd>
+    查找记录
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodselectInsert">Driver::selectInsert()</a>
+  </dt>
+  <dd>
+    通过Select方式插入记录
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodsetModel">Driver::setModel()</a>
+  </dt>
+  <dd>
+    设置当前操作模型
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodstartTrans">Driver::startTrans()</a>
+  </dt>
+  <dd>
+    启动事务
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#methodupdate">Driver::update()</a>
+  </dt>
+  <dd>
+    更新记录
+  </dd>
+    <dt>
+    <a href="../../Service/Database/Driver.html#method__destruct">Driver::__destruct()</a>
+  </dt>
+  <dd>
+    析构方法
+  </dd>
+  </dl>
+</div>
+</td>
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 12]<br />
+Oracle数据库驱动<br /></div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$selectSql"></a>
+	<p></p>
+	<h4>$selectSql = <span class="value">&nbsp;'SELECT&nbsp;*&nbsp;FROM&nbsp;(SELECT&nbsp;thinkphp.*,&nbsp;rownum&nbsp;AS&nbsp;numrow&nbsp;FROM&nbsp;(SELECT&nbsp;&nbsp;%DISTINCT%&nbsp;%FIELD%&nbsp;FROM&nbsp;%TABLE%%JOIN%%WHERE%%GROUP%%HAVING%%ORDER%)&nbsp;thinkphp&nbsp;)&nbsp;%LIMIT%%COMMENT%'</span></h4>
+	<p>[line 15]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+        <tr>
+      <td><b>Overrides:</b>&nbsp;&nbsp;</td>
+      <td>Array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Method Detail</h3>
+<div class="tags">
+	<a name="methodescapeString"></a>
+	<h3>escapeString<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 132]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string escapeString(
+string
+$str)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		SQL指令安全过滤<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+Overrides <a href="../../Service/Database/Driver.html#methodescapeString">Driver::escapeString()</a> (SQL指令安全过滤)
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$str</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>SQL指令</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodexecute"></a>
+	<h3>execute<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 38]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>integer execute(
+string
+$str, [boolean
+$fetchSql = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		执行语句<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+Overrides <a href="../../Service/Database/Driver.html#methodexecute">Driver::execute()</a> (执行语句)
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$str</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>sql指令</td>
+      </tr>
+          <tr>
+        <td>boolean&nbsp;&nbsp;</td>
+        <td><tt>$fetchSql</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>不执行只是获取SQL</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodgetFields"></a>
+	<h3>getFields<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 91]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getFields(
+
+$tableName)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		取得数据表的字段信息<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$tableName</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodgetTables"></a>
+	<h3>getTables<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 117]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getTables(
+[
+$dbName = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		取得数据库的表信息（暂时实现取得用户表信息）<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$dbName</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseDsn"></a>
+	<h3>parseDsn<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 23]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseDsn(
+array
+$config)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析pdo连接的dsn信息<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+Overrides <a href="../../Service/Database/Driver.html#methodparseDsn">Driver::parseDsn()</a> (解析pdo连接的dsn信息)
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$config</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>连接信息</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseLimit"></a>
+	<h3>parseLimit<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 141]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseLimit(
+
+$limit)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		limit<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+Overrides <a href="../../Service/Database/Driver.html#methodparseLimit">Driver::parseLimit()</a> (limit分析)
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$limit</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseLock"></a>
+	<h3>parseLock<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 158]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parseLock(
+[
+$lock = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		设置锁机制<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+Overrides <a href="../../Service/Database/Driver.html#methodparseLock">Driver::parseLock()</a> (设置锁机制)
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$lock</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+</div>
+
+        <div class="credit">
+		    <hr />
+		    Powered by Steeze. author email: spring.wind2006@163.com
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

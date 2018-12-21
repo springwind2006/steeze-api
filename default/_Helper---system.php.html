@@ -1,0 +1,1367 @@
+<html>
+<head>
+<title>Docs for page system.php</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">default</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        		  [ <a href="../classtrees_default.html" class="menu">类树图: default</a> ]
+		    [ <a href="../elementindex_default.html" class="menu">索引: default</a> ]
+      		  [ <a href="../elementindex.html" class="menu">所有元素</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_default.html">default</a><br />
+              <a href="../li_Cache.html">Cache</a><br />
+              <a href="../li_Database.html">Database</a><br />
+              <a href="../li_Drivers.html">Drivers</a><br />
+              <a href="../li_Library.html">Library</a><br />
+              <a href="../li_Service.html">Service</a><br />
+              <a href="../li_Storage.html">Storage</a><br />
+              <a href="../li_Template.html">Template</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../default/Loader.html">Loader</a><br />
+	  </div>
+                  <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../default/_base.php.html">		base.php
+		</a><br>
+			<a href="../default/_Helper---dir.php.html">		dir.php
+		</a><br>
+			<a href="../default/_View---dispatch_jump.php.html">		dispatch_jump.php
+		</a><br>
+			<a href="../default/_View---exception.php.html">		exception.php
+		</a><br>
+			<a href="../default/_Helper---mail.php.html">		mail.php
+		</a><br>
+			<a href="../default/_Helper---system.php.html">		system.php
+		</a><br>
+			<a href="../default/_Lang---zh-cn.php.html">		zh-cn.php
+		</a><br>
+	  </div><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>File: system.php</h1>
+Source Location: /Helper/system.php<br /><br />
+
+<div class="contents">
+<h2>类:</h2>
+</div>
+
+<h2>页面详情:</h2>
+系统默认函数库<br />  <hr />
+	<a name="functionarray2html"></a>
+	<h3>array2html <span class="smalllinenumber">[line 598]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string array2html(
+array $data)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		将数组转换数据为字符串表示的形式，支持其中变量设置<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionarray2string"></a>
+	<h3>array2string <span class="smalllinenumber">[line 579]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string array2string(
+array $data, [bool $isSlashes = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		将数组转换为字符串<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+		      <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$isSlashes</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionarray_map_deep"></a>
+	<h3>array_map_deep <span class="smalllinenumber">[line 315]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void array_map_deep(
+array $array, string $func, [bool $applyKey = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		使用特定function对数组中所有元素做处理<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$array</b>&nbsp;&nbsp;</td>
+        <td>需要处理的数组</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$func</b>&nbsp;&nbsp;</td>
+        <td>对数组处理的函数</td>
+      </tr>
+		      <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$applyKey</b>&nbsp;&nbsp;</td>
+        <td>是否同时处理数组键名</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionassets"></a>
+	<h3>assets <span class="smalllinenumber">[line 905]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void assets(
+string $file, [string $type = ''], [bool $check = false], [string $default = 'default'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		导入静态文件路径 如：'js/show.js@daoke:home'，则返回/assets/app/home/daoke/js/show.js<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$file</b>&nbsp;&nbsp;</td>
+        <td>文件模式路径</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$type</b>&nbsp;&nbsp;</td>
+        <td>文件类型</td>
+      </tr>
+		      <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$check</b>&nbsp;&nbsp;</td>
+        <td>是否检查存在，如果不存在返回空</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$default</b>&nbsp;&nbsp;</td>
+        <td>如果不存在，默认的风格包名称</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionbase64"></a>
+	<h3>base64 <span class="smalllinenumber">[line 338]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string base64(
+array|string $data, [string $type = 'ENCODE'], [array|string $filter = null], [string $strip = 0])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		改进后base64加密或解密<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 处理后的数据</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">array|string&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>数据</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$type</b>&nbsp;&nbsp;</td>
+        <td>处理类型：ENCODE为加密，DECODE为解密，默认为ENCODE</td>
+      </tr>
+		      <tr>
+        <td class="type">array|string&nbsp;&nbsp;</td>
+        <td><b>$filter</b>&nbsp;&nbsp;</td>
+        <td>第一个参数为数组时，过滤的键名，默认为NULL</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$strip</b>&nbsp;&nbsp;</td>
+        <td>是否对部分字符进行处理，处理后符合URL编码规范，默认为0（不处理）</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionC"></a>
+	<h3>C <span class="smalllinenumber">[line 1296]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed C(
+[string $key = ''], [string $default = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		获取系统配置信息<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 配置信息</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>获取配置的名称，可以使用“配置名.键名1.键名2”的格式</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$default</b>&nbsp;&nbsp;</td>
+        <td>默认值</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functioncut_str"></a>
+	<h3>cut_str <span class="smalllinenumber">[line 219]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string cut_str(
+string $sourcestr, [number $cutlength = 80], [bool $addfoot = true], [bool &$isAdd = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		主要用于截取从0开始的任意长度的字符串(完整无乱码)<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$sourcestr</b>&nbsp;&nbsp;</td>
+        <td>待截取的字符串</td>
+      </tr>
+		      <tr>
+        <td class="type">number&nbsp;&nbsp;</td>
+        <td><b>$cutlength</b>&nbsp;&nbsp;</td>
+        <td>截取长度</td>
+      </tr>
+		      <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$addfoot</b>&nbsp;&nbsp;</td>
+        <td>是否添加&quot;...&quot;在末尾</td>
+      </tr>
+		      <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>&$isAdd</b>&nbsp;&nbsp;</td>
+        <td>是否进行过截取操作</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiondump"></a>
+	<h3>dump <span class="smalllinenumber">[line 96]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void|mixed dump(
+mixed $var, [bool $isReturn = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		输出变量信息<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$var</b>&nbsp;&nbsp;</td>
+        <td>变量</td>
+      </tr>
+		      <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$isReturn</b>&nbsp;&nbsp;</td>
+        <td>是否返回值</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionE"></a>
+	<h3>E <span class="smalllinenumber">[line 1336]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>\Exception E(
+mixed $error, [int|array $code = 404])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		生成错误异常<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$error</b>&nbsp;&nbsp;</td>
+        <td>参数名称</td>
+      </tr>
+		      <tr>
+        <td class="type">int|array&nbsp;&nbsp;</td>
+        <td><b>$code</b>&nbsp;&nbsp;</td>
+        <td>错误码，也可以传入一个包括code键的数组</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionenv"></a>
+	<h3>env <span class="smalllinenumber">[line 1009]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string env(
+string $key, [string $default = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		获取环境变量（键名不区分大小写）<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 环境变量值</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>键名称</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$default</b>&nbsp;&nbsp;</td>
+        <td>默认值</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionF"></a>
+	<h3>F <span class="smalllinenumber">[line 1097]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed F(
+string $name, [mixed $value = ''], [string $path = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		快速文件数据读取和保存 针对简单类型数据 字符串、数组<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td>缓存名称</td>
+      </tr>
+		      <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>缓存值</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$path</b>&nbsp;&nbsp;</td>
+        <td>缓存路径</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionfastlog"></a>
+	<h3>fastlog <span class="smalllinenumber">[line 14]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int fastlog(
+mixed $content, [int $isAppend = true], [string $file = 'system.log'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		快速日志记录（支持日志分割及文件增量清理）<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 写入日志字节数</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$content</b>&nbsp;&nbsp;</td>
+        <td>日志内容</td>
+      </tr>
+		      <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$isAppend</b>&nbsp;&nbsp;</td>
+        <td>是否附加内容</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$file</b>&nbsp;&nbsp;</td>
+        <td>日志文件名</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionfileext"></a>
+	<h3>fileext <span class="smalllinenumber">[line 528]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string fileext(
+string $filename, [string $default = 'jpg'], [int $maxExtLen = 5])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		取得文件扩展名（小写）<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 扩展名</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$filename</b>&nbsp;&nbsp;</td>
+        <td>文件名</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$default</b>&nbsp;&nbsp;</td>
+        <td>默认扩展名</td>
+      </tr>
+		      <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$maxExtLen</b>&nbsp;&nbsp;</td>
+        <td>允许获取扩展名的最大长度</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionfilelist"></a>
+	<h3>filelist <span class="smalllinenumber">[line 160]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array filelist(
+[string $dir = '.'], [string $type = '*'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		从指定目录根据知道路径读取文件列表（只检索当前目录）<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$dir</b>&nbsp;&nbsp;</td>
+        <td>需要获取的目录</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$type</b>&nbsp;&nbsp;</td>
+        <td>过滤文件类型</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionG"></a>
+	<h3>G <span class="smalllinenumber">[line 1031]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed G(
+string $start, [string $end = ''], [int|string $dec = 4])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		记录和统计时间（微秒）和内存使用情况<br /><p>使用方法:  <code><pre><ol><li><div class="src-line">&nbsp;<a href="../default/_Helper---system.php.html#functionG">G</a><strong>(</strong><span class="encapsed_string">'begin'</span><strong>)</strong>;&nbsp;<font color="green">//&nbsp;记录开始标记位</font></div></li>
+<li><div class="src-line">&nbsp;<a href="../default/_Helper---system.php.html#functionG">G</a><strong>(</strong><span class="encapsed_string">'end'</span><strong>)</strong>;&nbsp;&nbsp;&nbsp;<font color="green">//记录结束标签位</font></div></li>
+<li><div class="src-line">&nbsp;echo&nbsp;<a href="../default/_Helper---system.php.html#functionG">G</a><strong>(</strong><span class="encapsed_string">'begin'</span><strong>,</strong><span class="encapsed_string">'end'</span><strong>,</strong>6<strong>)</strong>;&nbsp;&nbsp;<font color="green">//统计区间运行时间&nbsp;精确到小数后6位</font></div></li>
+<li><div class="src-line">&nbsp;echo&nbsp;<a href="../default/_Helper---system.php.html#functionG">G</a><strong>(</strong><span class="encapsed_string">'begin'</span><strong>,</strong><span class="encapsed_string">'end'</span><strong>,</strong><span class="encapsed_string">'m'</span><strong>)</strong>;&nbsp;&nbsp;<font color="green">//统计区间内存使用情况</font></div></li>
+</ol></pre></code>  如果end标记位没有定义，则会自动以当前作为标记位  统计内存使用需要 MEMORY_LIMIT_ON 常量为true才有效</p>    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$start</b>&nbsp;&nbsp;</td>
+        <td>开始标签</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$end</b>&nbsp;&nbsp;</td>
+        <td>结束标签</td>
+      </tr>
+		      <tr>
+        <td class="type">int|string&nbsp;&nbsp;</td>
+        <td><b>$dec</b>&nbsp;&nbsp;</td>
+        <td>小数位或者m</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiongetip"></a>
+	<h3>getip <span class="smalllinenumber">[line 118]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getip(
+[int $isOnline = 0])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		获取真实IP地址<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$isOnline</b>&nbsp;&nbsp;</td>
+        <td>是否在线获取本地IP</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionget_remote_file"></a>
+	<h3>get_remote_file <span class="smalllinenumber">[line 703]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string|int|null get_remote_file(
+string $url, [string $data = null], [array $headers = null], [string $savepath = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		获取远程文件<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$url</b>&nbsp;&nbsp;</td>
+        <td>文件地址</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>POST请求时为数组</td>
+      </tr>
+		      <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$headers</b>&nbsp;&nbsp;</td>
+        <td>设置请求头信息</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$savepath</b>&nbsp;&nbsp;</td>
+        <td>文件保存路径，如果为空则返回获取的文件内容</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionL"></a>
+	<h3>L <span class="smalllinenumber">[line 1357]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string L(
+string $message, [array $datas = []])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		语言转化<br /><p>使用范例：  L('hello: {name}', ['name'=&gt;'steeze'])</p><div class="tags">
+<ul>
+<li><b>Return:</b> 转换后的语言</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$message</b>&nbsp;&nbsp;</td>
+        <td>语言键名</td>
+      </tr>
+		      <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$datas</b>&nbsp;&nbsp;</td>
+        <td>参数变量数组</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionM"></a>
+	<h3>M <span class="smalllinenumber">[line 1150]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>\Library\Model M(
+[string $name = ''], [mixed $conn = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		模型快速操作<br /><p><pre> $conn参数为字符串类型时举例说明：
+ 1、"xxx": 使用"xxx"为连接名称，表前缀使用连接配置；
+ 2、"^aaa_@xxx"（或"^@xxx"）: 使用"aaa_"（或为空）为表前缀,xxx为连接名称；
+ 3、"^aaa_"（或"^"）: 使用"aaa_"（或为空）为表前缀，连接名称使用系统默认配置</pre></p><div class="tags">
+<ul>
+<li><b>Return:</b> 数据库Model模型对象</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td>需要操作的表</td>
+      </tr>
+		      <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$conn</b>&nbsp;&nbsp;</td>
+        <td>为字符串时，如果以&quot;^xxx&quot;开头，表示表前缀，否则表示数据库配置名；如果为数组，表示配置</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionmake"></a>
+	<h3>make <span class="smalllinenumber">[line 992]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>object 类型实例 make(
+string $concrete, [array $parameters = []], [\Library\Container $container = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		从容器中返回给定类型名称的实例<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$concrete</b>&nbsp;&nbsp;</td>
+        <td>类型名称</td>
+      </tr>
+		      <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$parameters</b>&nbsp;&nbsp;</td>
+        <td>参数</td>
+      </tr>
+		      <tr>
+        <td class="type">\Library\Container&nbsp;&nbsp;</td>
+        <td><b>$container</b>&nbsp;&nbsp;</td>
+        <td>使用的容器对象，为null则使用系统容器</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionparse_name"></a>
+	<h3>parse_name <span class="smalllinenumber">[line 503]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string parse_name(
+string $name, [integer $type = 0])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		字符串命名风格转换<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td>字符串</td>
+      </tr>
+		      <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$type</b>&nbsp;&nbsp;</td>
+        <td>转换类型，0:输出C的风格（下划线分割）、1:输出Java的风格（驼峰式）</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionrandom"></a>
+	<h3>random <span class="smalllinenumber">[line 546]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string random(
+int $length, [string $chars = '0123456789'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		从提供的字符串中，产生随机字符串<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 生成的字符串</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$length</b>&nbsp;&nbsp;</td>
+        <td>输出长度</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$chars</b>&nbsp;&nbsp;</td>
+        <td>范围字符串，默认为：0123456789</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionS"></a>
+	<h3>S <span class="smalllinenumber">[line 1062]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed S(
+mixed $name, [mixed $value = ''], [mixed $options = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		缓存管理<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td>缓存名称，如果为数组表示进行缓存设置</td>
+      </tr>
+		      <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>缓存值</td>
+      </tr>
+		      <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$options</b>&nbsp;&nbsp;</td>
+        <td>缓存参数</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionsafe_replace"></a>
+	<h3>safe_replace <span class="smalllinenumber">[line 670]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string safe_replace(
+array|string $data)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		安全过滤函数<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">array|string&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionsession"></a>
+	<h3>session <span class="smalllinenumber">[line 760]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed session(
+[string|array $name = ''], [mixed $value = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		session管理函数<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string|array&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td>session名称 如果为数组则表示进行session设置</td>
+      </tr>
+		      <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>session值</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionsimplify_ds"></a>
+	<h3>simplify_ds <span class="smalllinenumber">[line 200]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string simplify_ds(
+string $path)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		简化路径<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$path</b>&nbsp;&nbsp;</td>
+        <td>路径名称</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionsizeformat"></a>
+	<h3>sizeformat <span class="smalllinenumber">[line 129]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string sizeformat(
+int $size, [number $bits = 2])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		转换字节数为其他单位<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$size</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+		      <tr>
+        <td class="type">number&nbsp;&nbsp;</td>
+        <td><b>$bits</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionslashes"></a>
+	<h3>slashes <span class="smalllinenumber">[line 634]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string|array slashes(
+ $data, [bool $isAdd = true], string|array $data，字符串或数组对象)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		返回经addslashes处理过的字符串或数组<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string|array&nbsp;&nbsp;</td>
+        <td><b>$data，字符串或数组对象</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+		      <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$isAdd</b>&nbsp;&nbsp;</td>
+        <td>是否为添加slashes，默认为true</td>
+      </tr>
+		      <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionstring2array"></a>
+	<h3>string2array <span class="smalllinenumber">[line 561]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array string2array(
+string $data)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		将字符串转换为数组<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>需要转换的字符串</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionstrlen_utf8"></a>
+	<h3>strlen_utf8 <span class="smalllinenumber">[line 280]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string strlen_utf8(
+string $str)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		统计utf-8字符长度<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$str</b>&nbsp;&nbsp;</td>
+        <td>原始html字符串</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionsys_auth"></a>
+	<h3>sys_auth <span class="smalllinenumber">[line 375]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string sys_auth(
+string $str, [string $operation = 'ENCODE'], [string $key = ''], [string $expiry = 0])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		系统动态加密解密可以设置过期时间的字符串（通常用于授权）<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 处理后的数据</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$str</b>&nbsp;&nbsp;</td>
+        <td>需要处理的字符串</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$operation</b>&nbsp;&nbsp;</td>
+        <td>处理类型：ENCODE为加密，DECODE为解密，默认为ENCODE</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>自定义秘钥，默认为空</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$expiry</b>&nbsp;&nbsp;</td>
+        <td>过期时间，默认为0，不限制</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionsys_crypt"></a>
+	<h3>sys_crypt <span class="smalllinenumber">[line 410]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string sys_crypt(
+string $str, [string $type = 1], [string $key = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		系统加密解密的字符串<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 处理后的数据</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$str</b>&nbsp;&nbsp;</td>
+        <td>需要处理的字符串</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$type</b>&nbsp;&nbsp;</td>
+        <td>处理类型：1为加密，0为解密，默认为1</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>自定义秘钥，默认为空</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiontemplate"></a>
+	<h3>template <span class="smalllinenumber">[line 431]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string template(
+[string $template = 'index'], [string|bool $dir = ''], [string|bool $style = ''], [string $module = ''], [bool $isCompile = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		处理界面模板（包括管理后台、前台和插件）<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 返回模板路径</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$template</b>&nbsp;&nbsp;</td>
+        <td>模板文件名，不包括扩展名（.html）</td>
+      </tr>
+		      <tr>
+        <td class="type">string|bool&nbsp;&nbsp;</td>
+        <td><b>$dir</b>&nbsp;&nbsp;</td>
+        <td>为string时为模板在目录，相对于模板目录；为bool时是否强制调用（true：后台模板，false:前台模板）</td>
+      </tr>
+		      <tr>
+        <td class="type">string|bool&nbsp;&nbsp;</td>
+        <td><b>$style</b>&nbsp;&nbsp;</td>
+        <td>为string时为使用的风格；为bool时是否强制调用（true：后台模板，false:前台模板）</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$module</b>&nbsp;&nbsp;</td>
+        <td>模块名称</td>
+      </tr>
+		      <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$isCompile</b>&nbsp;&nbsp;</td>
+        <td>是否需要编译，如果为true，返回编译后的路径，否则返回模板路径</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionthumb"></a>
+	<h3>thumb <span class="smalllinenumber">[line 190]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string thumb(
+string $imgUrl, [number $maxWidth = 0], [number $maxHeight = 0], [number $cutType = 0], [string $defaultImg = ''], [number $isGetRemot = 0])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		生成缩略图<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 处理后的图片路径（相对于网站根目录）</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$imgUrl</b>&nbsp;&nbsp;</td>
+        <td>需要处理的字符串</td>
+      </tr>
+		      <tr>
+        <td class="type">number&nbsp;&nbsp;</td>
+        <td><b>$maxWidth</b>&nbsp;&nbsp;</td>
+        <td>限制宽度，默认为0（不限制）</td>
+      </tr>
+		      <tr>
+        <td class="type">number&nbsp;&nbsp;</td>
+        <td><b>$maxHeight</b>&nbsp;&nbsp;</td>
+        <td>限制高度，默认为0（不限制）</td>
+      </tr>
+		      <tr>
+        <td class="type">number&nbsp;&nbsp;</td>
+        <td><b>$cutType</b>&nbsp;&nbsp;</td>
+        <td>剪裁类型，为0不剪裁，为1缩小剪裁，为2放大剪裁</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$defaultImg</b>&nbsp;&nbsp;</td>
+        <td>图片不存在默认图片</td>
+      </tr>
+		      <tr>
+        <td class="type">number&nbsp;&nbsp;</td>
+        <td><b>$isGetRemot</b>&nbsp;&nbsp;</td>
+        <td>是否获取远程图片</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiontimeformat"></a>
+	<h3>timeformat <span class="smalllinenumber">[line 140]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string timeformat(
+int $tm)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		转换字节数为其他单位<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$tm</b>&nbsp;&nbsp;</td>
+        <td>时间戳</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionto_string"></a>
+	<h3>to_string <span class="smalllinenumber">[line 482]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string to_string(
+mixed $data, [int $option = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		将对象或数组转换为JSON字符串<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>带转换的对象或数组</td>
+      </tr>
+		      <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$option</b>&nbsp;&nbsp;</td>
+        <td>转换选项</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiontrace"></a>
+	<h3>trace <span class="smalllinenumber">[line 71]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void|array trace(
+[string $value = null], [string $label = ''], [string $level = 'DEBUG'], [boolean $record = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		添加和获取页面Trace记录<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>变量</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$label</b>&nbsp;&nbsp;</td>
+        <td>标签</td>
+      </tr>
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$level</b>&nbsp;&nbsp;</td>
+        <td>日志级别(或者页面Trace的选项卡)</td>
+      </tr>
+		      <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$record</b>&nbsp;&nbsp;</td>
+        <td>是否记录日志</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functiontrim_script"></a>
+	<h3>trim_script <span class="smalllinenumber">[line 650]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string trim_script(
+string $data)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		转义 javascript 代码标记<br />    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>原始html字符串</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionU"></a>
+	<h3>U <span class="smalllinenumber">[line 1193]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string U(
+[string $url = ''], [string|array $vars = ''], [boolean $domain = false], [integer $type = -1])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		URL组装 支持不同URL模式<br /><p><pre> 使用方式说明：
+ 1、外部地址解析（地址以“http://”或“https://”开头）：
+    U('http://www.baidu.com','name=spring&id=2')
+    返回：http://www.baidu.com?name=spring&id=2
+ 2、本地绝对地址解析（地址以“/”开头）：
+    U('/api/','name=spring&id=2',true)
+    返回：http://www.h928.com/api/?name=spring&id=2
+ 3、本地插件地址解析（地址以“:”开头）:
+    U(':houserent/add','name=spring&id=2')
+    返回：/index.php?plugin_c=houserent&plugin_a=add&name=spring&id=2
+ 4、本地控制器地址解析：
+    U('houserent/add','name=spring&id=2')
+    返回：/index.php?c=houserent&a=add&name=spring&id=2</pre></p><div class="tags">
+<ul>
+<li><b>Deprecated:</b> 1.3.0</li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$url</b>&nbsp;&nbsp;</td>
+        <td>URL表达式，格式：'[:][模块/控制器/操作#锚点@域名]?参数1=值1&amp;参数2=值2...'</td>
+      </tr>
+		      <tr>
+        <td class="type">string|array&nbsp;&nbsp;</td>
+        <td><b>$vars</b>&nbsp;&nbsp;</td>
+        <td>传入的参数，支持数组和字符串</td>
+      </tr>
+		      <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$domain</b>&nbsp;&nbsp;</td>
+        <td>是否显示域名</td>
+      </tr>
+		      <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$type</b>&nbsp;&nbsp;</td>
+        <td>使用的URL类型，为-1系统自动判断，为0前端，为1后台</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+
+        <div class="credit">
+		    <hr />
+		    Powered by Steeze. author email: spring.wind2006@163.com
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

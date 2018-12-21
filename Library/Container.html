@@ -1,0 +1,963 @@
+<html>
+<head>
+<title>Docs For Class Container</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">Library</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        		  [ <a href="../classtrees_Library.html" class="menu">类树图: Library</a> ]
+		    [ <a href="../elementindex_Library.html" class="menu">索引: Library</a> ]
+      		  [ <a href="../elementindex.html" class="menu">所有元素</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_default.html">default</a><br />
+              <a href="../li_Cache.html">Cache</a><br />
+              <a href="../li_Database.html">Database</a><br />
+              <a href="../li_Drivers.html">Drivers</a><br />
+              <a href="../li_Library.html">Library</a><br />
+              <a href="../li_Service.html">Service</a><br />
+              <a href="../li_Storage.html">Storage</a><br />
+              <a href="../li_Template.html">Template</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../Library/Application.html">Application</a><br />
+	    		<a href="../Library/Client.html">Client</a><br />
+	    		<a href="../Library/CommandColor.html">CommandColor</a><br />
+	    		<a href="../Library/Container.html">Container</a><br />
+	    		<a href="../Library/Context.html">Context</a><br />
+	    		<a href="../Library/Controller.html">Controller</a><br />
+	    		<a href="../Library/ErrorException.html">ErrorException</a><br />
+	    		<a href="../Library/Image.html">Image</a><br />
+	    		<a href="../Library/Middleware.html">Middleware</a><br />
+	    		<a href="../Library/Model.html">Model</a><br />
+	    		<a href="../Library/Pager.html">Pager</a><br />
+	    		<a href="../Library/Pipeline.html">Pipeline</a><br />
+	    		<a href="../Library/Request.html">Request</a><br />
+	    		<a href="../Library/Response.html">Response</a><br />
+	    		<a href="../Library/Route.html">Route</a><br />
+	    		<a href="../Library/View.html">View</a><br />
+	    		<a href="../Library/Zip.html">Zip</a><br />
+	  </div>
+                  <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../Library/_Library---Application.class.php.html">		Application.class.php
+		</a><br>
+			<a href="../Library/_Library---Client.class.php.html">		Client.class.php
+		</a><br>
+			<a href="../Library/_Library---CommandColor.class.php.html">		CommandColor.class.php
+		</a><br>
+			<a href="../Library/_Library---Container.class.php.html">		Container.class.php
+		</a><br>
+			<a href="../Library/_Library---Context.class.php.html">		Context.class.php
+		</a><br>
+			<a href="../Library/_Library---Controller.class.php.html">		Controller.class.php
+		</a><br>
+			<a href="../Library/_Library---ErrorException.class.php.html">		ErrorException.class.php
+		</a><br>
+			<a href="../Library/_Library---Image.class.php.html">		Image.class.php
+		</a><br>
+			<a href="../Library/_Library---Middleware.class.php.html">		Middleware.class.php
+		</a><br>
+			<a href="../Library/_Library---Model.class.php.html">		Model.class.php
+		</a><br>
+			<a href="../Library/_Library---Pager.class.php.html">		Pager.class.php
+		</a><br>
+			<a href="../Library/_Library---Pipeline.class.php.html">		Pipeline.class.php
+		</a><br>
+			<a href="../Library/_Library---Request.class.php.html">		Request.class.php
+		</a><br>
+			<a href="../Library/_Library---Response.class.php.html">		Response.class.php
+		</a><br>
+			<a href="../Library/_Library---Route.class.php.html">		Route.class.php
+		</a><br>
+			<a href="../Library/_Library---View.class.php.html">		View.class.php
+		</a><br>
+			<a href="../Library/_Library---Zip.class.php.html">		Zip.class.php
+		</a><br>
+	  </div><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Container</h1>
+Source Location: /Library/Container.class.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">系统容器类</div><br /><br />
+
+
+
+
+
+
+
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../Library/Container.html#var$aliases">$aliases</a></li>
+    <li><a href="../Library/Container.html#var$extenders">$extenders</a></li>
+    <li><a href="../Library/Container.html#var$instance">$instance</a></li>
+    <li><a href="../Library/Container.html#var$instances">$instances</a></li>
+    <li><a href="../Library/Container.html#var$with">$with</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../Library/Container.html#methodbuild">build</a></li>
+    <li><a href="../Library/Container.html#methodforgetExtenders">forgetExtenders</a></li>
+    <li><a href="../Library/Container.html#methodforgetInstance">forgetInstance</a></li>
+    <li><a href="../Library/Container.html#methodforgetInstances">forgetInstances</a></li>
+    <li><a href="../Library/Container.html#methodgetAlias">getAlias</a></li>
+    <li><a href="../Library/Container.html#methodgetExtenders">getExtenders</a></li>
+    <li><a href="../Library/Container.html#methodgetInstance">getInstance</a></li>
+    <li><a href="../Library/Container.html#methodgetLastParameterOverride">getLastParameterOverride</a></li>
+    <li><a href="../Library/Container.html#methodgetParameterOverride">getParameterOverride</a></li>
+    <li><a href="../Library/Container.html#methodhasParameterOverride">hasParameterOverride</a></li>
+    <li><a href="../Library/Container.html#methodinvoke">invoke</a></li>
+    <li><a href="../Library/Container.html#methodinvokeFunc">invokeFunc</a></li>
+    <li><a href="../Library/Container.html#methodinvokeMethod">invokeMethod</a></li>
+    <li><a href="../Library/Container.html#methodmake">make</a></li>
+    <li><a href="../Library/Container.html#methodresolve">resolve</a></li>
+    <li><a href="../Library/Container.html#methodresolveClass">resolveClass</a></li>
+    <li><a href="../Library/Container.html#methodresolveDependencies">resolveDependencies</a></li>
+    <li><a href="../Library/Container.html#methodresolvePrimitive">resolvePrimitive</a></li>
+    <li><a href="../Library/Container.html#methodsetInstance">setInstance</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+<td valign="top">
+<h3>Child classes:</h3>
+<div class="tags">
+<dl>
+<dt><a href="../Library/Context.html">Context</a></dt>
+	<dd>系统上下文类</dd>
+</dl>
+</div>
+</td>
+
+<td valign="top">
+<h3>Inherited Variables</h3>
+</td>
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+</div>
+</td>
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 15]<br />
+系统容器类<br /></div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$aliases"></a>
+	<p></p>
+	<h4>$aliases = <span class="value">[]</span></h4>
+	<p>[line 18]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$extenders"></a>
+	<p></p>
+	<h4>$extenders = <span class="value">[]</span></h4>
+	<p>[line 19]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$instance"></a>
+	<p></p>
+	<h4>$instance = <span class="value"></span></h4>
+	<p>[line 27]</p>
+  当前容器实例对象<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>\Library\Container</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$instances"></a>
+	<p></p>
+	<h4>$instances = <span class="value">[]</span></h4>
+	<p>[line 17]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$with"></a>
+	<p></p>
+	<h4>$with = <span class="value">[]</span></h4>
+	<p>[line 20]</p>
+  <div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Method Detail</h3>
+<div class="tags">
+	<a name="methodbuild"></a>
+	<h3>build<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 136]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed build(
+string
+$concrete)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		实例化给定类型的具体实例<br /><div class="tags">
+<ul>
+<li><b>Throws:</b> \Exception</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$concrete</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodforgetExtenders"></a>
+	<h3>forgetExtenders<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 363]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void forgetExtenders(
+string
+$concrete)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		删除特定类型扩展<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$concrete</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodforgetInstance"></a>
+	<h3>forgetInstance<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 373]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void forgetInstance(
+string
+$concrete)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		更加类型删除特定实例缓存<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$concrete</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodforgetInstances"></a>
+	<h3>forgetInstances<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 385]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void forgetInstances(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		清空容器中的所有实例<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodgetAlias"></a>
+	<h3>getAlias<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 350]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getAlias(
+string
+$concrete)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		获取类型别名<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$concrete</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodgetExtenders"></a>
+	<h3>getExtenders<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 334]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getExtenders(
+string
+$concrete)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		根据指定的类型获取特定扩展<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$concrete</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodgetInstance"></a>
+	<h3>getInstance<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 404]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>static getInstance(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		获取容器单例<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodgetLastParameterOverride"></a>
+	<h3>getLastParameterOverride<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 282]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getLastParameterOverride(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		获取最后的参数.<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodgetParameterOverride"></a>
+	<h3>getParameterOverride<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 273]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed getParameterOverride(
+ReflectionParameter
+$dependency)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		获取一个依赖项的参数<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>ReflectionParameter&nbsp;&nbsp;</td>
+        <td><tt>$dependency</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodhasParameterOverride"></a>
+	<h3>hasParameterOverride<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 263]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool hasParameterOverride(
+ReflectionParameter
+$dependency)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		确定给定的依赖是否有一个参数.<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>ReflectionParameter&nbsp;&nbsp;</td>
+        <td><tt>$dependency</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodinvoke"></a>
+	<h3>invoke<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 36]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed invoke(
+string|array
+$name, [array
+$parameters = []])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		对象方法或函数依赖注入调用<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string|array&nbsp;&nbsp;</td>
+        <td><tt>$name</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>调用名称，如果为字符串</td>
+      </tr>
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$parameters</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>方法参数</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodinvokeFunc"></a>
+	<h3>invokeFunc<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 81]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed invokeFunc(
+string|Closure
+$closure, [array
+$parameters = []])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		一般函数或Closure匿名函数调用<br /><div class="tags">
+<ul>
+<li><b>Throws:</b> \Exception</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string|Closure&nbsp;&nbsp;</td>
+        <td><tt>$closure</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>为一般函数名称或Closure对象，如果为Closure对象，$this指向当前容器</td>
+      </tr>
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$parameters</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>方法参数</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodinvokeMethod"></a>
+	<h3>invokeMethod<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 54]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed invokeMethod(
+object|string
+$concrete, string
+$method, [array
+$parameters = []])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		对象方法调用<br /><div class="tags">
+<ul>
+<li><b>Throws:</b> \Exception</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>object|string&nbsp;&nbsp;</td>
+        <td><tt>$concrete</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>实例或类名</td>
+      </tr>
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$method</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>方法名称</td>
+      </tr>
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$parameters</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>方法参数</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodmake"></a>
+	<h3>make<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 124]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed make(
+string
+$concrete, [array
+$parameters = []], [bool
+$isCache = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		从容器中解析给定的类型<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$concrete</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>需要构造的类名</td>
+      </tr>
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$parameters</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>参数</td>
+      </tr>
+          <tr>
+        <td>bool&nbsp;&nbsp;</td>
+        <td><tt>$isCache</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>是否需要存储，默认为true</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodresolve"></a>
+	<h3>resolve<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 165]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed resolve(
+string
+$concrete, [array
+$parameters = []], [bool
+$isCache = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		从容器中解析给定的类型.<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$concrete</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$parameters</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>bool&nbsp;&nbsp;</td>
+        <td><tt>$isCache</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodresolveClass"></a>
+	<h3>resolveClass<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 306]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed resolveClass(
+ReflectionParameter
+$parameter)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		从容器中解决基于类的依赖关系<br /><div class="tags">
+<ul>
+<li><b>Throws:</b> \Exception</li>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>ReflectionParameter&nbsp;&nbsp;</td>
+        <td><tt>$parameter</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodresolveDependencies"></a>
+	<h3>resolveDependencies<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 205]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array resolveDependencies(
+array
+$dependencies)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		从反射参数中解决所有的依赖项<br /><div class="tags">
+<ul>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$dependencies</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodresolvePrimitive"></a>
+	<h3>resolvePrimitive<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 294]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed resolvePrimitive(
+ReflectionParameter
+$parameter)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		解析非自定义类的原始依赖关系<br /><div class="tags">
+<ul>
+<li><b>Throws:</b> \Exception</li>
+<li><b>Access:</b> protected</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>ReflectionParameter&nbsp;&nbsp;</td>
+        <td><tt>$parameter</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodsetInstance"></a>
+	<h3>setInstance<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 395]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>static setInstance(
+[<a href="../Library/Container.html">Container</a>
+$container = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		设置容器实例<br /><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>\Library\Container|null&nbsp;&nbsp;</td>
+        <td><tt>$container</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+</div>
+
+        <div class="credit">
+		    <hr />
+		    Powered by Steeze. author email: spring.wind2006@163.com
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

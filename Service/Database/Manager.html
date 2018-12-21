@@ -1,0 +1,249 @@
+<html>
+<head>
+<title>Docs For Class Manager</title>
+<link rel="stylesheet" type="text/css" href="../../media/style.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">Service</td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        		  [ <a href="../../classtrees_Service.html" class="menu">类树图: Service</a> ]
+		    [ <a href="../../elementindex_Service.html" class="menu">索引: Service</a> ]
+      		  [ <a href="../../elementindex.html" class="menu">所有元素</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../../li_default.html">default</a><br />
+              <a href="../../li_Cache.html">Cache</a><br />
+              <a href="../../li_Database.html">Database</a><br />
+              <a href="../../li_Drivers.html">Drivers</a><br />
+              <a href="../../li_Library.html">Library</a><br />
+              <a href="../../li_Service.html">Service</a><br />
+              <a href="../../li_Storage.html">Storage</a><br />
+              <a href="../../li_Template.html">Template</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../../Service/Db.html">Db</a><br />
+	    		<a href="../../Service/File.html">File</a><br />
+	    		<a href="../../Service/Memcache.html">Memcache</a><br />
+	    		<a href="../../Service/Sae.html">Sae</a><br />
+	  </div>
+  <div class="package">
+	Database<br />	    &nbsp;&nbsp;		<a href="../../Service/Database/Driver.html">Driver</a><br />
+	    &nbsp;&nbsp;		<a href="../../Service/Database/Manager.html">Manager</a><br />
+	  </div>
+                  <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../../Service/_Service---Session---Driver---Db.class.php.html">		Db.class.php
+		</a><br>
+			<a href="../../Service/_Service---Storage---Drivers---File.class.php.html">		File.class.php
+		</a><br>
+			<a href="../../Service/_Service---Session---Driver---Memcache.class.php.html">		Memcache.class.php
+		</a><br>
+			<a href="../../Service/_Service---Storage---Drivers---Sae.class.php.html">		Sae.class.php
+		</a><br>
+	  </div><br />
+	subpackage <b>Database</b><br>  <div class="package">
+			<a href="../../Service/Database/_Service---Database---Driver.class.php.html">		Driver.class.php
+		</a><br>
+			<a href="../../Service/Database/_Service---Database---Manager.class.php.html">		Manager.class.php
+		</a><br>
+	  </div><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Manager</h1>
+Source Location: /Service/Database/Manager.class.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">数据库中间层实现类</div><br /><br />
+
+
+
+
+
+
+
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../../Service/Database/Manager.html#methodgetInstance">getInstance</a></li>
+    <li><a href="../../Service/Database/Manager.html#methodparseDsn">parseDsn</a></li>
+    <li><a href="../../Service/Database/Manager.html#method__callStatic">__callStatic</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+<td valign="top">
+<h3>Inherited Variables</h3>
+</td>
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+</div>
+</td>
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 11]<br />
+数据库中间层实现类<br /></div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+
+<hr />
+<a name="class_methods"></a>
+<h3>Method Detail</h3>
+<div class="tags">
+	<a name="methodgetInstance"></a>
+	<h3>getInstance<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 23]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Object getInstance(
+[mixed
+$config = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		取得数据库类实例<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 返回数据库驱动类</li>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>mixed&nbsp;&nbsp;</td>
+        <td><tt>$config</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>连接配置</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="methodparseDsn"></a>
+	<h3>parseDsn<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 53]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array parseDsn(
+string
+$dsnStr)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		DSN解析<br /><p>格式： mysql://username:passwd@localhost:3306/DbName?param1=val1&amp;param2=val2#utf8</p><div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$dsnStr</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+	<a name="method__callStatic"></a>
+	<h3>__callStatic<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 134]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void __callStatic(
+
+$method, 
+$params)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<div class="tags">
+<ul>
+<li><b>Access:</b> public</li>
+</ul>
+</div>
+<br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$method</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>&nbsp;&nbsp;</td>
+        <td><tt>$params</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />  
+</div>
+
+        <div class="credit">
+		    <hr />
+		    Powered by Steeze. author email: spring.wind2006@163.com
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
