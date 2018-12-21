@@ -8,7 +8,9 @@
 
 <table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
   <tr>
-    <td class="header_top">Cache</td>
+    <td class="header_top">
+              缓存服务
+          </td>
   </tr>
   <tr><td class="header_line"><img src="media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
   <tr>
@@ -27,18 +29,49 @@
   <tr valign="top">
     <td width="200" class="menu">
       <b>所在包:</b><br />
-              <a href="li_Library.html">Library</a><br />
-              <a href="li_default.html">default</a><br />
-              <a href="li_Database.html">Database</a><br />
-              <a href="li_Service.html">Service</a><br />
-              <a href="li_Drivers.html">Drivers</a><br />
-              <a href="li_Cache.html">Cache</a><br />
-              <a href="li_Template.html">Template</a><br />
-              <a href="li_Storage.html">Storage</a><br />
-            <br /><br />
-                              <b>文件:</b><br />
+              <a href="li_default.html">默认</a><br />
+      
+              <a href="li_Library.html">系统类库</a><br />
+      
+                                                                <a href="li_Database.html">
+              数据库服务
+          </a><br />
+                                                      <a href="li_Cache.html" style="font-weight:bold">
+              缓存服务
+            </a><br />
+                                                      <a href="li_Template.html">
+              模板引擎
+          </a><br />
+                                                      <a href="li_Storage.html">
+              存储服务
+          </a><br />
+                                                      <a href="li_Session.html">
+              会话服务
+          </a><br />
+                              <br /><br />
+                        <b>类:</b><br />
+        <div class="package">
+	Drivers<br />	    &nbsp;&nbsp;		<a href="Cache/Drivers/File.html">File</a><br />
+	    &nbsp;&nbsp;		<a href="Cache/Drivers/Memcache.html">Memcache</a><br />
+	    &nbsp;&nbsp;		<a href="Cache/Drivers/Redis.html">Redis</a><br />
+	    &nbsp;&nbsp;		<a href="Cache/Drivers/Sqlite.html">Sqlite</a><br />
+	  </div>
+  <div class="package">
+		    		<a href="Cache/Manager.html">Manager</a><br />
+	  </div>
+                  <b>文件:</b><br />
       	  <div class="package">
-			<a href="Cache/_Service---Cache---Manager.class.php.html">		Manager.class.php
+			<a href="Cache/_Service---Cache---Manager.class.php.html" title="Manager.class.php">		Manager.class.php
+		</a><br>
+	  </div><br />
+	<b>驱动包</b><br>  <div class="package">
+			<a href="Cache/Drivers/_Service---Cache---Drivers---File.class.php.html" title="File.class.php">		File.class.php
+		</a><br>
+			<a href="Cache/Drivers/_Service---Cache---Drivers---Memcache.class.php.html" title="Memcache.class.php">		Memcache.class.php
+		</a><br>
+			<a href="Cache/Drivers/_Service---Cache---Drivers---Redis.class.php.html" title="Redis.class.php">		Redis.class.php
+		</a><br>
+			<a href="Cache/Drivers/_Service---Cache---Drivers---Sqlite.class.php.html" title="Sqlite.class.php">		Sqlite.class.php
 		</a><br>
 	  </div><br />
                 </td>
@@ -47,15 +80,176 @@
 
 <a name="top"></a>
 <h1>Element index for package Cache</h1>
+	[ <a href="elementindex_Cache.html#c">c</a> ]
+	[ <a href="elementindex_Cache.html#f">f</a> ]
+	[ <a href="elementindex_Cache.html#g">g</a> ]
+	[ <a href="elementindex_Cache.html#h">h</a> ]
 	[ <a href="elementindex_Cache.html#m">m</a> ]
+	[ <a href="elementindex_Cache.html#o">o</a> ]
+	[ <a href="elementindex_Cache.html#q">q</a> ]
+	[ <a href="elementindex_Cache.html#r">r</a> ]
+	[ <a href="elementindex_Cache.html#s">s</a> ]
+	[ <a href="elementindex_Cache.html#_">_</a> ]
 
+  <hr />
+	<a name="_"></a>
+	<div>
+		<h2>_</h2>
+		<dl>
+							<dt><b>__call</b></dt>
+				<dd>in file Manager.class.php, method <a href="Cache/Manager.html#method__call">Manager::__call()</a></dd>
+							<dt><b>__get</b></dt>
+				<dd>in file Manager.class.php, method <a href="Cache/Manager.html#method__get">Manager::__get()</a></dd>
+							<dt><b>__set</b></dt>
+				<dd>in file Manager.class.php, method <a href="Cache/Manager.html#method__set">Manager::__set()</a></dd>
+							<dt><b>__unset</b></dt>
+				<dd>in file Manager.class.php, method <a href="Cache/Manager.html#method__unset">Manager::__unset()</a></dd>
+							<dt><b>__construct</b></dt>
+				<dd>in file Sqlite.class.php, method <a href="Cache/Drivers/Sqlite.html#method__construct">Sqlite::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;架构函数</dd>
+							<dt><b>__construct</b></dt>
+				<dd>in file Redis.class.php, method <a href="Cache/Drivers/Redis.html#method__construct">Redis::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;架构函数</dd>
+							<dt><b>__construct</b></dt>
+				<dd>in file Memcache.class.php, method <a href="Cache/Drivers/Memcache.html#method__construct">Memcache::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;架构函数</dd>
+							<dt><b>__construct</b></dt>
+				<dd>in file File.class.php, method <a href="Cache/Drivers/File.html#method__construct">File::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;架构函数</dd>
+					</dl>
+	</div>
+	<a href="elementindex_Cache.html#top">top</a><br>
+  <hr />
+	<a name="c"></a>
+	<div>
+		<h2>c</h2>
+		<dl>
+							<dt><b>connect</b></dt>
+				<dd>in file Manager.class.php, method <a href="Cache/Manager.html#methodconnect">Manager::connect()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;连接缓存</dd>
+							<dt><b>clear</b></dt>
+				<dd>in file Sqlite.class.php, method <a href="Cache/Drivers/Sqlite.html#methodclear">Sqlite::clear()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;清除缓存</dd>
+							<dt><b>clear</b></dt>
+				<dd>in file Redis.class.php, method <a href="Cache/Drivers/Redis.html#methodclear">Redis::clear()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;清除缓存</dd>
+							<dt><b>clear</b></dt>
+				<dd>in file Memcache.class.php, method <a href="Cache/Drivers/Memcache.html#methodclear">Memcache::clear()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;清除缓存</dd>
+							<dt><b>clear</b></dt>
+				<dd>in file File.class.php, method <a href="Cache/Drivers/File.html#methodclear">File::clear()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;清除缓存</dd>
+					</dl>
+	</div>
+	<a href="elementindex_Cache.html#top">top</a><br>
+  <hr />
+	<a name="f"></a>
+	<div>
+		<h2>f</h2>
+		<dl>
+							<dt><b>File</b></dt>
+				<dd>in file File.class.php, class <a href="Cache/Drivers/File.html">File</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件类型缓存类</dd>
+							<dt><b>File.class.php</b></dt>
+				<dd>procedural page <a href="Cache/Drivers/_Service---Cache---Drivers---File.class.php.html">File.class.php</a></dd>
+					</dl>
+	</div>
+	<a href="elementindex_Cache.html#top">top</a><br>
+  <hr />
+	<a name="g"></a>
+	<div>
+		<h2>g</h2>
+		<dl>
+							<dt><b>getInstance</b></dt>
+				<dd>in file Manager.class.php, method <a href="Cache/Manager.html#methodgetInstance">Manager::getInstance()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;取得缓存类实例</dd>
+							<dt><b>getOptions</b></dt>
+				<dd>in file Manager.class.php, method <a href="Cache/Manager.html#methodgetOptions">Manager::getOptions()</a></dd>
+							<dt><b>get</b></dt>
+				<dd>in file Sqlite.class.php, method <a href="Cache/Drivers/Sqlite.html#methodget">Sqlite::get()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;读取缓存</dd>
+							<dt><b>get</b></dt>
+				<dd>in file Redis.class.php, method <a href="Cache/Drivers/Redis.html#methodget">Redis::get()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;读取缓存</dd>
+							<dt><b>get</b></dt>
+				<dd>in file Memcache.class.php, method <a href="Cache/Drivers/Memcache.html#methodget">Memcache::get()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;读取缓存</dd>
+							<dt><b>get</b></dt>
+				<dd>in file File.class.php, method <a href="Cache/Drivers/File.html#methodget">File::get()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;读取缓存</dd>
+					</dl>
+	</div>
+	<a href="elementindex_Cache.html#top">top</a><br>
+  <hr />
+	<a name="h"></a>
+	<div>
+		<h2>h</h2>
+		<dl>
+							<dt><b>$handler</b></dt>
+				<dd>in file Manager.class.php, variable <a href="Cache/Manager.html#var$handler">Manager::$handler</a><br>&nbsp;&nbsp;&nbsp;&nbsp;操作句柄</dd>
+					</dl>
+	</div>
+	<a href="elementindex_Cache.html#top">top</a><br>
   <hr />
 	<a name="m"></a>
 	<div>
 		<h2>m</h2>
 		<dl>
+							<dt><b>Manager</b></dt>
+				<dd>in file Manager.class.php, class <a href="Cache/Manager.html">Manager</a><br>&nbsp;&nbsp;&nbsp;&nbsp;缓存管理类</dd>
 							<dt><b>Manager.class.php</b></dt>
 				<dd>procedural page <a href="Cache/_Service---Cache---Manager.class.php.html">Manager.class.php</a></dd>
+							<dt><b>Memcache</b></dt>
+				<dd>in file Memcache.class.php, class <a href="Cache/Drivers/Memcache.html">Memcache</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Memcache缓存驱动</dd>
+							<dt><b>Memcache.class.php</b></dt>
+				<dd>procedural page <a href="Cache/Drivers/_Service---Cache---Drivers---Memcache.class.php.html">Memcache.class.php</a></dd>
+					</dl>
+	</div>
+	<a href="elementindex_Cache.html#top">top</a><br>
+  <hr />
+	<a name="o"></a>
+	<div>
+		<h2>o</h2>
+		<dl>
+							<dt><b>$options</b></dt>
+				<dd>in file Manager.class.php, variable <a href="Cache/Manager.html#var$options">Manager::$options</a><br>&nbsp;&nbsp;&nbsp;&nbsp;缓存连接参数</dd>
+					</dl>
+	</div>
+	<a href="elementindex_Cache.html#top">top</a><br>
+  <hr />
+	<a name="q"></a>
+	<div>
+		<h2>q</h2>
+		<dl>
+							<dt><b>queue</b></dt>
+				<dd>in file Manager.class.php, method <a href="Cache/Manager.html#methodqueue">Manager::queue()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;队列缓存</dd>
+					</dl>
+	</div>
+	<a href="elementindex_Cache.html#top">top</a><br>
+  <hr />
+	<a name="r"></a>
+	<div>
+		<h2>r</h2>
+		<dl>
+							<dt><b>Redis</b></dt>
+				<dd>in file Redis.class.php, class <a href="Cache/Drivers/Redis.html">Redis</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Redis缓存驱动  要求安装phpredis扩展：https://github.com/nicolasff/phpredis</dd>
+							<dt><b>rm</b></dt>
+				<dd>in file Redis.class.php, method <a href="Cache/Drivers/Redis.html#methodrm">Redis::rm()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;删除缓存</dd>
+							<dt><b>rm</b></dt>
+				<dd>in file File.class.php, method <a href="Cache/Drivers/File.html#methodrm">File::rm()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;删除缓存</dd>
+							<dt><b>rm</b></dt>
+				<dd>in file Memcache.class.php, method <a href="Cache/Drivers/Memcache.html#methodrm">Memcache::rm()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;删除缓存</dd>
+							<dt><b>rm</b></dt>
+				<dd>in file Sqlite.class.php, method <a href="Cache/Drivers/Sqlite.html#methodrm">Sqlite::rm()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;删除缓存</dd>
+							<dt><b>Redis.class.php</b></dt>
+				<dd>procedural page <a href="Cache/Drivers/_Service---Cache---Drivers---Redis.class.php.html">Redis.class.php</a></dd>
+					</dl>
+	</div>
+	<a href="elementindex_Cache.html#top">top</a><br>
+  <hr />
+	<a name="s"></a>
+	<div>
+		<h2>s</h2>
+		<dl>
+							<dt><b>setOptions</b></dt>
+				<dd>in file Manager.class.php, method <a href="Cache/Manager.html#methodsetOptions">Manager::setOptions()</a></dd>
+							<dt><b>Sqlite.class.php</b></dt>
+				<dd>procedural page <a href="Cache/Drivers/_Service---Cache---Drivers---Sqlite.class.php.html">Sqlite.class.php</a></dd>
+							<dt><b>set</b></dt>
+				<dd>in file Sqlite.class.php, method <a href="Cache/Drivers/Sqlite.html#methodset">Sqlite::set()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;写入缓存</dd>
+							<dt><b>set</b></dt>
+				<dd>in file Redis.class.php, method <a href="Cache/Drivers/Redis.html#methodset">Redis::set()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;写入缓存</dd>
+							<dt><b>set</b></dt>
+				<dd>in file File.class.php, method <a href="Cache/Drivers/File.html#methodset">File::set()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;写入缓存</dd>
+							<dt><b>set</b></dt>
+				<dd>in file Memcache.class.php, method <a href="Cache/Drivers/Memcache.html#methodset">Memcache::set()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;写入缓存</dd>
+							<dt><b>Sqlite</b></dt>
+				<dd>in file Sqlite.class.php, class <a href="Cache/Drivers/Sqlite.html">Sqlite</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Sqlite缓存驱动</dd>
 					</dl>
 	</div>
 	<a href="elementindex_Cache.html#top">top</a><br>

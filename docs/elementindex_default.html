@@ -8,7 +8,9 @@
 
 <table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
   <tr>
-    <td class="header_top">default</td>
+    <td class="header_top">
+              &nbsp;
+          </td>
   </tr>
   <tr><td class="header_line"><img src="media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
   <tr>
@@ -27,32 +29,49 @@
   <tr valign="top">
     <td width="200" class="menu">
       <b>所在包:</b><br />
-              <a href="li_Library.html">Library</a><br />
-              <a href="li_default.html">default</a><br />
-              <a href="li_Database.html">Database</a><br />
-              <a href="li_Service.html">Service</a><br />
-              <a href="li_Drivers.html">Drivers</a><br />
-              <a href="li_Cache.html">Cache</a><br />
-              <a href="li_Template.html">Template</a><br />
-              <a href="li_Storage.html">Storage</a><br />
-            <br /><br />
+              <a href="li_default.html" style="font-weight:bold">默认</a><br />
+      
+              <a href="li_Library.html">系统类库</a><br />
+      
+                                                                <a href="li_Database.html">
+              数据库服务
+          </a><br />
+                                                      <a href="li_Cache.html">
+              缓存服务
+          </a><br />
+                                                      <a href="li_Template.html">
+              模板引擎
+          </a><br />
+                                                      <a href="li_Storage.html">
+              存储服务
+          </a><br />
+                                                      <a href="li_Session.html">
+              会话服务
+          </a><br />
+                              <br /><br />
                         <b>类:</b><br />
         <div class="package">
 		    		<a href="default/Loader.html">Loader</a><br />
 	  </div>
                   <b>文件:</b><br />
       	  <div class="package">
-			<a href="default/_base.php.html">		base.php
+			<a href="default/_base.php.html" title="base.php">		base.php
 		</a><br>
-			<a href="default/_Helper---dir.php.html">		dir.php
+	  </div><br />
+	<b>函数库</b><br>  <div class="package">
+			<a href="default/Helper/_Helper---dir.php.html" title="dir.php">		dir.php
 		</a><br>
-			<a href="default/_View---exception.php.html">		exception.php
+			<a href="default/Helper/_Helper---mail.php.html" title="mail.php">		mail.php
 		</a><br>
-			<a href="default/_Helper---mail.php.html">		mail.php
+			<a href="default/Helper/_Helper---system.php.html" title="system.php">		system.php
 		</a><br>
-			<a href="default/_Helper---system.php.html">		system.php
+	  </div><br />
+	<b>语言包</b><br>  <div class="package">
+			<a href="default/Lang/_Lang---zh-cn.php.html" title="zh-cn.php">		zh-cn.php
 		</a><br>
-			<a href="default/_Lang---zh-cn.php.html">		zh-cn.php
+	  </div><br />
+	<b>视图</b><br>  <div class="package">
+			<a href="default/View/_View---exception.php.html" title="exception.php">		exception.php
 		</a><br>
 	  </div><br />
                 </td>
@@ -94,16 +113,16 @@
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG_LEVEL">APP_DEBUG_LEVEL</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统错误信息显示级别（支持自定义）</dd>
 							<dt><b>APP_PATH</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_PATH">APP_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;应用目录（支持自定义）</dd>
-							<dt><b>array2html</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionarray2html">array2html()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;将数组转换数据为字符串表示的形式，支持其中变量设置</dd>
-							<dt><b>array2string</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionarray2string">array2string()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;将数组转换为字符串</dd>
-							<dt><b>array_map_deep</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionarray_map_deep">array_map_deep()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;使用特定function对数组中所有元素做处理</dd>
-							<dt><b>assets</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionassets">assets()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;导入静态文件路径 如：'js/show.js@daoke:home'，则返回/assets/app/home/daoke/js/show.js</dd>
 							<dt><b>ASSETS_PATH</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineASSETS_PATH">ASSETS_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;资源文件路径</dd>
+							<dt><b>array2html</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionarray2html">array2html()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;将数组转换数据为字符串表示的形式，支持其中变量设置</dd>
+							<dt><b>array2string</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionarray2string">array2string()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;将数组转换为字符串</dd>
+							<dt><b>array_map_deep</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionarray_map_deep">array_map_deep()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;使用特定function对数组中所有元素做处理</dd>
+							<dt><b>assets</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionassets">assets()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;导入静态文件路径 如：'js/show.js@daoke:home'，则返回/assets/app/home/daoke/js/show.js</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -115,7 +134,7 @@
 							<dt><b>base.php</b></dt>
 				<dd>procedural page <a href="default/_base.php.html">base.php</a></dd>
 							<dt><b>base64</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionbase64">base64()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;改进后base64加密或解密</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionbase64">base64()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;改进后base64加密或解密</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -124,16 +143,16 @@
 	<div>
 		<h2>c</h2>
 		<dl>
-							<dt><b>C</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionC">C()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取系统配置信息</dd>
 							<dt><b>CACHE_PATH</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineCACHE_PATH">CACHE_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;缓存文件目录（权限为可读写）</dd>
 							<dt><b>config</b></dt>
 				<dd>in file base.php, method <a href="default/Loader.html#methodconfig">Loader::config()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;配置文件加载</dd>
 							<dt><b>controller</b></dt>
 				<dd>in file base.php, method <a href="default/Loader.html#methodcontroller">Loader::controller()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;控制器加载</dd>
+							<dt><b>C</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionC">C()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取系统配置信息</dd>
 							<dt><b>cut_str</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functioncut_str">cut_str()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;主要用于截取从0开始的任意长度的字符串(完整无乱码)</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functioncut_str">cut_str()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;主要用于截取从0开始的任意长度的字符串(完整无乱码)</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -146,28 +165,28 @@
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_APP_NAME">DEFAULT_APP_NAME</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认应用名称（支持自定义），如果设置为空（&quot;&quot;），则不使用多应用模式</dd>
 							<dt><b>DEFAULT_HOST</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_HOST">DEFAULT_HOST</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认主机，命令行模式时使用（支持定义环境变量default_host）</dd>
-							<dt><b>dir_copy</b></dt>
-				<dd>in file dir.php, function <a href="default/_Helper---dir.php.html#functiondir_copy">dir_copy()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;拷贝目录及下面所有文件</dd>
-							<dt><b>dir_create</b></dt>
-				<dd>in file dir.php, function <a href="default/_Helper---dir.php.html#functiondir_create">dir_create()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;创建目录</dd>
-							<dt><b>dir_delete</b></dt>
-				<dd>in file dir.php, function <a href="default/_Helper---dir.php.html#functiondir_delete">dir_delete()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;删除目录及目录下面的所有文件</dd>
-							<dt><b>dir_iconv</b></dt>
-				<dd>in file dir.php, function <a href="default/_Helper---dir.php.html#functiondir_iconv">dir_iconv()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;转换目录下面的所有文件编码格式</dd>
-							<dt><b>dir_list</b></dt>
-				<dd>in file dir.php, function <a href="default/_Helper---dir.php.html#functiondir_list">dir_list()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;列出目录下所有文件</dd>
-							<dt><b>dir_path</b></dt>
-				<dd>in file dir.php, function <a href="default/_Helper---dir.php.html#functiondir_path">dir_path()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;功能：转化 \ 为 /</dd>
-							<dt><b>dir_touch</b></dt>
-				<dd>in file dir.php, function <a href="default/_Helper---dir.php.html#functiondir_touch">dir_touch()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;设置目录下面的所有文件的访问和修改时间</dd>
-							<dt><b>dir_tree</b></dt>
-				<dd>in file dir.php, function <a href="default/_Helper---dir.php.html#functiondir_tree">dir_tree()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;返回目录列表</dd>
 							<dt><b>DS</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineDS">DS</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统目录分隔符</dd>
+							<dt><b>dir_copy</b></dt>
+				<dd>in file dir.php, function <a href="default/Helper/_Helper---dir.php.html#functiondir_copy">dir_copy()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;拷贝目录及下面所有文件</dd>
+							<dt><b>dir_create</b></dt>
+				<dd>in file dir.php, function <a href="default/Helper/_Helper---dir.php.html#functiondir_create">dir_create()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;创建目录</dd>
+							<dt><b>dir_delete</b></dt>
+				<dd>in file dir.php, function <a href="default/Helper/_Helper---dir.php.html#functiondir_delete">dir_delete()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;删除目录及目录下面的所有文件</dd>
+							<dt><b>dir_iconv</b></dt>
+				<dd>in file dir.php, function <a href="default/Helper/_Helper---dir.php.html#functiondir_iconv">dir_iconv()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;转换目录下面的所有文件编码格式</dd>
+							<dt><b>dir_list</b></dt>
+				<dd>in file dir.php, function <a href="default/Helper/_Helper---dir.php.html#functiondir_list">dir_list()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;列出目录下所有文件</dd>
+							<dt><b>dir_path</b></dt>
+				<dd>in file dir.php, function <a href="default/Helper/_Helper---dir.php.html#functiondir_path">dir_path()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;功能：转化 \ 为 /</dd>
+							<dt><b>dir_touch</b></dt>
+				<dd>in file dir.php, function <a href="default/Helper/_Helper---dir.php.html#functiondir_touch">dir_touch()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;设置目录下面的所有文件的访问和修改时间</dd>
+							<dt><b>dir_tree</b></dt>
+				<dd>in file dir.php, function <a href="default/Helper/_Helper---dir.php.html#functiondir_tree">dir_tree()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;返回目录列表</dd>
 							<dt><b>dump</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functiondump">dump()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;输出变量信息</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functiondump">dump()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;输出变量信息</dd>
 							<dt><b>dir.php</b></dt>
-				<dd>procedural page <a href="default/_Helper---dir.php.html">dir.php</a></dd>
+				<dd>procedural page <a href="default/Helper/_Helper---dir.php.html">dir.php</a></dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -176,14 +195,14 @@
 	<div>
 		<h2>e</h2>
 		<dl>
-							<dt><b>E</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionE">E()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;生成错误异常</dd>
 							<dt><b>env</b></dt>
 				<dd>in file base.php, method <a href="default/Loader.html#methodenv">Loader::env()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统环境变量加载</dd>
+							<dt><b>E</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionE">E()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;生成错误异常</dd>
 							<dt><b>env</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionenv">env()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取环境变量（键名不区分大小写）</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionenv">env()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取环境变量（键名不区分大小写）</dd>
 							<dt><b>exception.php</b></dt>
-				<dd>procedural page <a href="default/_View---exception.php.html">exception.php</a></dd>
+				<dd>procedural page <a href="default/View/_View---exception.php.html">exception.php</a></dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -193,13 +212,13 @@
 		<h2>f</h2>
 		<dl>
 							<dt><b>F</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionF">F()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;快速文件数据读取和保存 针对简单类型数据 字符串、数组</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionF">F()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;快速文件数据读取和保存 针对简单类型数据 字符串、数组</dd>
 							<dt><b>fastlog</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionfastlog">fastlog()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;快速日志记录（支持日志分割及文件增量清理）</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionfastlog">fastlog()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;快速日志记录（支持日志分割及文件增量清理）</dd>
 							<dt><b>fileext</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionfileext">fileext()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;取得文件扩展名（小写）</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionfileext">fileext()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;取得文件扩展名（小写）</dd>
 							<dt><b>filelist</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionfilelist">filelist()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;从指定目录根据知道路径读取文件列表（只检索当前目录）</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionfilelist">filelist()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;从指定目录根据知道路径读取文件列表（只检索当前目录）</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -209,11 +228,11 @@
 		<h2>g</h2>
 		<dl>
 							<dt><b>G</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionG">G()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;记录和统计时间（微秒）和内存使用情况</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionG">G()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;记录和统计时间（微秒）和内存使用情况</dd>
 							<dt><b>getip</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functiongetip">getip()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取真实IP地址</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functiongetip">getip()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取真实IP地址</dd>
 							<dt><b>get_remote_file</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionget_remote_file">get_remote_file()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取远程文件</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionget_remote_file">get_remote_file()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取远程文件</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -252,12 +271,12 @@
 	<div>
 		<h2>l</h2>
 		<dl>
-							<dt><b>L</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionL">L()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;语言转化</dd>
 							<dt><b>Loader</b></dt>
 				<dd>in file base.php, class <a href="default/Loader.html">Loader</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统加载器</dd>
 							<dt><b>LOGS_PATH</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineLOGS_PATH">LOGS_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;日志目录（权限为可读写）</dd>
+							<dt><b>L</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionL">L()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;语言转化</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -267,15 +286,15 @@
 		<h2>m</h2>
 		<dl>
 							<dt><b>mail.php</b></dt>
-				<dd>procedural page <a href="default/_Helper---mail.php.html">mail.php</a></dd>
+				<dd>procedural page <a href="default/Helper/_Helper---mail.php.html">mail.php</a></dd>
 							<dt><b>M</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionM">M()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;模型快速操作</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionM">M()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;模型快速操作</dd>
 							<dt><b>mail_send</b></dt>
-				<dd>in file mail.php, function <a href="default/_Helper---mail.php.html#functionmail_send">mail_send()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;发送邮件</dd>
+				<dd>in file mail.php, function <a href="default/Helper/_Helper---mail.php.html#functionmail_send">mail_send()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;发送邮件</dd>
 							<dt><b>mail_send_log</b></dt>
-				<dd>in file mail.php, function <a href="default/_Helper---mail.php.html#functionmail_send_log">mail_send_log()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;发送日志记录</dd>
+				<dd>in file mail.php, function <a href="default/Helper/_Helper---mail.php.html#functionmail_send_log">mail_send_log()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;发送日志记录</dd>
 							<dt><b>make</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionmake">make()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;从容器中返回给定类型名称的实例</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionmake">make()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;从容器中返回给定类型名称的实例</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -285,7 +304,7 @@
 		<h2>p</h2>
 		<dl>
 							<dt><b>parse_name</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionparse_name">parse_name()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;字符串命名风格转换</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionparse_name">parse_name()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;字符串命名风格转换</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -294,10 +313,10 @@
 	<div>
 		<h2>r</h2>
 		<dl>
-							<dt><b>random</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionrandom">random()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;从提供的字符串中，产生随机字符串</dd>
 							<dt><b>ROOT_PATH</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineROOT_PATH">ROOT_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;入口文件根目录路径（支持自定义）</dd>
+							<dt><b>random</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionrandom">random()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;从提供的字符串中，产生随机字符串</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -306,36 +325,36 @@
 	<div>
 		<h2>s</h2>
 		<dl>
-							<dt><b>system.php</b></dt>
-				<dd>procedural page <a href="default/_Helper---system.php.html">system.php</a></dd>
-							<dt><b>S</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionS">S()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;缓存管理</dd>
-							<dt><b>safe_replace</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionsafe_replace">safe_replace()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;安全过滤函数</dd>
-							<dt><b>session</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionsession">session()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;session管理函数</dd>
-							<dt><b>simplify_ds</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionsimplify_ds">simplify_ds()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;简化路径</dd>
-							<dt><b>sizeformat</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionsizeformat">sizeformat()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;转换字节数为其他单位</dd>
-							<dt><b>slashes</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionslashes">slashes()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;返回经addslashes处理过的字符串或数组</dd>
 							<dt><b>STEEZE_VERSION</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTEEZE_VERSION">STEEZE_VERSION</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统当前版本号</dd>
 							<dt><b>STORAGE_PATH</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTORAGE_PATH">STORAGE_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;数据存储目录（支持自定义，权限为可读写）</dd>
 							<dt><b>STORAGE_TYPE</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTORAGE_TYPE">STORAGE_TYPE</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件存储类型</dd>
-							<dt><b>string2array</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionstring2array">string2array()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;将字符串转换为数组</dd>
-							<dt><b>strlen_utf8</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionstrlen_utf8">strlen_utf8()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;统计utf-8字符长度</dd>
-							<dt><b>sys_auth</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionsys_auth">sys_auth()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统动态加密解密可以设置过期时间的字符串（通常用于授权）</dd>
-							<dt><b>sys_crypt</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionsys_crypt">sys_crypt()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统加密解密的字符串</dd>
 							<dt><b>SYS_START_TIME</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineSYS_START_TIME">SYS_START_TIME</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统开始时间值</dd>
+							<dt><b>system.php</b></dt>
+				<dd>procedural page <a href="default/Helper/_Helper---system.php.html">system.php</a></dd>
+							<dt><b>S</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionS">S()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;缓存管理</dd>
+							<dt><b>safe_replace</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionsafe_replace">safe_replace()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;安全过滤函数</dd>
+							<dt><b>session</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionsession">session()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;session管理函数</dd>
+							<dt><b>simplify_ds</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionsimplify_ds">simplify_ds()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;简化路径</dd>
+							<dt><b>sizeformat</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionsizeformat">sizeformat()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;转换字节数为其他单位</dd>
+							<dt><b>slashes</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionslashes">slashes()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;返回经addslashes处理过的字符串或数组</dd>
+							<dt><b>string2array</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionstring2array">string2array()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;将字符串转换为数组</dd>
+							<dt><b>strlen_utf8</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionstrlen_utf8">strlen_utf8()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;统计utf-8字符长度</dd>
+							<dt><b>sys_auth</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionsys_auth">sys_auth()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统动态加密解密可以设置过期时间的字符串（通常用于授权）</dd>
+							<dt><b>sys_crypt</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionsys_crypt">sys_crypt()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统加密解密的字符串</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -345,17 +364,17 @@
 		<h2>t</h2>
 		<dl>
 							<dt><b>template</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functiontemplate">template()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;处理界面模板（包括管理后台、前台和插件）</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functiontemplate">template()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;处理界面模板（包括管理后台、前台和插件）</dd>
 							<dt><b>thumb</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionthumb">thumb()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;生成缩略图</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionthumb">thumb()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;生成缩略图</dd>
 							<dt><b>timeformat</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functiontimeformat">timeformat()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;转换字节数为其他单位</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functiontimeformat">timeformat()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;转换字节数为其他单位</dd>
 							<dt><b>to_string</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionto_string">to_string()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;将对象或数组转换为JSON字符串</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionto_string">to_string()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;将对象或数组转换为JSON字符串</dd>
 							<dt><b>trace</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functiontrace">trace()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;添加和获取页面Trace记录</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functiontrace">trace()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;添加和获取页面Trace记录</dd>
 							<dt><b>trim_script</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functiontrim_script">trim_script()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;转义 javascript 代码标记</dd>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functiontrim_script">trim_script()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;转义 javascript 代码标记</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -364,12 +383,12 @@
 	<div>
 		<h2>u</h2>
 		<dl>
-							<dt><b>U</b></dt>
-				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionU">U()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;URL组装 支持不同URL模式</dd>
 							<dt><b>UPLOAD_PATH</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineUPLOAD_PATH">UPLOAD_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件上传目录路径</dd>
 							<dt><b>USE_DEFUALT_HANDLE</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineUSE_DEFUALT_HANDLE">USE_DEFUALT_HANDLE</a><br>&nbsp;&nbsp;&nbsp;&nbsp;当找不到处理器时，是否使用默认处理器（支持自定义常量或环境变量use_defualt_handle）</dd>
+							<dt><b>U</b></dt>
+				<dd>in file system.php, function <a href="default/Helper/_Helper---system.php.html#functionU">U()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;URL组装 支持不同URL模式</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -389,7 +408,7 @@
 		<h2>z</h2>
 		<dl>
 							<dt><b>zh-cn.php</b></dt>
-				<dd>procedural page <a href="default/_Lang---zh-cn.php.html">zh-cn.php</a></dd>
+				<dd>procedural page <a href="default/Lang/_Lang---zh-cn.php.html">zh-cn.php</a></dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>

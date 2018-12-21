@@ -8,7 +8,9 @@
 
 <table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
   <tr>
-    <td class="header_top">Storage</td>
+    <td class="header_top">
+              存储服务
+          </td>
   </tr>
   <tr><td class="header_line"><img src="media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
   <tr>
@@ -27,22 +29,43 @@
   <tr valign="top">
     <td width="200" class="menu">
       <b>所在包:</b><br />
-              <a href="li_Library.html">Library</a><br />
-              <a href="li_default.html">default</a><br />
-              <a href="li_Database.html">Database</a><br />
-              <a href="li_Service.html">Service</a><br />
-              <a href="li_Drivers.html">Drivers</a><br />
-              <a href="li_Cache.html">Cache</a><br />
-              <a href="li_Template.html">Template</a><br />
-              <a href="li_Storage.html">Storage</a><br />
-            <br /><br />
+              <a href="li_default.html">默认</a><br />
+      
+              <a href="li_Library.html">系统类库</a><br />
+      
+                                                                <a href="li_Database.html">
+              数据库服务
+          </a><br />
+                                                      <a href="li_Cache.html">
+              缓存服务
+          </a><br />
+                                                      <a href="li_Template.html">
+              模板引擎
+          </a><br />
+                                                      <a href="li_Storage.html" style="font-weight:bold">
+              存储服务
+            </a><br />
+                                                      <a href="li_Session.html">
+              会话服务
+          </a><br />
+                              <br /><br />
                         <b>类:</b><br />
         <div class="package">
-	Drivers<br />	    &nbsp;&nbsp;		<a href="Storage/Drivers/Manager.html">Manager</a><br />
+	Drivers<br />	    &nbsp;&nbsp;		<a href="Storage/Drivers/File.html">File</a><br />
+	    &nbsp;&nbsp;		<a href="Storage/Drivers/Sae.html">Sae</a><br />
+	  </div>
+  <div class="package">
+		    		<a href="Storage/Manager.html">Manager</a><br />
 	  </div>
                   <b>文件:</b><br />
-      	子包 <b>Drivers</b><br>  <div class="package">
-			<a href="Storage/Drivers/_Service---Storage---Manager.class.php.html">		Manager.class.php
+      	  <div class="package">
+			<a href="Storage/_Service---Storage---Manager.class.php.html" title="Manager.class.php">		Manager.class.php
+		</a><br>
+	  </div><br />
+	<b>驱动包</b><br>  <div class="package">
+			<a href="Storage/Drivers/_Service---Storage---Drivers---File.class.php.html" title="File.class.php">		File.class.php
+		</a><br>
+			<a href="Storage/Drivers/_Service---Storage---Drivers---Sae.class.php.html" title="Sae.class.php">		Sae.class.php
 		</a><br>
 	  </div><br />
                 </td>
@@ -51,9 +74,17 @@
 
 <a name="top"></a>
 <h1>Element index for package Storage</h1>
+	[ <a href="elementindex_Storage.html#a">a</a> ]
 	[ <a href="elementindex_Storage.html#c">c</a> ]
+	[ <a href="elementindex_Storage.html#f">f</a> ]
+	[ <a href="elementindex_Storage.html#g">g</a> ]
 	[ <a href="elementindex_Storage.html#h">h</a> ]
+	[ <a href="elementindex_Storage.html#l">l</a> ]
 	[ <a href="elementindex_Storage.html#m">m</a> ]
+	[ <a href="elementindex_Storage.html#p">p</a> ]
+	[ <a href="elementindex_Storage.html#r">r</a> ]
+	[ <a href="elementindex_Storage.html#s">s</a> ]
+	[ <a href="elementindex_Storage.html#u">u</a> ]
 	[ <a href="elementindex_Storage.html#_">_</a> ]
 
   <hr />
@@ -62,7 +93,23 @@
 		<h2>_</h2>
 		<dl>
 							<dt><b>__callstatic</b></dt>
-				<dd>in file Manager.class.php, method <a href="Storage/Drivers/Manager.html#method__callstatic">Manager::__callstatic()</a></dd>
+				<dd>in file Manager.class.php, method <a href="Storage/Manager.html#method__callstatic">Manager::__callstatic()</a></dd>
+							<dt><b>__construct</b></dt>
+				<dd>in file Sae.class.php, method <a href="Storage/Drivers/Sae.html#method__construct">Sae::__construct()</a></dd>
+							<dt><b>__construct</b></dt>
+				<dd>in file File.class.php, method <a href="Storage/Drivers/File.html#method__construct">File::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;架构函数</dd>
+					</dl>
+	</div>
+	<a href="elementindex_Storage.html#top">top</a><br>
+  <hr />
+	<a name="a"></a>
+	<div>
+		<h2>a</h2>
+		<dl>
+							<dt><b>append</b></dt>
+				<dd>in file Sae.class.php, method <a href="Storage/Drivers/Sae.html#methodappend">Sae::append()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件追加写入</dd>
+							<dt><b>append</b></dt>
+				<dd>in file File.class.php, method <a href="Storage/Drivers/File.html#methodappend">File::append()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件追加写入</dd>
 					</dl>
 	</div>
 	<a href="elementindex_Storage.html#top">top</a><br>
@@ -72,7 +119,31 @@
 		<h2>c</h2>
 		<dl>
 							<dt><b>connect</b></dt>
-				<dd>in file Manager.class.php, method <a href="Storage/Drivers/Manager.html#methodconnect">Manager::connect()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;连接分布式文件系统</dd>
+				<dd>in file Manager.class.php, method <a href="Storage/Manager.html#methodconnect">Manager::connect()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;连接分布式文件系统</dd>
+					</dl>
+	</div>
+	<a href="elementindex_Storage.html#top">top</a><br>
+  <hr />
+	<a name="f"></a>
+	<div>
+		<h2>f</h2>
+		<dl>
+							<dt><b>File</b></dt>
+				<dd>in file File.class.php, class <a href="Storage/Drivers/File.html">File</a><br>&nbsp;&nbsp;&nbsp;&nbsp;本地文件写入存储类</dd>
+							<dt><b>File.class.php</b></dt>
+				<dd>procedural page <a href="Storage/Drivers/_Service---Storage---Drivers---File.class.php.html">File.class.php</a></dd>
+					</dl>
+	</div>
+	<a href="elementindex_Storage.html#top">top</a><br>
+  <hr />
+	<a name="g"></a>
+	<div>
+		<h2>g</h2>
+		<dl>
+							<dt><b>get</b></dt>
+				<dd>in file Sae.class.php, method <a href="Storage/Drivers/Sae.html#methodget">Sae::get()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;读取文件信息</dd>
+							<dt><b>get</b></dt>
+				<dd>in file File.class.php, method <a href="Storage/Drivers/File.html#methodget">File::get()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;读取文件信息</dd>
 					</dl>
 	</div>
 	<a href="elementindex_Storage.html#top">top</a><br>
@@ -82,7 +153,23 @@
 		<h2>h</h2>
 		<dl>
 							<dt><b>$handler</b></dt>
-				<dd>in file Manager.class.php, variable <a href="Storage/Drivers/Manager.html#var$handler">Manager::$handler</a><br>&nbsp;&nbsp;&nbsp;&nbsp;操作句柄</dd>
+				<dd>in file Manager.class.php, variable <a href="Storage/Manager.html#var$handler">Manager::$handler</a><br>&nbsp;&nbsp;&nbsp;&nbsp;操作句柄</dd>
+							<dt><b>has</b></dt>
+				<dd>in file Sae.class.php, method <a href="Storage/Drivers/Sae.html#methodhas">Sae::has()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件是否存在</dd>
+							<dt><b>has</b></dt>
+				<dd>in file File.class.php, method <a href="Storage/Drivers/File.html#methodhas">File::has()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件是否存在</dd>
+					</dl>
+	</div>
+	<a href="elementindex_Storage.html#top">top</a><br>
+  <hr />
+	<a name="l"></a>
+	<div>
+		<h2>l</h2>
+		<dl>
+							<dt><b>load</b></dt>
+				<dd>in file Sae.class.php, method <a href="Storage/Drivers/Sae.html#methodload">Sae::load()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载文件</dd>
+							<dt><b>load</b></dt>
+				<dd>in file File.class.php, method <a href="Storage/Drivers/File.html#methodload">File::load()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载文件</dd>
 					</dl>
 	</div>
 	<a href="elementindex_Storage.html#top">top</a><br>
@@ -92,9 +179,57 @@
 		<h2>m</h2>
 		<dl>
 							<dt><b>Manager</b></dt>
-				<dd>in file Manager.class.php, class <a href="Storage/Drivers/Manager.html">Manager</a><br>&nbsp;&nbsp;&nbsp;&nbsp;分布式文件存储类</dd>
+				<dd>in file Manager.class.php, class <a href="Storage/Manager.html">Manager</a><br>&nbsp;&nbsp;&nbsp;&nbsp;分布式文件存储类</dd>
 							<dt><b>Manager.class.php</b></dt>
-				<dd>procedural page <a href="Storage/Drivers/_Service---Storage---Manager.class.php.html">Manager.class.php</a></dd>
+				<dd>procedural page <a href="Storage/_Service---Storage---Manager.class.php.html">Manager.class.php</a></dd>
+					</dl>
+	</div>
+	<a href="elementindex_Storage.html#top">top</a><br>
+  <hr />
+	<a name="p"></a>
+	<div>
+		<h2>p</h2>
+		<dl>
+							<dt><b>put</b></dt>
+				<dd>in file Sae.class.php, method <a href="Storage/Drivers/Sae.html#methodput">Sae::put()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件写入</dd>
+							<dt><b>put</b></dt>
+				<dd>in file File.class.php, method <a href="Storage/Drivers/File.html#methodput">File::put()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件写入</dd>
+					</dl>
+	</div>
+	<a href="elementindex_Storage.html#top">top</a><br>
+  <hr />
+	<a name="r"></a>
+	<div>
+		<h2>r</h2>
+		<dl>
+							<dt><b>read</b></dt>
+				<dd>in file Sae.class.php, method <a href="Storage/Drivers/Sae.html#methodread">Sae::read()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件内容读取</dd>
+							<dt><b>read</b></dt>
+				<dd>in file File.class.php, method <a href="Storage/Drivers/File.html#methodread">File::read()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件内容读取</dd>
+					</dl>
+	</div>
+	<a href="elementindex_Storage.html#top">top</a><br>
+  <hr />
+	<a name="s"></a>
+	<div>
+		<h2>s</h2>
+		<dl>
+							<dt><b>Sae</b></dt>
+				<dd>in file Sae.class.php, class <a href="Storage/Drivers/Sae.html">Sae</a><br>&nbsp;&nbsp;&nbsp;&nbsp;SAE环境文件写入存储类</dd>
+							<dt><b>Sae.class.php</b></dt>
+				<dd>procedural page <a href="Storage/Drivers/_Service---Storage---Drivers---Sae.class.php.html">Sae.class.php</a></dd>
+					</dl>
+	</div>
+	<a href="elementindex_Storage.html#top">top</a><br>
+  <hr />
+	<a name="u"></a>
+	<div>
+		<h2>u</h2>
+		<dl>
+							<dt><b>unlink</b></dt>
+				<dd>in file Sae.class.php, method <a href="Storage/Drivers/Sae.html#methodunlink">Sae::unlink()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件删除</dd>
+							<dt><b>unlink</b></dt>
+				<dd>in file File.class.php, method <a href="Storage/Drivers/File.html#methodunlink">File::unlink()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件删除</dd>
 					</dl>
 	</div>
 	<a href="elementindex_Storage.html#top">top</a><br>

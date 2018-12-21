@@ -8,7 +8,9 @@
 
 <table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
   <tr>
-    <td class="header_top">Template</td>
+    <td class="header_top">
+              模板引擎
+          </td>
   </tr>
   <tr><td class="header_line"><img src="media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
   <tr>
@@ -27,25 +29,40 @@
   <tr valign="top">
     <td width="200" class="menu">
       <b>所在包:</b><br />
-              <a href="li_Library.html">Library</a><br />
-              <a href="li_default.html">default</a><br />
-              <a href="li_Database.html">Database</a><br />
-              <a href="li_Service.html">Service</a><br />
-              <a href="li_Drivers.html">Drivers</a><br />
-              <a href="li_Cache.html">Cache</a><br />
-              <a href="li_Template.html">Template</a><br />
-              <a href="li_Storage.html">Storage</a><br />
-            <br /><br />
+              <a href="li_default.html">默认</a><br />
+      
+              <a href="li_Library.html">系统类库</a><br />
+      
+                                                                <a href="li_Database.html">
+              数据库服务
+          </a><br />
+                                                      <a href="li_Cache.html">
+              缓存服务
+          </a><br />
+                                                      <a href="li_Template.html" style="font-weight:bold">
+              模板引擎
+            </a><br />
+                                                      <a href="li_Storage.html">
+              存储服务
+          </a><br />
+                                                      <a href="li_Session.html">
+              会话服务
+          </a><br />
+                              <br /><br />
                         <b>类:</b><br />
         <div class="package">
 		    		<a href="Template/Manager.html">Manager</a><br />
-	    		<a href="Template/St.html">St</a><br />
+	  </div>
+  <div class="package">
+	Taglib<br />	    &nbsp;&nbsp;		<a href="Template/Taglib/St.html">St</a><br />
 	  </div>
                   <b>文件:</b><br />
       	  <div class="package">
-			<a href="Template/_Service---Template---Manager.class.php.html">		Manager.class.php
+			<a href="Template/_Service---Template---Manager.class.php.html" title="Manager.class.php">		Manager.class.php
 		</a><br>
-			<a href="Template/_Service---Template---Taglib---St.class.php.html">		St.class.php
+	  </div><br />
+	<b>标签库</b><br>  <div class="package">
+			<a href="Template/Taglib/_Service---Template---Taglib---St.class.php.html" title="St.class.php">		St.class.php
 		</a><br>
 	  </div><br />
                 </td>
@@ -142,22 +159,22 @@
 				<dd>in file Manager.class.php, method <a href="Template/Manager.html#methodparseForeach">Manager::parseForeach()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;解析foreach标签</dd>
 							<dt><b>parseFunc</b></dt>
 				<dd>in file Manager.class.php, method <a href="Template/Manager.html#methodparseFunc">Manager::parseFunc()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;解析函数 支持以“.”分割的数组表示方式</dd>
-							<dt><b>parseGet</b></dt>
-				<dd>in file St.class.php, method <a href="Template/St.html#methodparseGet">St::parseGet()</a></dd>
 							<dt><b>parseIf</b></dt>
 				<dd>in file Manager.class.php, method <a href="Template/Manager.html#methodparseIf">Manager::parseIf()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;解析if标签</dd>
 							<dt><b>parseImport</b></dt>
 				<dd>in file Manager.class.php, method <a href="Template/Manager.html#methodparseImport">Manager::parseImport()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;解析import标签</dd>
 							<dt><b>parseInclude</b></dt>
 				<dd>in file Manager.class.php, method <a href="Template/Manager.html#methodparseInclude">Manager::parseInclude()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;解析include或template标签 用法：模块@主题风格/控制器/方法 例如：home@default/index/show</dd>
-							<dt><b>parseJson</b></dt>
-				<dd>in file St.class.php, method <a href="Template/St.html#methodparseJson">St::parseJson()</a></dd>
 							<dt><b>parseLayout</b></dt>
 				<dd>in file Manager.class.php, method <a href="Template/Manager.html#methodparseLayout">Manager::parseLayout()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;解析layout标签</dd>
 							<dt><b>parseTagLib</b></dt>
 				<dd>in file Manager.class.php, method <a href="Template/Manager.html#methodparseTagLib">Manager::parseTagLib()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;解析PC标签</dd>
 							<dt><b>parseVar</b></dt>
 				<dd>in file Manager.class.php, method <a href="Template/Manager.html#methodparseVar">Manager::parseVar()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;解析数组变量，包括“.”操作符号的数组变量</dd>
+							<dt><b>parseGet</b></dt>
+				<dd>in file St.class.php, method <a href="Template/Taglib/St.html#methodparseGet">St::parseGet()</a></dd>
+							<dt><b>parseJson</b></dt>
+				<dd>in file St.class.php, method <a href="Template/Taglib/St.html#methodparseJson">St::parseJson()</a></dd>
 					</dl>
 	</div>
 	<a href="elementindex_Template.html#top">top</a><br>
@@ -176,12 +193,12 @@
 	<div>
 		<h2>s</h2>
 		<dl>
-							<dt><b>St.class.php</b></dt>
-				<dd>procedural page <a href="Template/_Service---Template---Taglib---St.class.php.html">St.class.php</a></dd>
 							<dt><b>set_delim</b></dt>
 				<dd>in file Manager.class.php, method <a href="Template/Manager.html#methodset_delim">Manager::set_delim()</a></dd>
+							<dt><b>St.class.php</b></dt>
+				<dd>procedural page <a href="Template/Taglib/_Service---Template---Taglib---St.class.php.html">St.class.php</a></dd>
 							<dt><b>St</b></dt>
-				<dd>in file St.class.php, class <a href="Template/St.html">St</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统标签类型</dd>
+				<dd>in file St.class.php, class <a href="Template/Taglib/St.html">St</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统标签类型</dd>
 					</dl>
 	</div>
 	<a href="elementindex_Template.html#top">top</a><br>

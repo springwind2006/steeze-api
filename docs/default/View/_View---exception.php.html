@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Docs for page exception.php</title>
+<link rel="stylesheet" type="text/css" href="../../media/style.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">
+              &nbsp;
+          </td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+      [ <a href="http://steeze.cn/docs/startup/index/" target="_blank" class="menu">查看开发文档</a> ]
+        		  [ <a href="../../classtrees_default.html" class="menu">类树图: default</a> ]
+		    [ <a href="../../elementindex_default.html" class="menu">索引: default</a> ]
+      		  [ <a href="../../elementindex.html" class="menu">所有元素</a> ]
+      [ <a href="/" class="menu">首页</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>所在包:</b><br />
+              <a href="../../li_default.html" style="font-weight:bold">默认</a><br />
+      
+              <a href="../../li_Library.html">系统类库</a><br />
+      
+                                                  <a href="../../li_Cache.html">
+              缓存服务
+          </a><br />
+                                                      <a href="../../li_Database.html">
+              数据库服务
+          </a><br />
+                                                                    <a href="../../li_Session.html">
+              会话服务
+          </a><br />
+                                                      <a href="../../li_Storage.html">
+              存储服务
+          </a><br />
+                                                      <a href="../../li_Template.html">
+              模板引擎
+          </a><br />
+                              <br /><br />
+                        <b>类:</b><br />
+        <div class="package">
+		    		<a href="../../default/Loader.html">Loader</a><br />
+	  </div>
+                  <b>文件:</b><br />
+      	  <div class="package">
+			<a href="../../default/_base.php.html" title="base.php">		base.php
+		</a><br>
+	  </div><br />
+	<b>函数库</b><br>  <div class="package">
+			<a href="../../default/Helper/_Helper---dir.php.html" title="dir.php">		dir.php
+		</a><br>
+			<a href="../../default/Helper/_Helper---mail.php.html" title="mail.php">		mail.php
+		</a><br>
+			<a href="../../default/Helper/_Helper---system.php.html" title="system.php">		system.php
+		</a><br>
+	  </div><br />
+	<b>语言包</b><br>  <div class="package">
+			<a href="../../default/Lang/_Lang---zh-cn.php.html" title="zh-cn.php">		zh-cn.php
+		</a><br>
+	  </div><br />
+	<b>视图</b><br>  <div class="package">
+			<a href="../../default/View/_View---exception.php.html" title="exception.php">		exception.php
+		</a><br>
+	  </div><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>File: exception.php</h1>
+源文件路径: /View/exception.php<br /><br />
+
+
+<h2>说明:</h2>
+系统发送错误或异常时访问的页面文件<br /><p><pre> 用户可以在tmpl_exception_tpl配置项自定义错误显示页面，
+ 例如：C(['tmpl_exception_tpl'=>'/page/error']) .
+ 用户自定义的错误页面支持模版标签，支持以下模板变量：
+ $type: 错误类型，有exception（异常）和error（错误）两种
+ $code: 错误码
+ $message: 错误消息
+ $file: 发生错误的文件
+ $line: 发送错误所在的文件行数
+ $url: 客户端访问的URL地址
+ $e: 错误类型exception时是异常对象，用户可以自己获取异常信息；为error是发生错误的上下文符号表数组</pre></p>
+        <div class="credit">
+		    <hr />
+		    Powered by Steeze. author email: spring.wind2006@163.com
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

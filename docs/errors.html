@@ -8,7 +8,9 @@
 
 <table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
   <tr>
-    <td class="header_top">Library</td>
+    <td class="header_top">
+              系统类库
+          </td>
   </tr>
   <tr><td class="header_line"><img src="media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
   <tr>
@@ -27,15 +29,26 @@
   <tr valign="top">
     <td width="200" class="menu">
       <b>所在包:</b><br />
-              <a href="li_default.html">default</a><br />
-              <a href="li_Cache.html">Cache</a><br />
-              <a href="li_Database.html">Database</a><br />
-              <a href="li_Drivers.html">Drivers</a><br />
-              <a href="li_Library.html">Library</a><br />
-              <a href="li_Service.html">Service</a><br />
-              <a href="li_Storage.html">Storage</a><br />
-              <a href="li_Template.html">Template</a><br />
-            <br /><br />
+              <a href="li_default.html">默认</a><br />
+      
+              <a href="li_Library.html" style="font-weight:bold">系统类库</a><br />
+      
+                                                  <a href="li_Cache.html">
+              缓存服务
+          </a><br />
+                                                      <a href="li_Database.html">
+              数据库服务
+          </a><br />
+                                                                    <a href="li_Session.html">
+              会话服务
+          </a><br />
+                                                      <a href="li_Storage.html">
+              存储服务
+          </a><br />
+                                                      <a href="li_Template.html">
+              模板引擎
+          </a><br />
+                              <br /><br />
                 </td>
     <td>
       <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
@@ -47,13 +60,11 @@
 <a href="#Context.class.php">Context.class.php</a><br>
 <a href="#Controller.class.php">Controller.class.php</a><br>
 <a href="#Db.class.php">Db.class.php</a><br>
-<a href="#dir.php">dir.php</a><br>
 <a href="#Driver.class.php">Driver.class.php</a><br>
 <a href="#ErrorException.class.php">ErrorException.class.php</a><br>
 <a href="#File.class.php">File.class.php</a><br>
 <a href="#Firebird.class.php">Firebird.class.php</a><br>
 <a href="#Image.class.php">Image.class.php</a><br>
-<a href="#mail.php">mail.php</a><br>
 <a href="#Manager.class.php">Manager.class.php</a><br>
 <a href="#Memcache.class.php">Memcache.class.php</a><br>
 <a href="#Middleware.class.php">Middleware.class.php</a><br>
@@ -72,22 +83,18 @@
 <a href="#Sqlite.class.php">Sqlite.class.php</a><br>
 <a href="#Sqlsrv.class.php">Sqlsrv.class.php</a><br>
 <a href="#St.class.php">St.class.php</a><br>
-<a href="#system.php">system.php</a><br>
 <a href="#View.class.php">View.class.php</a><br>
 <a href="#Zip.class.php">Zip.class.php</a><br>
 <a name="Post-parsing"></a>
 <h1>Post-parsing</h1>
 <h2>Warnings:</h2><br>
+<b>Warning</b> - Class Memcache parent Cache not found<br>
 <b>Warning</b> - Class Sqlite parent Cache not found<br>
-<b>Warning</b> - Class File parent Cache not found<br>
 <b>Warning</b> - Class Redis parent Cache not found<br>
 <b>Warning</b> - Class ErrorException parent \ not found<br>
 <b>Warning</b> - Class File parent Storage not found<br>
-<b>Warning</b> - Class Memcache parent Cache not found<br>
+<b>Warning</b> - Class File parent Cache not found<br>
 <b>Warning</b> - Class Sae parent Storage not found<br>
-<b>Warning</b> - 
-duplicate class element "Manager" in file /Users/xiechunping/projects/php/steeze/framework/kernel/Service/Cache/Manager.class.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="Application.class.php"></a>
 <h1>Application.class.php</h1>
 <h2>Warnings:</h2><br>
@@ -115,17 +122,11 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="Db.class.php"></a>
 <h1>Db.class.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 16</b> - package default is already in category 服务类型, will now replace with category default<br>
 <b>Warning on line 16</b> - DocBlock would be page-level, but precedes class "Db", use another DocBlock to document the file<br>
-<a name="dir.php"></a>
-<h1>dir.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 12</b> - no @package tag was used in a DocBlock for file /Users/xiechunping/projects/php/steeze/framework/kernel/Helper/dir.php<br>
 <a name="Driver.class.php"></a>
 <h1>Driver.class.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 12</b> - package default is already in category default, will now replace with category 服务类型<br>
-<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "Driver", use another DocBlock to document the file<br>
+<b>Warning on line 10</b> - DocBlock would be page-level, but precedes class "Driver", use another DocBlock to document the file<br>
 <a name="ErrorException.class.php"></a>
 <h1>ErrorException.class.php</h1>
 <h2>Warnings:</h2><br>
@@ -133,9 +134,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="File.class.php"></a>
 <h1>File.class.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 8</b> - DocBlock would be page-level, but precedes class "File", use another DocBlock to document the file<br>
-<b>Warning on line 8</b> - package default is already in category 服务类型, will now replace with category default<br>
-<b>Warning on line 8</b> - package Service is already in category 服务类型, will now replace with category default<br>
+<b>Warning on line 9</b> - DocBlock would be page-level, but precedes class "File", use another DocBlock to document the file<br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "File", use another DocBlock to document the file<br>
 <a name="Firebird.class.php"></a>
 <h1>Firebird.class.php</h1>
 <h2>Warnings:</h2><br>
@@ -144,23 +144,18 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>Image.class.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 7</b> - DocBlock would be page-level, but precedes class "Image", use another DocBlock to document the file<br>
-<a name="mail.php"></a>
-<h1>mail.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 13</b> - no @package tag was used in a DocBlock for file /Users/xiechunping/projects/php/steeze/framework/kernel/Helper/mail.php<br>
 <a name="Manager.class.php"></a>
 <h1>Manager.class.php</h1>
 <h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - DocBlock would be page-level, but precedes class "Manager", use another DocBlock to document the file<br>
+<b>Warning on line 8</b> - DocBlock would be page-level, but precedes class "Manager", use another DocBlock to document the file<br>
+<b>Warning on line 8</b> - DocBlock would be page-level, but precedes class "Manager", use another DocBlock to document the file<br>
 <b>Warning on line 10</b> - DocBlock would be page-level, but precedes class "Manager", use another DocBlock to document the file<br>
-<b>Warning on line 10</b> - DocBlock would be page-level, but precedes class "Manager", use another DocBlock to document the file<br>
-<b>Warning on line 10</b> - package default is already in category default, will now replace with category 服务类型<br>
-<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "Manager", use another DocBlock to document the file<br>
-<b>Warning on line 11</b> - package Template is already in category default, will now replace with category 服务类型<br>
-<b>Warning on line 11</b> - package default is already in category default, will now replace with category 服务类型<br>
 <a name="Memcache.class.php"></a>
 <h1>Memcache.class.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 8</b> - DocBlock would be page-level, but precedes class "Memcache", use another DocBlock to document the file<br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "Memcache", use another DocBlock to document the file<br>
 <a name="Middleware.class.php"></a>
 <h1>Middleware.class.php</h1>
 <h2>Warnings:</h2><br>
@@ -198,7 +193,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="Redis.class.php"></a>
 <h1>Redis.class.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 6</b> - package default is already in category 服务类型, will now replace with category default<br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "Redis", use another DocBlock to document the file<br>
 <a name="Request.class.php"></a>
 <h1>Request.class.php</h1>
 <h2>Warnings:</h2><br>
@@ -214,10 +209,11 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="Sae.class.php"></a>
 <h1>Sae.class.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 8</b> - DocBlock would be page-level, but precedes class "Sae", use another DocBlock to document the file<br>
+<b>Warning on line 9</b> - DocBlock would be page-level, but precedes class "Sae", use another DocBlock to document the file<br>
 <a name="Sqlite.class.php"></a>
 <h1>Sqlite.class.php</h1>
 <h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "Sqlite", use another DocBlock to document the file<br>
 <b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "Sqlite", use another DocBlock to document the file<br>
 <a name="Sqlsrv.class.php"></a>
 <h1>Sqlsrv.class.php</h1>
@@ -226,11 +222,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="St.class.php"></a>
 <h1>St.class.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "St", use another DocBlock to document the file<br>
-<a name="system.php"></a>
-<h1>system.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 13</b> - no @package tag was used in a DocBlock for file /Users/xiechunping/projects/php/steeze/framework/kernel/Helper/system.php<br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "St", use another DocBlock to document the file<br>
 <a name="View.class.php"></a>
 <h1>View.class.php</h1>
 <h2>Warnings:</h2><br>
