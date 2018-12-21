@@ -71,7 +71,7 @@ Source Location: /base.php<br /><br />
 <h2>页面详情:</h2>
 系统运行基础文件<br /><p>此文件主要定义系统基础常量和加载器，如果需要写命令行程序，只需要引入此文件即可</p>  <hr />
 	<a name="defineAPP_DEBUG"></a>
-	<h3>APP_DEBUG <span class="smalllinenumber">[line 95]</span></h3>
+	<h3>APP_DEBUG <span class="smalllinenumber">[line 96]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -79,12 +79,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-    系统默认在调试模式下运行，生产中在环境变量中配置为false<br />    <br />
+    系统默认在调试模式下运行（支持自定义常量或环境变量app_debug），建议在生产系统中配置环境变量为false<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineAPP_DEBUG_LEVEL"></a>
-	<h3>APP_DEBUG_LEVEL <span class="smalllinenumber">[line 100]</span></h3>
+	<h3>APP_DEBUG_LEVEL <span class="smalllinenumber">[line 101]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -136,7 +136,7 @@ Source Location: /base.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineDEFAULT_APP_NAME"></a>
-	<h3>DEFAULT_APP_NAME <span class="smalllinenumber">[line 118]</span></h3>
+	<h3>DEFAULT_APP_NAME <span class="smalllinenumber">[line 119]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -144,12 +144,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-    默认应用名称，如果设置为空（&quot;&quot;），则不使用多应用模式<br />    <br />
+    默认应用名称（支持自定义），如果设置为空（&quot;&quot;），则不使用多应用模式<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineDEFAULT_HOST"></a>
-	<h3>DEFAULT_HOST <span class="smalllinenumber">[line 113]</span></h3>
+	<h3>DEFAULT_HOST <span class="smalllinenumber">[line 114]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -157,7 +157,7 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-    默认主机，命令行模式时使用<br />    <br />
+    默认主机，命令行模式时使用（支持定义环境变量default_host）<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
@@ -279,7 +279,7 @@ Source Location: /base.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineUSE_DEFUALT_HANDLE"></a>
-	<h3>USE_DEFUALT_HANDLE <span class="smalllinenumber">[line 108]</span></h3>
+	<h3>USE_DEFUALT_HANDLE <span class="smalllinenumber">[line 109]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -287,7 +287,7 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-    当找不到处理器时，是否使用默认处理器<br />    <br />
+    当找不到处理器时，是否使用默认处理器（支持自定义常量或环境变量use_defualt_handle）<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />

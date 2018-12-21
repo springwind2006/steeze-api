@@ -89,7 +89,7 @@
 							<dt><b>app</b></dt>
 				<dd>in file base.php, method <a href="default/Loader.html#methodapp">Loader::app()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载并运行应用程序对象</dd>
 							<dt><b>APP_DEBUG</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG">APP_DEBUG</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统默认在调试模式下运行，生产中在环境变量中配置为false</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG">APP_DEBUG</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统默认在调试模式下运行（支持自定义常量或环境变量app_debug），建议在生产系统中配置环境变量为false</dd>
 							<dt><b>APP_DEBUG_LEVEL</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG_LEVEL">APP_DEBUG_LEVEL</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统错误信息显示级别</dd>
 							<dt><b>APP_PATH</b></dt>
@@ -143,9 +143,9 @@
 		<h2>d</h2>
 		<dl>
 							<dt><b>DEFAULT_APP_NAME</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_APP_NAME">DEFAULT_APP_NAME</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认应用名称，如果设置为空（&quot;&quot;），则不使用多应用模式</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_APP_NAME">DEFAULT_APP_NAME</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认应用名称（支持自定义），如果设置为空（&quot;&quot;），则不使用多应用模式</dd>
 							<dt><b>DEFAULT_HOST</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_HOST">DEFAULT_HOST</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认主机，命令行模式时使用</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_HOST">DEFAULT_HOST</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认主机，命令行模式时使用（支持定义环境变量default_host）</dd>
 							<dt><b>dir_copy</b></dt>
 				<dd>in file dir.php, function <a href="default/_Helper---dir.php.html#functiondir_copy">dir_copy()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;拷贝目录及下面所有文件</dd>
 							<dt><b>dir_create</b></dt>
@@ -371,7 +371,7 @@
 							<dt><b>UPLOAD_PATH</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineUPLOAD_PATH">UPLOAD_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件上传目录路径</dd>
 							<dt><b>USE_DEFUALT_HANDLE</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineUSE_DEFUALT_HANDLE">USE_DEFUALT_HANDLE</a><br>&nbsp;&nbsp;&nbsp;&nbsp;当找不到处理器时，是否使用默认处理器</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineUSE_DEFUALT_HANDLE">USE_DEFUALT_HANDLE</a><br>&nbsp;&nbsp;&nbsp;&nbsp;当找不到处理器时，是否使用默认处理器（支持自定义常量或环境变量use_defualt_handle）</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>

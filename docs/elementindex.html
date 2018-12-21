@@ -92,7 +92,7 @@
 							<dt><b>Application</b></dt>
 				<dd>in file Application.class.php, class <a href="Library/Application.html">Application</a><br>&nbsp;&nbsp;&nbsp;&nbsp;上下文应用程序类</dd>
 							<dt><b>APP_DEBUG</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG">APP_DEBUG</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统默认在调试模式下运行，生产中在环境变量中配置为false</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG">APP_DEBUG</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统默认在调试模式下运行（支持自定义常量或环境变量app_debug），建议在生产系统中配置环境变量为false</dd>
 							<dt><b>APP_DEBUG_LEVEL</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG_LEVEL">APP_DEBUG_LEVEL</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统错误信息显示级别</dd>
 							<dt><b>APP_PATH</b></dt>
@@ -268,11 +268,11 @@
 							<dt><b>debug</b></dt>
 				<dd>in file Driver.class.php, method <a href="Service/Database/Driver.html#methoddebug">Driver::debug()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;数据库调试 记录当前SQL</dd>
 							<dt><b>DEFAULT_APP_NAME</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_APP_NAME">DEFAULT_APP_NAME</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认应用名称，如果设置为空（&quot;&quot;），则不使用多应用模式</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_APP_NAME">DEFAULT_APP_NAME</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认应用名称（支持自定义），如果设置为空（&quot;&quot;），则不使用多应用模式</dd>
 							<dt><b>DEFAULT_ERROR_CODE</b></dt>
 				<dd>in file ErrorException.class.php, class constant <a href="Library/ErrorException.html#constDEFAULT_ERROR_CODE">ErrorException::DEFAULT_ERROR_CODE</a></dd>
 							<dt><b>DEFAULT_HOST</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_HOST">DEFAULT_HOST</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认主机，命令行模式时使用</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_HOST">DEFAULT_HOST</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认主机，命令行模式时使用（支持定义环境变量default_host）</dd>
 							<dt><b>delete</b></dt>
 				<dd>in file Driver.class.php, method <a href="Service/Database/Driver.html#methoddelete">Driver::delete()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;删除记录</dd>
 							<dt><b>delete</b></dt>
@@ -1370,7 +1370,7 @@
 							<dt><b>UPLOAD_PATH</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineUPLOAD_PATH">UPLOAD_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件上传目录路径</dd>
 							<dt><b>USE_DEFUALT_HANDLE</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineUSE_DEFUALT_HANDLE">USE_DEFUALT_HANDLE</a><br>&nbsp;&nbsp;&nbsp;&nbsp;当找不到处理器时，是否使用默认处理器</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineUSE_DEFUALT_HANDLE">USE_DEFUALT_HANDLE</a><br>&nbsp;&nbsp;&nbsp;&nbsp;当找不到处理器时，是否使用默认处理器（支持自定义常量或环境变量use_defualt_handle）</dd>
 							<dt><b>using</b></dt>
 				<dd>in file Model.class.php, method <a href="Library/Model.html#methodusing">Model::using()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;USING支持 用于多表删除</dd>
 					</dl>
