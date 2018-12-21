@@ -84,7 +84,7 @@
 							<dt><b>ajaxReturn</b></dt>
 				<dd>in file Controller.class.php, method <a href="Library/Controller.html#methodajaxReturn">Controller::ajaxReturn()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Ajax方式返回数据到客户端</dd>
 							<dt><b>app</b></dt>
-				<dd>in file base.php, method <a href="default/Loader.html#methodapp">Loader::app()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;初始化应用程序</dd>
+				<dd>in file base.php, method <a href="default/Loader.html#methodapp">Loader::app()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载并运行应用程序对象</dd>
 							<dt><b>append</b></dt>
 				<dd>in file Sae.class.php, method <a href="Service/Sae.html#methodappend">Sae::append()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件追加写入</dd>
 							<dt><b>append</b></dt>
@@ -92,11 +92,11 @@
 							<dt><b>Application</b></dt>
 				<dd>in file Application.class.php, class <a href="Library/Application.html">Application</a><br>&nbsp;&nbsp;&nbsp;&nbsp;上下文应用程序类</dd>
 							<dt><b>APP_DEBUG</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG">APP_DEBUG</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统默认在开发模式下运行</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG">APP_DEBUG</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统默认在调试模式下运行，生产中在环境变量中配置为false</dd>
 							<dt><b>APP_DEBUG_LEVEL</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG_LEVEL">APP_DEBUG_LEVEL</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统调试信息级别</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG_LEVEL">APP_DEBUG_LEVEL</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统错误信息显示级别</dd>
 							<dt><b>APP_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_PATH">APP_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_PATH">APP_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;应用目录（支持自定义）</dd>
 							<dt><b>array2html</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionarray2html">array2html()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;将数组转换数据为字符串表示的形式，支持其中变量设置</dd>
 							<dt><b>array2string</b></dt>
@@ -106,7 +106,7 @@
 							<dt><b>assets</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionassets">assets()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;导入静态文件路径 如：'js/show.js@daoke:home'，则返回/assets/app/home/daoke/js/show.js</dd>
 							<dt><b>ASSETS_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineASSETS_PATH">ASSETS_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineASSETS_PATH">ASSETS_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;资源文件路径</dd>
 							<dt><b>assign</b></dt>
 				<dd>in file Controller.class.php, method <a href="Library/Controller.html#methodassign">Controller::assign()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;模板变量赋值</dd>
 							<dt><b>assign</b></dt>
@@ -168,7 +168,7 @@
 							<dt><b>cache</b></dt>
 				<dd>in file Model.class.php, method <a href="Library/Model.html#methodcache">Model::cache()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;查询缓存</dd>
 							<dt><b>CACHE_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineCACHE_PATH">CACHE_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineCACHE_PATH">CACHE_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;缓存文件目录（支持自定义，权限为可读写）</dd>
 							<dt><b>carry</b></dt>
 				<dd>in file Pipeline.class.php, method <a href="Library/Pipeline.html#methodcarry">Pipeline::carry()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;迭代回调函数</dd>
 							<dt><b>changeDotArray</b></dt>
@@ -210,7 +210,7 @@
 							<dt><b>compile</b></dt>
 				<dd>in file Manager.class.php, method <a href="Template/Manager.html#methodcompile">Manager::compile()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;模板编译</dd>
 							<dt><b>config</b></dt>
-				<dd>in file base.php, method <a href="default/Loader.html#methodconfig">Loader::config()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载配置文件</dd>
+				<dd>in file base.php, method <a href="default/Loader.html#methodconfig">Loader::config()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;配置文件加载</dd>
 							<dt><b>connect</b></dt>
 				<dd>in file Mongo.class.php, method <a href="Database/Drivers/Mongo.html#methodconnect">Mongo::connect()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;连接数据库方法</dd>
 							<dt><b>connect</b></dt>
@@ -222,7 +222,7 @@
 							<dt><b>Context</b></dt>
 				<dd>in file Context.class.php, class <a href="Library/Context.html">Context</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统上下文类</dd>
 							<dt><b>controller</b></dt>
-				<dd>in file base.php, method <a href="default/Loader.html#methodcontroller">Loader::controller()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载控制器</dd>
+				<dd>in file base.php, method <a href="default/Loader.html#methodcontroller">Loader::controller()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;控制器加载</dd>
 							<dt><b>Controller</b></dt>
 				<dd>in file Controller.class.php, class <a href="Library/Controller.html">Controller</a><br>&nbsp;&nbsp;&nbsp;&nbsp;控制器基类</dd>
 							<dt><b>cookie</b></dt>
@@ -268,7 +268,7 @@
 							<dt><b>debug</b></dt>
 				<dd>in file Driver.class.php, method <a href="Service/Database/Driver.html#methoddebug">Driver::debug()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;数据库调试 记录当前SQL</dd>
 							<dt><b>DEFAULT_APP_NAME</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_APP_NAME">DEFAULT_APP_NAME</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认应用名称</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_APP_NAME">DEFAULT_APP_NAME</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认应用名称，如果设置为空（&quot;&quot;），则不使用多应用模式</dd>
 							<dt><b>DEFAULT_ERROR_CODE</b></dt>
 				<dd>in file ErrorException.class.php, class constant <a href="Library/ErrorException.html#constDEFAULT_ERROR_CODE">ErrorException::DEFAULT_ERROR_CODE</a></dd>
 							<dt><b>DEFAULT_HOST</b></dt>
@@ -308,7 +308,7 @@
 							<dt><b>Driver</b></dt>
 				<dd>in file Driver.class.php, class <a href="Service/Database/Driver.html">Driver</a><br>&nbsp;&nbsp;&nbsp;&nbsp;数据库实现基类</dd>
 							<dt><b>DS</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineDS">DS</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineDS">DS</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统目录分隔符</dd>
 							<dt><b>dump</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functiondump">dump()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;输出变量信息</dd>
 							<dt><b>dir.php</b></dt>
@@ -344,7 +344,7 @@
 							<dt><b>end</b></dt>
 				<dd>in file Response.class.php, method <a href="Library/Response.html#methodend">Response::end()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;发送Http响应体，并结束请求处理</dd>
 							<dt><b>env</b></dt>
-				<dd>in file base.php, method <a href="default/Loader.html#methodenv">Loader::env()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载环境变量</dd>
+				<dd>in file base.php, method <a href="default/Loader.html#methodenv">Loader::env()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统环境变量加载</dd>
 							<dt><b>env</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionenv">env()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取环境变量（键名不区分大小写）</dd>
 							<dt><b>error</b></dt>
@@ -648,7 +648,7 @@
 							<dt><b>header</b></dt>
 				<dd>in file Request.class.php, method <a href="Library/Request.html#methodheader">Request::header()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取Http请求的头部信息（键名为小写）</dd>
 							<dt><b>helper</b></dt>
-				<dd>in file base.php, method <a href="default/Loader.html#methodhelper">Loader::helper()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载函数库</dd>
+				<dd>in file base.php, method <a href="default/Loader.html#methodhelper">Loader::helper()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;函数库加载</dd>
 					</dl>
 	</div>
 	<a href="elementindex.html#top">top</a><br>
@@ -664,15 +664,13 @@
 							<dt><b>Image</b></dt>
 				<dd>in file Image.class.php, class <a href="Library/Image.html">Image</a><br>&nbsp;&nbsp;&nbsp;&nbsp;图像处理类</dd>
 							<dt><b>import</b></dt>
-				<dd>in file base.php, method <a href="default/Loader.html#methodimport">Loader::import()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;类加载器</dd>
+				<dd>in file base.php, method <a href="default/Loader.html#methodimport">Loader::import()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统类加载</dd>
 							<dt><b>info</b></dt>
 				<dd>in file Image.class.php, method <a href="Library/Image.html#methodinfo">Image::info()</a></dd>
 							<dt><b>init</b></dt>
 				<dd>in file Context.class.php, method <a href="Library/Context.html#methodinit">Context::init()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统初始化</dd>
 							<dt><b>initConnect</b></dt>
 				<dd>in file Driver.class.php, method <a href="Service/Database/Driver.html#methodinitConnect">Driver::initConnect()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;初始化数据库连接</dd>
-							<dt><b>INI_STEEZE</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineINI_STEEZE">INI_STEEZE</a></dd>
 							<dt><b>input</b></dt>
 				<dd>in file Request.class.php, method <a href="Library/Request.html#methodinput">Request::input()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取POST/GET输入参数，优先级为: POST&gt; GET</dd>
 							<dt><b>insert</b></dt>
@@ -718,7 +716,7 @@
 		<h2>k</h2>
 		<dl>
 							<dt><b>KERNEL_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineKERNEL_PATH">KERNEL_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineKERNEL_PATH">KERNEL_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;内核框架路径</dd>
 					</dl>
 	</div>
 	<a href="elementindex.html#top">top</a><br>
@@ -746,9 +744,9 @@
 							<dt><b>load</b></dt>
 				<dd>in file File.class.php, method <a href="Service/File.html#methodload">File::load()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载文件</dd>
 							<dt><b>Loader</b></dt>
-				<dd>in file base.php, class <a href="default/Loader.html">Loader</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统加载类</dd>
+				<dd>in file base.php, class <a href="default/Loader.html">Loader</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统加载器</dd>
 							<dt><b>LOGS_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineLOGS_PATH">LOGS_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineLOGS_PATH">LOGS_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;日志目录（支持自定义，权限为可读写）</dd>
 					</dl>
 	</div>
 	<a href="elementindex.html#top">top</a><br>
@@ -1148,7 +1146,7 @@
 							<dt><b>rollback</b></dt>
 				<dd>in file Model.class.php, method <a href="Library/Model.html#methodrollback">Model::rollback()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;事务回滚</dd>
 							<dt><b>ROOT_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineROOT_PATH">ROOT_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineROOT_PATH">ROOT_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;入口文件根目录路径（支持自定义）</dd>
 							<dt><b>Route</b></dt>
 				<dd>in file Route.class.php, class <a href="Library/Route.html">Route</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统路由类</dd>
 							<dt><b>Redis.class.php</b></dt>
@@ -1284,11 +1282,11 @@
 							<dt><b>status</b></dt>
 				<dd>in file Response.class.php, method <a href="Library/Response.html#methodstatus">Response::status()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;发送Http状态码</dd>
 							<dt><b>STEEZE_VERSION</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTEEZE_VERSION">STEEZE_VERSION</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统运行基础文件，主要定义加载器和系统常量</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTEEZE_VERSION">STEEZE_VERSION</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统当前版本号</dd>
 							<dt><b>STORAGE_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTORAGE_PATH">STORAGE_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTORAGE_PATH">STORAGE_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;数据存储目录（支持自定义，权限为可读写）</dd>
 							<dt><b>STORAGE_TYPE</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTORAGE_TYPE">STORAGE_TYPE</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTORAGE_TYPE">STORAGE_TYPE</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件存储类型</dd>
 							<dt><b>string2array</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionstring2array">string2array()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;将字符串转换为数组</dd>
 							<dt><b>strlen_utf8</b></dt>
@@ -1302,7 +1300,7 @@
 							<dt><b>sys_crypt</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionsys_crypt">sys_crypt()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统加密解密的字符串</dd>
 							<dt><b>SYS_START_TIME</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineSYS_START_TIME">SYS_START_TIME</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineSYS_START_TIME">SYS_START_TIME</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统开始时间值</dd>
 					</dl>
 	</div>
 	<a href="elementindex.html#top">top</a><br>
@@ -1370,7 +1368,7 @@
 							<dt><b>update</b></dt>
 				<dd>in file Driver.class.php, method <a href="Service/Database/Driver.html#methodupdate">Driver::update()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;更新记录</dd>
 							<dt><b>UPLOAD_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineUPLOAD_PATH">UPLOAD_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineUPLOAD_PATH">UPLOAD_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件上传目录路径</dd>
 							<dt><b>USE_DEFUALT_HANDLE</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineUSE_DEFUALT_HANDLE">USE_DEFUALT_HANDLE</a><br>&nbsp;&nbsp;&nbsp;&nbsp;当找不到处理器时，是否使用默认处理器</dd>
 							<dt><b>using</b></dt>
@@ -1388,7 +1386,7 @@
 							<dt><b>VALUE_VALIDATE</b></dt>
 				<dd>in file Model.class.php, class constant <a href="Library/Model.html#constVALUE_VALIDATE">Model::VALUE_VALIDATE</a></dd>
 							<dt><b>VENDOR_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineVENDOR_PATH">VENDOR_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineVENDOR_PATH">VENDOR_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;应用目录（支持自定义）</dd>
 							<dt><b>via</b></dt>
 				<dd>in file Pipeline.class.php, method <a href="Library/Pipeline.html#methodvia">Pipeline::via()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;设置调用管道的方法</dd>
 							<dt><b>View</b></dt>

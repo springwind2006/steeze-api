@@ -87,13 +87,13 @@
 		<h2>a</h2>
 		<dl>
 							<dt><b>app</b></dt>
-				<dd>in file base.php, method <a href="default/Loader.html#methodapp">Loader::app()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;初始化应用程序</dd>
+				<dd>in file base.php, method <a href="default/Loader.html#methodapp">Loader::app()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载并运行应用程序对象</dd>
 							<dt><b>APP_DEBUG</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG">APP_DEBUG</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统默认在开发模式下运行</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG">APP_DEBUG</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统默认在调试模式下运行，生产中在环境变量中配置为false</dd>
 							<dt><b>APP_DEBUG_LEVEL</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG_LEVEL">APP_DEBUG_LEVEL</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统调试信息级别</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_DEBUG_LEVEL">APP_DEBUG_LEVEL</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统错误信息显示级别</dd>
 							<dt><b>APP_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_PATH">APP_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineAPP_PATH">APP_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;应用目录（支持自定义）</dd>
 							<dt><b>array2html</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionarray2html">array2html()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;将数组转换数据为字符串表示的形式，支持其中变量设置</dd>
 							<dt><b>array2string</b></dt>
@@ -103,7 +103,7 @@
 							<dt><b>assets</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionassets">assets()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;导入静态文件路径 如：'js/show.js@daoke:home'，则返回/assets/app/home/daoke/js/show.js</dd>
 							<dt><b>ASSETS_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineASSETS_PATH">ASSETS_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineASSETS_PATH">ASSETS_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;资源文件路径</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -127,11 +127,11 @@
 							<dt><b>C</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionC">C()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取系统配置信息</dd>
 							<dt><b>CACHE_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineCACHE_PATH">CACHE_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineCACHE_PATH">CACHE_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;缓存文件目录（支持自定义，权限为可读写）</dd>
 							<dt><b>config</b></dt>
-				<dd>in file base.php, method <a href="default/Loader.html#methodconfig">Loader::config()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载配置文件</dd>
+				<dd>in file base.php, method <a href="default/Loader.html#methodconfig">Loader::config()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;配置文件加载</dd>
 							<dt><b>controller</b></dt>
-				<dd>in file base.php, method <a href="default/Loader.html#methodcontroller">Loader::controller()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载控制器</dd>
+				<dd>in file base.php, method <a href="default/Loader.html#methodcontroller">Loader::controller()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;控制器加载</dd>
 							<dt><b>cut_str</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functioncut_str">cut_str()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;主要用于截取从0开始的任意长度的字符串(完整无乱码)</dd>
 					</dl>
@@ -143,7 +143,7 @@
 		<h2>d</h2>
 		<dl>
 							<dt><b>DEFAULT_APP_NAME</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_APP_NAME">DEFAULT_APP_NAME</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认应用名称</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_APP_NAME">DEFAULT_APP_NAME</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认应用名称，如果设置为空（&quot;&quot;），则不使用多应用模式</dd>
 							<dt><b>DEFAULT_HOST</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineDEFAULT_HOST">DEFAULT_HOST</a><br>&nbsp;&nbsp;&nbsp;&nbsp;默认主机，命令行模式时使用</dd>
 							<dt><b>dir_copy</b></dt>
@@ -163,7 +163,7 @@
 							<dt><b>dir_tree</b></dt>
 				<dd>in file dir.php, function <a href="default/_Helper---dir.php.html#functiondir_tree">dir_tree()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;返回目录列表</dd>
 							<dt><b>DS</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineDS">DS</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineDS">DS</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统目录分隔符</dd>
 							<dt><b>dump</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functiondump">dump()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;输出变量信息</dd>
 							<dt><b>dir.php</b></dt>
@@ -181,7 +181,7 @@
 							<dt><b>E</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionE">E()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;生成错误异常</dd>
 							<dt><b>env</b></dt>
-				<dd>in file base.php, method <a href="default/Loader.html#methodenv">Loader::env()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载环境变量</dd>
+				<dd>in file base.php, method <a href="default/Loader.html#methodenv">Loader::env()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统环境变量加载</dd>
 							<dt><b>env</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionenv">env()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;获取环境变量（键名不区分大小写）</dd>
 							<dt><b>exception.php</b></dt>
@@ -225,7 +225,7 @@
 		<h2>h</h2>
 		<dl>
 							<dt><b>helper</b></dt>
-				<dd>in file base.php, method <a href="default/Loader.html#methodhelper">Loader::helper()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;加载函数库</dd>
+				<dd>in file base.php, method <a href="default/Loader.html#methodhelper">Loader::helper()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;函数库加载</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -235,9 +235,7 @@
 		<h2>i</h2>
 		<dl>
 							<dt><b>import</b></dt>
-				<dd>in file base.php, method <a href="default/Loader.html#methodimport">Loader::import()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;类加载器</dd>
-							<dt><b>INI_STEEZE</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineINI_STEEZE">INI_STEEZE</a></dd>
+				<dd>in file base.php, method <a href="default/Loader.html#methodimport">Loader::import()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统类加载</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -247,7 +245,7 @@
 		<h2>k</h2>
 		<dl>
 							<dt><b>KERNEL_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineKERNEL_PATH">KERNEL_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineKERNEL_PATH">KERNEL_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;内核框架路径</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -259,9 +257,9 @@
 							<dt><b>L</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionL">L()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;语言转化</dd>
 							<dt><b>Loader</b></dt>
-				<dd>in file base.php, class <a href="default/Loader.html">Loader</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统加载类</dd>
+				<dd>in file base.php, class <a href="default/Loader.html">Loader</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统加载器</dd>
 							<dt><b>LOGS_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineLOGS_PATH">LOGS_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineLOGS_PATH">LOGS_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;日志目录（支持自定义，权限为可读写）</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -301,7 +299,7 @@
 							<dt><b>random</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionrandom">random()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;从提供的字符串中，产生随机字符串</dd>
 							<dt><b>ROOT_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineROOT_PATH">ROOT_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineROOT_PATH">ROOT_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;入口文件根目录路径（支持自定义）</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -325,11 +323,11 @@
 							<dt><b>slashes</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionslashes">slashes()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;返回经addslashes处理过的字符串或数组</dd>
 							<dt><b>STEEZE_VERSION</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTEEZE_VERSION">STEEZE_VERSION</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统运行基础文件，主要定义加载器和系统常量</dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTEEZE_VERSION">STEEZE_VERSION</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统当前版本号</dd>
 							<dt><b>STORAGE_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTORAGE_PATH">STORAGE_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTORAGE_PATH">STORAGE_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;数据存储目录（支持自定义，权限为可读写）</dd>
 							<dt><b>STORAGE_TYPE</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTORAGE_TYPE">STORAGE_TYPE</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineSTORAGE_TYPE">STORAGE_TYPE</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件存储类型</dd>
 							<dt><b>string2array</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionstring2array">string2array()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;将字符串转换为数组</dd>
 							<dt><b>strlen_utf8</b></dt>
@@ -339,7 +337,7 @@
 							<dt><b>sys_crypt</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionsys_crypt">sys_crypt()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统加密解密的字符串</dd>
 							<dt><b>SYS_START_TIME</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineSYS_START_TIME">SYS_START_TIME</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineSYS_START_TIME">SYS_START_TIME</a><br>&nbsp;&nbsp;&nbsp;&nbsp;系统开始时间值</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>
@@ -371,7 +369,7 @@
 							<dt><b>U</b></dt>
 				<dd>in file system.php, function <a href="default/_Helper---system.php.html#functionU">U()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;URL组装 支持不同URL模式</dd>
 							<dt><b>UPLOAD_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineUPLOAD_PATH">UPLOAD_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineUPLOAD_PATH">UPLOAD_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;文件上传目录路径</dd>
 							<dt><b>USE_DEFUALT_HANDLE</b></dt>
 				<dd>in file base.php, constant <a href="default/_base.php.html#defineUSE_DEFUALT_HANDLE">USE_DEFUALT_HANDLE</a><br>&nbsp;&nbsp;&nbsp;&nbsp;当找不到处理器时，是否使用默认处理器</dd>
 					</dl>
@@ -383,7 +381,7 @@
 		<h2>v</h2>
 		<dl>
 							<dt><b>VENDOR_PATH</b></dt>
-				<dd>in file base.php, constant <a href="default/_base.php.html#defineVENDOR_PATH">VENDOR_PATH</a></dd>
+				<dd>in file base.php, constant <a href="default/_base.php.html#defineVENDOR_PATH">VENDOR_PATH</a><br>&nbsp;&nbsp;&nbsp;&nbsp;应用目录（支持自定义）</dd>
 					</dl>
 	</div>
 	<a href="elementindex_default.html#top">top</a><br>

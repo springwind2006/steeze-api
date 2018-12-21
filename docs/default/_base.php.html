@@ -65,13 +65,13 @@ Source Location: /base.php<br /><br />
 <div class="contents">
 <h2>类:</h2>
 <dt><a href="../default/Loader.html">Loader</a></dt>
-	<dd>系统加载类</dd>
+	<dd>系统加载器</dd>
 </div>
 
 <h2>页面详情:</h2>
-  <hr />
+系统运行基础文件<br /><p>此文件主要定义系统基础常量和加载器，如果需要写命令行程序，只需要引入此文件即可</p>  <hr />
 	<a name="defineAPP_DEBUG"></a>
-	<h3>APP_DEBUG <span class="smalllinenumber">[line 35]</span></h3>
+	<h3>APP_DEBUG <span class="smalllinenumber">[line 94]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -79,12 +79,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-    系统默认在开发模式下运行<br />    <br />
+    系统默认在调试模式下运行，生产中在环境变量中配置为false<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineAPP_DEBUG_LEVEL"></a>
-	<h3>APP_DEBUG_LEVEL <span class="smalllinenumber">[line 40]</span></h3>
+	<h3>APP_DEBUG_LEVEL <span class="smalllinenumber">[line 99]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -92,12 +92,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-    系统调试信息级别<br />    <br />
+    系统错误信息显示级别<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineAPP_PATH"></a>
-	<h3>APP_PATH <span class="smalllinenumber">[line 18]</span></h3>
+	<h3>APP_PATH <span class="smalllinenumber">[line 45]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -105,12 +105,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-        <br />
+    应用目录（支持自定义）<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineASSETS_PATH"></a>
-	<h3>ASSETS_PATH <span class="smalllinenumber">[line 24]</span></h3>
+	<h3>ASSETS_PATH <span class="smalllinenumber">[line 75]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -118,12 +118,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-        <br />
+    资源文件路径<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineCACHE_PATH"></a>
-	<h3>CACHE_PATH <span class="smalllinenumber">[line 21]</span></h3>
+	<h3>CACHE_PATH <span class="smalllinenumber">[line 60]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -131,12 +131,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-        <br />
+    缓存文件目录（支持自定义，权限为可读写）<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineDEFAULT_APP_NAME"></a>
-	<h3>DEFAULT_APP_NAME <span class="smalllinenumber">[line 58]</span></h3>
+	<h3>DEFAULT_APP_NAME <span class="smalllinenumber">[line 117]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -144,12 +144,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-    默认应用名称<br />    <br />
+    默认应用名称，如果设置为空（&quot;&quot;），则不使用多应用模式<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineDEFAULT_HOST"></a>
-	<h3>DEFAULT_HOST <span class="smalllinenumber">[line 53]</span></h3>
+	<h3>DEFAULT_HOST <span class="smalllinenumber">[line 112]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -162,7 +162,7 @@ Source Location: /base.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineDS"></a>
-	<h3>DS <span class="smalllinenumber">[line 16]</span></h3>
+	<h3>DS <span class="smalllinenumber">[line 35]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -170,25 +170,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-        <br />
-		</div>
-	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
-  <hr />
-	<a name="defineINI_STEEZE"></a>
-	<h3>INI_STEEZE <span class="smalllinenumber">[line 9]</span></h3>
-	<div class="tags">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>INI_STEEZE = true</code>
-    </td></tr></table>
-    </td></tr></table>
-
-        <br />
+    系统目录分隔符<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineKERNEL_PATH"></a>
-	<h3>KERNEL_PATH <span class="smalllinenumber">[line 17]</span></h3>
+	<h3>KERNEL_PATH <span class="smalllinenumber">[line 40]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -196,12 +183,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-        <br />
+    内核框架路径<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineLOGS_PATH"></a>
-	<h3>LOGS_PATH <span class="smalllinenumber">[line 22]</span></h3>
+	<h3>LOGS_PATH <span class="smalllinenumber">[line 65]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -209,12 +196,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-        <br />
+    日志目录（支持自定义，权限为可读写）<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineROOT_PATH"></a>
-	<h3>ROOT_PATH <span class="smalllinenumber">[line 23]</span></h3>
+	<h3>ROOT_PATH <span class="smalllinenumber">[line 70]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -222,12 +209,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-        <br />
+    入口文件根目录路径（支持自定义）<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineSTEEZE_VERSION"></a>
-	<h3>STEEZE_VERSION <span class="smalllinenumber">[line 8]</span></h3>
+	<h3>STEEZE_VERSION <span class="smalllinenumber">[line 16]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -235,12 +222,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-    系统运行基础文件，主要定义加载器和系统常量<br />    <br />
+    系统当前版本号<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineSTORAGE_PATH"></a>
-	<h3>STORAGE_PATH <span class="smalllinenumber">[line 20]</span></h3>
+	<h3>STORAGE_PATH <span class="smalllinenumber">[line 55]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -248,12 +235,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-        <br />
+    数据存储目录（支持自定义，权限为可读写）<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineSTORAGE_TYPE"></a>
-	<h3>STORAGE_TYPE <span class="smalllinenumber">[line 26]</span></h3>
+	<h3>STORAGE_TYPE <span class="smalllinenumber">[line 85]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -261,12 +248,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-        <br />
+    文件存储类型<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineSYS_START_TIME"></a>
-	<h3>SYS_START_TIME <span class="smalllinenumber">[line 10]</span></h3>
+	<h3>SYS_START_TIME <span class="smalllinenumber">[line 26]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -274,12 +261,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-        <br />
+    系统开始时间值<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineUPLOAD_PATH"></a>
-	<h3>UPLOAD_PATH <span class="smalllinenumber">[line 25]</span></h3>
+	<h3>UPLOAD_PATH <span class="smalllinenumber">[line 80]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -287,12 +274,12 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-        <br />
+    文件上传目录路径<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineUSE_DEFUALT_HANDLE"></a>
-	<h3>USE_DEFUALT_HANDLE <span class="smalllinenumber">[line 48]</span></h3>
+	<h3>USE_DEFUALT_HANDLE <span class="smalllinenumber">[line 107]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -305,7 +292,7 @@ Source Location: /base.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
   <hr />
 	<a name="defineVENDOR_PATH"></a>
-	<h3>VENDOR_PATH <span class="smalllinenumber">[line 19]</span></h3>
+	<h3>VENDOR_PATH <span class="smalllinenumber">[line 50]</span></h3>
 	<div class="tags">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -313,7 +300,7 @@ Source Location: /base.php<br /><br />
     </td></tr></table>
     </td></tr></table>
 
-        <br />
+    应用目录（支持自定义）<br />    <br />
 		</div>
 	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
 

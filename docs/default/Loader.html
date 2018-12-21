@@ -68,7 +68,7 @@ Source Location: /base.php<br /><br />
 
 <h3><a href="#class_details">Class Overview</a></h3>
 <pre></pre><br />
-<div class="description">系统加载类</div><br /><br />
+<div class="description">系统加载器</div><br /><br />
 
 
 
@@ -114,8 +114,8 @@ Source Location: /base.php<br /><br />
 <a name="class_details"></a>
 <h3>Class Details</h3>
 <div class="tags">
-[line 72]<br />
-系统加载类<br /></div><br /><br />
+[line 131]<br />
+系统加载器<br /></div><br /><br />
 <div class="top">[ <a href="#top">Top</a> ]</div><br />
 
 
@@ -124,7 +124,7 @@ Source Location: /base.php<br /><br />
 <h3>Method Detail</h3>
 <div class="tags">
 	<a name="methodapp"></a>
-	<h3>app<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 81]</span></h3>
+	<h3>app<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 140]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -135,7 +135,7 @@ $response = null])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
-		初始化应用程序<br /><div class="tags">
+		加载并运行应用程序对象<br /><div class="tags">
 <ul>
 <li><b>Return:</b> 应用程序对象</li>
 <li><b>Access:</b> public</li>
@@ -165,19 +165,19 @@ $response = null])</code>
   </div>
   <hr />  
 	<a name="methodconfig"></a>
-	<h3>config<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 218]</span></h3>
+	<h3>config<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 277]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>mixed config(
-string
+string|array
 $name, [string
 $key = ''], [string
 $default = ''])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
-		加载配置文件<br /><div class="tags">
+		配置文件加载<br /><div class="tags">
 <ul>
 <li><b>Access:</b> public</li>
 </ul>
@@ -189,10 +189,10 @@ $default = ''])</code>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
           <tr>
-        <td>string&nbsp;&nbsp;</td>
+        <td>string|array&nbsp;&nbsp;</td>
         <td><tt>$name</tt>&nbsp;&nbsp;</td>
         <td>&mdash;&nbsp;</td>
-        <td>配置文件</td>
+        <td>配置文件名称（不包括扩展名），如果为数组则设置配置选项</td>
       </tr>
           <tr>
         <td>string&nbsp;&nbsp;</td>
@@ -212,7 +212,7 @@ $default = ''])</code>
   </div>
   <hr />  
 	<a name="methodcontroller"></a>
-	<h3>controller<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 145]</span></h3>
+	<h3>controller<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 204]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -224,7 +224,7 @@ $container = null])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
-		加载控制器<br /><div class="tags">
+		控制器加载<br /><div class="tags">
 <ul>
 <li><b>Access:</b> public</li>
 </ul>
@@ -259,7 +259,7 @@ $container = null])</code>
   </div>
   <hr />  
 	<a name="methodenv"></a>
-	<h3>env<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 94]</span></h3>
+	<h3>env<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 153]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -271,7 +271,7 @@ $default = null])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
-		加载环境变量<br /><div class="tags">
+		系统环境变量加载<br /><div class="tags">
 <ul>
 <li><b>Access:</b> public</li>
 </ul>
@@ -306,7 +306,7 @@ $default = null])</code>
   </div>
   <hr />  
 	<a name="methodhelper"></a>
-	<h3>helper<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 182]</span></h3>
+	<h3>helper<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 241]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -319,7 +319,7 @@ $moudule)</code>
     </td></tr></table>
     </td></tr></table><br />
 	
-		加载函数库<br /><div class="tags">
+		函数库加载<br /><div class="tags">
 <ul>
 <li><b>Access:</b> public</li>
 </ul>
@@ -360,7 +360,7 @@ $moudule)</code>
   </div>
   <hr />  
 	<a name="methodimport"></a>
-	<h3>import<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 115]</span></h3>
+	<h3>import<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 174]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -370,7 +370,7 @@ $path)</code>
     </td></tr></table>
     </td></tr></table><br />
 	
-		类加载器<br /><div class="tags">
+		系统类加载<br /><div class="tags">
 <ul>
 <li><b>Access:</b> public</li>
 </ul>
