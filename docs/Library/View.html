@@ -13,9 +13,11 @@
   <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
   <tr>
     <td class="header_menu">
+      [ <a href="http://steeze.cn/docs/startup/index/" target="_blank" class="menu">查看开发文档</a> ]
         		  [ <a href="../classtrees_Library.html" class="menu">类树图: Library</a> ]
 		    [ <a href="../elementindex_Library.html" class="menu">索引: Library</a> ]
       		  [ <a href="../elementindex.html" class="menu">所有元素</a> ]
+      [ <a href="/" class="menu">首页</a> ]
     </td>
   </tr>
   <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
@@ -117,7 +119,6 @@ Source Location: /Library/View.class.php<br /><br />
 <td valign="top">
 <h3><a href="#class_vars">Variables</a></h3>
 <ul>
-    <li><a href="../Library/View.html#var$theme">$theme</a></li>
     <li><a href="../Library/View.html#var$tVar">$tVar</a></li>
   </ul>
 </td>
@@ -168,31 +169,11 @@ Source Location: /Library/View.class.php<br /><br />
 <a name="class_vars"></a>
 <h3>Class Variables</h3>
 <div class="tags">
-	<a name="var$theme"></a>
-	<p></p>
-	<h4>$theme = <span class="value">''</span></h4>
-	<p>[line 11]</p>
-  <div class="tags">
-<ul>
-<li><b>Access:</b> protected</li>
-</ul>
-</div>
-
-  <br />
-	<div class="tags">
-  <table border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td><b>Type:</b>&nbsp;&nbsp;</td>
-      <td>mixed</td>
-    </tr>
-      </table>
-	</div><br /><br />
-	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="var$tVar"></a>
 	<p></p>
 	<h4>$tVar = <span class="value">[]</span></h4>
-	<p>[line 10]</p>
-  <div class="tags">
+	<p>[line 15]</p>
+  模板输出变量<br /><div class="tags">
 <ul>
 <li><b>Access:</b> protected</li>
 </ul>
@@ -203,7 +184,7 @@ Source Location: /Library/View.class.php<br /><br />
   <table border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td><b>Type:</b>&nbsp;&nbsp;</td>
-      <td>mixed</td>
+      <td>array</td>
     </tr>
       </table>
 	</div><br /><br />
@@ -215,7 +196,7 @@ Source Location: /Library/View.class.php<br /><br />
 <h3>Method Detail</h3>
 <div class="tags">
 	<a name="method__construct"></a>
-	<h3>__construct (Constructor)<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 35]</span></h3>
+	<h3>__construct (Constructor)<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 40]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -248,7 +229,7 @@ $context)</code>
   </div>
   <hr />  
 	<a name="methodassign"></a>
-	<h3>assign<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 77]</span></h3>
+	<h3>assign<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 82]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -288,7 +269,7 @@ $value = ''])</code>
   </div>
   <hr />  
 	<a name="methoddisplay"></a>
-	<h3>display<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 113]</span></h3>
+	<h3>display<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 118]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -328,7 +309,7 @@ $data = ''])</code>
   </div>
   <hr />  
 	<a name="methodfetch"></a>
-	<h3>fetch<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 128]</span></h3>
+	<h3>fetch<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 133]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -368,7 +349,7 @@ $data = ''])</code>
   </div>
   <hr />  
 	<a name="methodget"></a>
-	<h3>get<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 93]</span></h3>
+	<h3>get<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 98]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -408,7 +389,7 @@ $isClear = true])</code>
   </div>
   <hr />  
 	<a name="methodgetContext"></a>
-	<h3>getContext<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 48]</span></h3>
+	<h3>getContext<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 53]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -429,7 +410,7 @@ $isClear = true])</code>
   </div>
   <hr />  
 	<a name="methodgetPager"></a>
-	<h3>getPager<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 60]</span></h3>
+	<h3>getPager<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 65]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -484,7 +465,7 @@ $array = []])</code>
   </div>
   <hr />  
 	<a name="methodrender"></a>
-	<h3>render<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 170]</span></h3>
+	<h3>render<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 175]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -531,7 +512,7 @@ $param = []])</code>
   </div>
   <hr />  
 	<a name="methodresolvePath"></a>
-	<h3>resolvePath<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 211]</span></h3>
+	<h3>resolvePath<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 216]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
