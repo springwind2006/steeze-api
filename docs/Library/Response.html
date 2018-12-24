@@ -173,7 +173,7 @@
 <a name="class_details"></a>
 <h3>Class Details</h3>
 <div class="tags">
-[line 8]<br />
+[line 9]<br />
 系统响应类<br /></div><br /><br />
 <div class="top">[ <a href="#top">Top</a> ]</div><br />
 
@@ -183,7 +183,7 @@
 <h3>Method Detail</h3>
 <div class="tags">
 	<a name="method__construct"></a>
-	<h3>__construct (Constructor)<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 25]</span></h3>
+	<h3>__construct (Constructor)<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 26]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -216,7 +216,7 @@ $context)</code>
   </div>
   <hr />  
 	<a name="methodcookie"></a>
-	<h3>cookie<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 95]</span></h3>
+	<h3>cookie<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 96]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -296,7 +296,7 @@ $httponly = 0])</code>
   </div>
   <hr />  
 	<a name="methodend"></a>
-	<h3>end<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 177]</span></h3>
+	<h3>end<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 203]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -336,7 +336,7 @@ $isAsyn = 0])</code>
   </div>
   <hr />  
 	<a name="methodflush"></a>
-	<h3>flush<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 201]</span></h3>
+	<h3>flush<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 164]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -348,7 +348,7 @@ $charset = ''])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
-		输出数据到客户端<br /><div class="tags">
+		输出数据到客户端并结束<br /><div class="tags">
 <ul>
 <li><b>Access:</b> public</li>
 </ul>
@@ -369,13 +369,13 @@ $charset = ''])</code>
         <td>string&nbsp;&nbsp;</td>
         <td><tt>$dataType</tt>&nbsp;&nbsp;</td>
         <td>&mdash;&nbsp;</td>
-        <td>数据类型，如果为空从系统配置获取</td>
+        <td>数据类型，可以是文件扩展名或类型标志（如：text/html）</td>
       </tr>
           <tr>
         <td>string|bool&nbsp;&nbsp;</td>
         <td><tt>$charset</tt>&nbsp;&nbsp;</td>
         <td>&mdash;&nbsp;</td>
-        <td>数据编码，如果为false不输出编码，为空从系统配置获取</td>
+        <td>编码类型，默认为空使用系统配置，为false则不输出编码类型</td>
       </tr>
         </table>
     </div><br />
@@ -383,7 +383,7 @@ $charset = ''])</code>
   </div>
   <hr />  
 	<a name="methodgetContext"></a>
-	<h3>getContext<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 33]</span></h3>
+	<h3>getContext<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 34]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -404,7 +404,7 @@ $charset = ''])</code>
   </div>
   <hr />  
 	<a name="methodgzip"></a>
-	<h3>gzip<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 127]</span></h3>
+	<h3>gzip<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 128]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -437,7 +437,7 @@ $level = 0])</code>
   </div>
   <hr />  
 	<a name="methodhasSendHeader"></a>
-	<h3>hasSendHeader<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 63]</span></h3>
+	<h3>hasSendHeader<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 64]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -458,7 +458,7 @@ $level = 0])</code>
   </div>
   <hr />  
 	<a name="methodheader"></a>
-	<h3>header<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 79]</span></h3>
+	<h3>header<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 80]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -506,7 +506,7 @@ $hasSend = true])</code>
   </div>
   <hr />  
 	<a name="methodredirect"></a>
-	<h3>redirect<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 225]</span></h3>
+	<h3>redirect<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 233]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -553,7 +553,7 @@ $msg = ''])</code>
   </div>
   <hr />  
 	<a name="methodsendfile"></a>
-	<h3>sendfile<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 156]</span></h3>
+	<h3>sendfile<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 180]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -600,7 +600,7 @@ $length = 0])</code>
   </div>
   <hr />  
 	<a name="methodsetIsEnd"></a>
-	<h3>setIsEnd<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 54]</span></h3>
+	<h3>setIsEnd<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 55]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -633,7 +633,7 @@ $status = true])</code>
   </div>
   <hr />  
 	<a name="methodsetResponse"></a>
-	<h3>setResponse<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 42]</span></h3>
+	<h3>setResponse<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 43]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -666,7 +666,7 @@ $response = null])</code>
   </div>
   <hr />  
 	<a name="methodstatus"></a>
-	<h3>status<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 111]</span></h3>
+	<h3>status<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 112]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -699,14 +699,15 @@ $code)</code>
   </div>
   <hr />  
 	<a name="methodwrite"></a>
-	<h3>write<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 137]</span></h3>
+	<h3>write<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 139]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>void write(
 string
-$data, [bool
-$isConsole = false])</code>
+$data, [string
+$dataType = ''], [string|bool
+$charset = ''])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
@@ -728,10 +729,16 @@ $isConsole = false])</code>
         <td>要发送的数据内容，最大长度不得超过2M</td>
       </tr>
           <tr>
-        <td>bool&nbsp;&nbsp;</td>
-        <td><tt>$isConsole</tt>&nbsp;&nbsp;</td>
+        <td>string&nbsp;&nbsp;</td>
+        <td><tt>$dataType</tt>&nbsp;&nbsp;</td>
         <td>&mdash;&nbsp;</td>
-        <td>是否直接写入到控制台</td>
+        <td>数据类型，可以是文件扩展名或类型标志（如：text/html）</td>
+      </tr>
+          <tr>
+        <td>string|bool&nbsp;&nbsp;</td>
+        <td><tt>$charset</tt>&nbsp;&nbsp;</td>
+        <td>&mdash;&nbsp;</td>
+        <td>编码类型，默认为空使用系统配置，为false则不输出编码类型</td>
       </tr>
         </table>
     </div><br />
