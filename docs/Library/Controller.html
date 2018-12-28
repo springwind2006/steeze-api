@@ -184,7 +184,7 @@
 <h3>Method Detail</h3>
 <div class="tags">
 	<a name="methodajaxReturn"></a>
-	<h3>ajaxReturn<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 188]</span></h3>
+	<h3>ajaxReturn<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 197]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -231,7 +231,7 @@ $option = null])</code>
   </div>
   <hr />  
 	<a name="methodassign"></a>
-	<h3>assign<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 110]</span></h3>
+	<h3>assign<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 119]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -271,7 +271,7 @@ $value = ''])</code>
   </div>
   <hr />  
 	<a name="methodbuildHtml"></a>
-	<h3>buildHtml<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 93]</span></h3>
+	<h3>buildHtml<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 102]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -318,15 +318,14 @@ $templateFile = ''])</code>
   </div>
   <hr />  
 	<a name="methoddisplay"></a>
-	<h3>display<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 59]</span></h3>
+	<h3>display<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 63]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>void display(
 [string
-$templateFile = ''], [string
-$charset = ''], [string
-$contentType = ''])</code>
+$file = ''], [array
+$data = []])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
@@ -343,21 +342,15 @@ $contentType = ''])</code>
     <table border="0" cellspacing="0" cellpadding="0">
           <tr>
         <td>string&nbsp;&nbsp;</td>
-        <td><tt>$templateFile</tt>&nbsp;&nbsp;</td>
+        <td><tt>$file</tt>&nbsp;&nbsp;</td>
         <td>&mdash;&nbsp;</td>
         <td>指定要调用的模板文件 默认为空则由系统自动定位模板文件</td>
       </tr>
           <tr>
-        <td>string&nbsp;&nbsp;</td>
-        <td><tt>$charset</tt>&nbsp;&nbsp;</td>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$data</tt>&nbsp;&nbsp;</td>
         <td>&mdash;&nbsp;</td>
-        <td>输出编码</td>
-      </tr>
-          <tr>
-        <td>string&nbsp;&nbsp;</td>
-        <td><tt>$contentType</tt>&nbsp;&nbsp;</td>
-        <td>&mdash;&nbsp;</td>
-        <td>输出类型</td>
+        <td>模板变量组成的数组</td>
       </tr>
         </table>
     </div><br />
@@ -365,7 +358,7 @@ $contentType = ''])</code>
   </div>
   <hr />  
 	<a name="methoderror"></a>
-	<h3>error<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 141]</span></h3>
+	<h3>error<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 150]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -419,14 +412,14 @@ $ajax = false])</code>
   </div>
   <hr />  
 	<a name="methodfetch"></a>
-	<h3>fetch<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 81]</span></h3>
+	<h3>fetch<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 90]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>string fetch(
 [string
-$templateFile = ''], [string
-$content = ''])</code>
+$file = ''], [string|array
+$data = ''])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
@@ -443,15 +436,15 @@ $content = ''])</code>
     <table border="0" cellspacing="0" cellpadding="0">
           <tr>
         <td>string&nbsp;&nbsp;</td>
-        <td><tt>$templateFile</tt>&nbsp;&nbsp;</td>
+        <td><tt>$file</tt>&nbsp;&nbsp;</td>
         <td>&mdash;&nbsp;</td>
-        <td>指定要调用的模板文件 默认为空 由系统自动定位模板文件</td>
+        <td>指定要调用的模板文件，默认为空 由系统自动定位模板文件</td>
       </tr>
           <tr>
-        <td>string&nbsp;&nbsp;</td>
-        <td><tt>$content</tt>&nbsp;&nbsp;</td>
+        <td>string|array&nbsp;&nbsp;</td>
+        <td><tt>$data</tt>&nbsp;&nbsp;</td>
         <td>&mdash;&nbsp;</td>
-        <td>模板输出内容</td>
+        <td>渲染输出的内容，如果为空字符串则使用文件渲染，如果为数组则为模板变量</td>
       </tr>
         </table>
     </div><br />
@@ -459,7 +452,7 @@ $content = ''])</code>
   </div>
   <hr />  
 	<a name="methodget"></a>
-	<h3>get<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 122]</span></h3>
+	<h3>get<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 131]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -492,11 +485,11 @@ $name = ''])</code>
   </div>
   <hr />  
 	<a name="methodgetContext"></a>
-	<h3>getContext<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 36]</span></h3>
+	<h3>getContext<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 41]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>\Library\Application getContext(
+		<code><a href="../Library/Application.html">Application</a> getContext(
 )</code>
     </td></tr></table>
     </td></tr></table><br />
@@ -513,7 +506,7 @@ $name = ''])</code>
   </div>
   <hr />  
 	<a name="methodgetPager"></a>
-	<h3>getPager<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 254]</span></h3>
+	<h3>getPager<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 263]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -568,7 +561,7 @@ $array = []])</code>
   </div>
   <hr />  
 	<a name="methodmiddleware"></a>
-	<h3>middleware<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 264]</span></h3>
+	<h3>middleware<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 273]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -608,7 +601,7 @@ $excepts = []])</code>
   </div>
   <hr />  
 	<a name="methodredirect"></a>
-	<h3>redirect<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 230]</span></h3>
+	<h3>redirect<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 239]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -662,12 +655,12 @@ $msg = ''])</code>
   </div>
   <hr />  
 	<a name="methodrender"></a>
-	<h3>render<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 48]</span></h3>
+	<h3>render<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 53]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>mixed render(
-\Library\Controller
+<a href="../Library/Controller.html">Controller</a>
 $controller, string
 $action, [array
 $param = []])</code>
@@ -686,7 +679,7 @@ $param = []])</code>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
           <tr>
-        <td>\Library\Controller&nbsp;&nbsp;</td>
+        <td><a href="../Library/Controller.html">Controller</a>&nbsp;&nbsp;</td>
         <td><tt>$controller</tt>&nbsp;&nbsp;</td>
         <td>&mdash;&nbsp;</td>
         <td></td>
@@ -709,11 +702,11 @@ $param = []])</code>
   </div>
   <hr />  
 	<a name="methodsetContext"></a>
-	<h3>setContext<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 26]</span></h3>
+	<h3>setContext<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 31]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>\Library\Controller setContext(
+		<code><a href="../Library/Controller.html">Controller</a> setContext(
 <a href="../Library/Application.html">Application</a>
 $context)</code>
     </td></tr></table>
@@ -731,7 +724,7 @@ $context)</code>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
           <tr>
-        <td>\Library\Application&nbsp;&nbsp;</td>
+        <td><a href="../Library/Application.html">Application</a>&nbsp;&nbsp;</td>
         <td><tt>$context</tt>&nbsp;&nbsp;</td>
         <td>&mdash;&nbsp;</td>
         <td></td>
@@ -742,15 +735,14 @@ $context)</code>
   </div>
   <hr />  
 	<a name="methodshow"></a>
-	<h3>show<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 70]</span></h3>
+	<h3>show<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 76]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>void show(
 [string
-$content = ''], [string
-$charset = ''], [string
-$contentType = ''])</code>
+$content = ''], [array
+$data = []])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
@@ -772,16 +764,10 @@ $contentType = ''])</code>
         <td>输出内容</td>
       </tr>
           <tr>
-        <td>string&nbsp;&nbsp;</td>
-        <td><tt>$charset</tt>&nbsp;&nbsp;</td>
+        <td>array&nbsp;&nbsp;</td>
+        <td><tt>$data</tt>&nbsp;&nbsp;</td>
         <td>&mdash;&nbsp;</td>
-        <td>模板输出字符集</td>
-      </tr>
-          <tr>
-        <td>string&nbsp;&nbsp;</td>
-        <td><tt>$contentType</tt>&nbsp;&nbsp;</td>
-        <td>&mdash;&nbsp;</td>
-        <td>输出类型</td>
+        <td>模板变量组成的数组</td>
       </tr>
         </table>
     </div><br />
@@ -789,7 +775,7 @@ $contentType = ''])</code>
   </div>
   <hr />  
 	<a name="methodsuccess"></a>
-	<h3>success<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 171]</span></h3>
+	<h3>success<span class="smalllinenumber">&nbsp;&nbsp;&nbsp;[line 180]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
