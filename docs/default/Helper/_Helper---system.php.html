@@ -169,7 +169,7 @@ array $array, string $func, [bool $applyKey = false])</code>
 	</div>
   <hr />
 	<a name="functionassets"></a>
-	<h3>assets <span class="smalllinenumber">[line 908]</span></h3>
+	<h3>assets <span class="smalllinenumber">[line 1000]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -250,7 +250,7 @@ array|string $data, [string $type = 'ENCODE'], [array|string $filter = null], [s
 	</div>
   <hr />
 	<a name="functionC"></a>
-	<h3>C <span class="smalllinenumber">[line 1299]</span></h3>
+	<h3>C <span class="smalllinenumber">[line 1391]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -348,12 +348,12 @@ mixed $var, [bool $isReturn = false])</code>
     	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
 	</div>
   <hr />
-	<a name="functionE"></a>
-	<h3>E <span class="smalllinenumber">[line 1339]</span></h3>
+	<a name="functione"></a>
+	<h3>e <span class="smalllinenumber">[line 1431]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>\Exception E(
+		<code>\Exception e(
 mixed $error, [int|array $code = 404])</code>
     </td></tr></table>
     </td></tr></table><br />
@@ -377,7 +377,7 @@ mixed $error, [int|array $code = 404])</code>
 	</div>
   <hr />
 	<a name="functionenv"></a>
-	<h3>env <span class="smalllinenumber">[line 1012]</span></h3>
+	<h3>env <span class="smalllinenumber">[line 1104]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -410,7 +410,7 @@ string $key, [string $default = null])</code>
 	</div>
   <hr />
 	<a name="functionF"></a>
-	<h3>F <span class="smalllinenumber">[line 1100]</span></h3>
+	<h3>F <span class="smalllinenumber">[line 1192]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -547,7 +547,7 @@ string $filename, [string $default = 'jpg'], [int $maxExtLen = 5])</code>
 	</div>
   <hr />
 	<a name="functionG"></a>
-	<h3>G <span class="smalllinenumber">[line 1034]</span></h3>
+	<h3>G <span class="smalllinenumber">[line 1126]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -607,45 +607,93 @@ string $start, [string $end = ''], [int|string $dec = 4])</code>
 	</div>
   <hr />
 	<a name="functionget_remote_file"></a>
-	<h3>get_remote_file <span class="smalllinenumber">[line 706]</span></h3>
+	<h3>get_remote_file <span class="smalllinenumber">[line 710]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>string|int|null get_remote_file(
-string $url, [string $data = null], [array $headers = null], [string $savepath = null])</code>
+string $url, [array|string|int $data = null], [array|string|int $headers = null], [string|int $savepath = null], [int $timeout = 5])</code>
     </td></tr></table>
     </td></tr></table><br />
 
-		获取远程文件<br />    <br /><br />
+		获取远程文件（自动支持GET/POST方法）<br /><div class="tags">
+<ul>
+<li><b>Return:</b> 使用说明：  1.本函数主要用于获取远程获取文件，如果是HTTP请求使用http_request函数。  2.本函数如果不设置文件保持路径，会将文件内容返回  3.本函数支持大文件下载，但要注意设置请求超时</li>
+</ul>
+</div>
+    <br /><br />
 	
     		<h4>Parameters</h4>
     <table border="0" cellspacing="0" cellpadding="0">
 		      <tr>
         <td class="type">string&nbsp;&nbsp;</td>
         <td><b>$url</b>&nbsp;&nbsp;</td>
-        <td>文件地址</td>
+        <td>文件地址或配置信息</td>
       </tr>
 		      <tr>
-        <td class="type">string&nbsp;&nbsp;</td>
+        <td class="type">array|string|int&nbsp;&nbsp;</td>
         <td><b>$data</b>&nbsp;&nbsp;</td>
-        <td>POST请求时为数组</td>
+        <td>数组为POST参数，字符串为保存路径，整数为请求超时</td>
+      </tr>
+		      <tr>
+        <td class="type">array|string|int&nbsp;&nbsp;</td>
+        <td><b>$headers</b>&nbsp;&nbsp;</td>
+        <td>数组为设置请求头信息，字符串为保存路径，整数为请求超时</td>
+      </tr>
+		      <tr>
+        <td class="type">string|int&nbsp;&nbsp;</td>
+        <td><b>$savepath</b>&nbsp;&nbsp;</td>
+        <td>字符串为文件保存路径，整数为请求超时</td>
+      </tr>
+		      <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$timeout</b>&nbsp;&nbsp;</td>
+        <td>请求超时（单位：秒），默认5秒</td>
+      </tr>
+				</table>
+    	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+	</div>
+  <hr />
+	<a name="functionhttp_request"></a>
+	<h3>http_request <span class="smalllinenumber">[line 777]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string|int|null http_request(
+array|string $config, [array|string $data = null], [array $headers = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+
+		HTTP请求<br /><div class="tags">
+<ul>
+<li><b>Return:</b> <p>使用范例：  1、POST请求并输出返回值  $result=http_request([   'url'=&gt;'http://steeze.com/message', //请求地址   'data'=&gt;['name'=&gt;'test'], //POST参数（可以为字符串或数组）   'headers'=&gt;['TOKEN'=&gt;'123'], //HEADER参数   'method'=&gt;'POST', //请求方法（默认：GET）   'timeout'=&gt;5, //超时（单位：秒）  ]);  echo $result;</p><p>2、GET请求下载文件  $fp=fopen('logo.png', 'w');  $result=http_request([   'url'=&gt;'https://steeze.cn/img/logonav.png', //下载文件地址   'output'=&gt; $fp, //POST参数（可以为字符串或资源类型）  ]);  var_dump($result); //输出获取到的内容字节数  fclose($fp);</p></li>
+</ul>
+</div>
+    <br /><br />
+	
+    		<h4>Parameters</h4>
+    <table border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+        <td class="type">array|string&nbsp;&nbsp;</td>
+        <td><b>$config</b>&nbsp;&nbsp;</td>
+        <td>参数配置或url</td>
+      </tr>
+		      <tr>
+        <td class="type">array|string&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>POST参数（第1个参数为url时有效）</td>
       </tr>
 		      <tr>
         <td class="type">array&nbsp;&nbsp;</td>
         <td><b>$headers</b>&nbsp;&nbsp;</td>
-        <td>设置请求头信息</td>
-      </tr>
-		      <tr>
-        <td class="type">string&nbsp;&nbsp;</td>
-        <td><b>$savepath</b>&nbsp;&nbsp;</td>
-        <td>文件保存路径，如果为空则返回获取的文件内容</td>
+        <td>请求头参数（第1个参数为url时有效）</td>
       </tr>
 				</table>
     	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
 	</div>
   <hr />
 	<a name="functionL"></a>
-	<h3>L <span class="smalllinenumber">[line 1360]</span></h3>
+	<h3>L <span class="smalllinenumber">[line 1452]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -678,7 +726,7 @@ string $message, [array $datas = []])</code>
 	</div>
   <hr />
 	<a name="functionM"></a>
-	<h3>M <span class="smalllinenumber">[line 1153]</span></h3>
+	<h3>M <span class="smalllinenumber">[line 1245]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -714,7 +762,7 @@ string $message, [array $datas = []])</code>
 	</div>
   <hr />
 	<a name="functionmake"></a>
-	<h3>make <span class="smalllinenumber">[line 995]</span></h3>
+	<h3>make <span class="smalllinenumber">[line 1087]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -808,7 +856,7 @@ int $length, [string $chars = '0123456789'])</code>
 	</div>
   <hr />
 	<a name="functionS"></a>
-	<h3>S <span class="smalllinenumber">[line 1065]</span></h3>
+	<h3>S <span class="smalllinenumber">[line 1157]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -864,7 +912,7 @@ array|string $data)</code>
 	</div>
   <hr />
 	<a name="functionsession"></a>
-	<h3>session <span class="smalllinenumber">[line 763]</span></h3>
+	<h3>session <span class="smalllinenumber">[line 855]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1316,7 +1364,7 @@ string $data)</code>
 	</div>
   <hr />
 	<a name="functionU"></a>
-	<h3>U <span class="smalllinenumber">[line 1196]</span></h3>
+	<h3>U <span class="smalllinenumber">[line 1288]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
