@@ -618,7 +618,7 @@ string $url, [array|string|int $data = null], [array|string|int $headers = null]
 
 		获取远程文件（自动支持GET/POST方法）<br /><div class="tags">
 <ul>
-<li><b>Return:</b> 使用说明：<br />  1.本函数主要用于获取远程获取文件，如果是HTTP请求使用http_request函数。<br />  2.本函数如果不设置文件保持路径，会将文件内容返回<br />  3.本函数支持大文件下载，但要注意设置请求超时</li>
+<li><b>Return:</b> <p>如果设置了保存路径，则返回获取的字节大小，否则返回获取的内容</p><p>&lt;h3&gt;使用说明&lt;/h3&gt;  1.本函数主要用于获取远程获取文件，如果是HTTP请求使用http_request函数。<br />  2.本函数如果不设置文件保持路径，会将文件内容返回<br />  3.本函数支持大文件下载，但要注意设置请求超时</p></li>
 </ul>
 </div>
     <br /><br />
@@ -666,14 +666,14 @@ array|string $config, [array|string $data = null], [array $headers = null])</cod
 
 		HTTP请求<br /><div class="tags">
 <ul>
-<li><b>Return:</b> <p>使用范例：  1、POST请求并输出返回值  <pre> $result=http_request([
+<li><b>Return:</b> <p>如果参数设置了output选项，则返回获取的字节大小，否则返回获取的内容</p><p>&lt;h3&gt;使用范例&lt;/h3&gt;  1、POST请求并输出返回值<br />  <pre> $result=http_request([
   'url'=>'http://steeze.com/message', //请求地址
   'data'=>['name'=>'test'], //POST参数（可以为字符串或数组）
   'headers'=>['TOKEN'=>'123'], //HEADER参数
   'method'=>'POST', //请求方法（默认：GET）
   'timeout'=>5, //超时（单位：秒）
  ]);
- echo $result;</pre></p><p>2、GET请求下载文件  <pre> $fp=fopen('logo.png', 'w');
+ echo $result;</pre></p><p>2、GET请求下载文件<br />  <pre> $fp=fopen('logo.png', 'w');
  $result=http_request([
   'url'=>'https://steeze.cn/img/logonav.png', //下载文件地址
   'output'=> $fp, //POST参数（可以为字符串或资源类型）
