@@ -618,7 +618,7 @@ string $url, [array|string|int $data = null], [array|string|int $headers = null]
 
 		获取远程文件（自动支持GET/POST方法）<br /><div class="tags">
 <ul>
-<li><b>Return:</b> 使用说明：  1.本函数主要用于获取远程获取文件，如果是HTTP请求使用http_request函数。  2.本函数如果不设置文件保持路径，会将文件内容返回  3.本函数支持大文件下载，但要注意设置请求超时</li>
+<li><b>Return:</b> 使用说明：<br />  1.本函数主要用于获取远程获取文件，如果是HTTP请求使用http_request函数。<br />  2.本函数如果不设置文件保持路径，会将文件内容返回<br />  3.本函数支持大文件下载，但要注意设置请求超时</li>
 </ul>
 </div>
     <br /><br />
@@ -666,22 +666,20 @@ array|string $config, [array|string $data = null], [array $headers = null])</cod
 
 		HTTP请求<br /><div class="tags">
 <ul>
-<li><b>Return:</b> <p>使用范例：  1、POST请求并输出返回值  <code><pre><ol><li><div class="src-line">&nbsp;<strong>$result</strong>=<a href="../../default/Helper/_Helper---system.php.html#functionhttp_request">http_request</a><strong>(</strong><strong>[</strong></div></li>
-<li><div class="src-line">&nbsp;&nbsp;<span class="encapsed_string">'url'</span>=&gt;<span class="encapsed_string">'http://steeze.com/message'</span><strong>,&nbsp;</strong><font color="green">//请求地址</font></div></li>
-<li><div class="src-line">&nbsp;&nbsp;<span class="encapsed_string">'data'</span>=&gt;<strong>[</strong><span class="encapsed_string">'name'</span>=&gt;<span class="encapsed_string">'test'</span><strong>]</strong><strong>,&nbsp;</strong><font color="green">//POST参数（可以为字符串或数组）</font></div></li>
-<li><div class="src-line">&nbsp;&nbsp;<span class="encapsed_string">'headers'</span>=&gt;<strong>[</strong><span class="encapsed_string">'TOKEN'</span>=&gt;<span class="encapsed_string">'123'</span><strong>]</strong><strong>,&nbsp;</strong><font color="green">//HEADER参数</font></div></li>
-<li><div class="src-line">&nbsp;&nbsp;<span class="encapsed_string">'method'</span>=&gt;<span class="encapsed_string">'POST'</span><strong>,&nbsp;</strong><font color="green">//请求方法（默认：GET）</font></div></li>
-<li><div class="src-line">&nbsp;&nbsp;<span class="encapsed_string">'timeout'</span>=&gt;5<strong>,&nbsp;</strong><font color="green">//超时（单位：秒）</font></div></li>
-<li><div class="src-line">&nbsp;<strong>]</strong><strong>)</strong>;</div></li>
-<li><div class="src-line">&nbsp;echo&nbsp;<strong>$result</strong>;</div></li>
-</ol></pre></code></p><p>2、GET请求下载文件  <code><pre><ol><li><div class="src-line">&nbsp;<strong>$fp</strong>=<a href="http://www.php.net/fopen">fopen</a><strong>(</strong><span class="encapsed_string">'logo.png'</span><strong>,&nbsp;</strong><span class="encapsed_string">'w'</span><strong>)</strong>;</div></li>
-<li><div class="src-line">&nbsp;<strong>$result</strong>=<a href="../../default/Helper/_Helper---system.php.html#functionhttp_request">http_request</a><strong>(</strong><strong>[</strong></div></li>
-<li><div class="src-line">&nbsp;&nbsp;<span class="encapsed_string">'url'</span>=&gt;<span class="encapsed_string">'https://steeze.cn/img/logonav.png'</span><strong>,&nbsp;</strong><font color="green">//下载文件地址</font></div></li>
-<li><div class="src-line">&nbsp;&nbsp;<span class="encapsed_string">'output'</span>=&gt;&nbsp;<strong>$fp</strong><strong>,&nbsp;</strong><font color="green">//POST参数（可以为字符串或资源类型）</font></div></li>
-<li><div class="src-line">&nbsp;<strong>]</strong><strong>)</strong>;</div></li>
-<li><div class="src-line">&nbsp;<a href="http://www.php.net/var_dump">var_dump</a><strong>(</strong><strong>$result</strong><strong>)</strong>;&nbsp;<font color="green">//输出获取到的内容字节数</font></div></li>
-<li><div class="src-line">&nbsp;<a href="http://www.php.net/fclose">fclose</a><strong>(</strong><strong>$fp</strong><strong>)</strong>;</div></li>
-</ol></pre></code></p></li>
+<li><b>Return:</b> <p>使用范例：  1、POST请求并输出返回值  <pre> $result=http_request([
+  'url'=>'http://steeze.com/message', //请求地址
+  'data'=>['name'=>'test'], //POST参数（可以为字符串或数组）
+  'headers'=>['TOKEN'=>'123'], //HEADER参数
+  'method'=>'POST', //请求方法（默认：GET）
+  'timeout'=>5, //超时（单位：秒）
+ ]);
+ echo $result;</pre></p><p>2、GET请求下载文件  <pre> $fp=fopen('logo.png', 'w');
+ $result=http_request([
+  'url'=>'https://steeze.cn/img/logonav.png', //下载文件地址
+  'output'=> $fp, //POST参数（可以为字符串或资源类型）
+ ]);
+ var_dump($result); //输出获取到的内容字节数
+ fclose($fp);</pre></p></li>
 </ul>
 </div>
     <br /><br />
